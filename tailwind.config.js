@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src//*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontSize: {
@@ -16,12 +16,12 @@ module.exports = {
         "header-bg": "url('./assets/images/home/webp/header-bg.webp')",
       },
       colors: {
-        "light-white": "#b2b9eb",
-        "white-gray": "#959595",
-        "dark-gray": "#4d4d4d",
-        "sky-blue": "#00b5d8",
-        "dark-blue": "#03045e",
-        "light-blue": "#ddf9ff",
+        lightWhite: "#b2b9eb",
+        whiteGray: "#959595",
+        darkGray: "#4d4d4d",
+        skyBlue: "#00b5d8",
+        darkBlue: "#03045e",
+        lightBlue: "#ddf9ff",
       },
 
       lineHeight: {
