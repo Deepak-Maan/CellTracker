@@ -3,6 +3,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+    
+      maxWidth: {
+        " max_w_520": "520px",
+        " max_w_506": "506px",
+      },
       fontSize: {
         "3xl2": "32px",
         "4xl2": "40px",
@@ -13,7 +18,7 @@ module.exports = {
         padding: "12px",
       },
       backgroundImage: {
-        "header-bg": "url('./assets/images/home/webp/header-bg.webp')",
+        homeHeader: "url('/src/assets/images/homePage/heroBg.webp')",
       },
       colors: {
         lightWhite: "#b2b9eb",
@@ -22,6 +27,7 @@ module.exports = {
         skyBlue: "#00b5d8",
         darkBlue: "#03045e",
         lightBlue: "#ddf9ff",
+        lightSky: "#f2f5fa",
       },
 
       lineHeight: {
