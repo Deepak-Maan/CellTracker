@@ -4,10 +4,7 @@ module.exports = {
   theme: {
     extend: {
     
-      maxWidth: {
-        " max_w_520": "520px",
-        " max_w_506": "506px",
-      },
+ 
       fontSize: {
         "3xl2": "32px",
         "4xl2": "40px",
