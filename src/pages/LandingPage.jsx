@@ -1,5 +1,5 @@
 import React from 'react'
-import LandingFooter from '../components/LandingFooter'
+import LandingFooter from '../components/landing/LandingFooter'
 
 const LandingPage = () => {
     return (

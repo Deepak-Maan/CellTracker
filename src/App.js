@@ -1,10 +1,12 @@
 import "./App.css";
-import Footer from "./components/common/Footer";
+import HomePage from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <div>
-      <Footer />
+      <HomePage />
+      <LandingPage />
     </div>
   );
 }

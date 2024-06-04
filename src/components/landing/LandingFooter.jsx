@@ -1,5 +1,5 @@
 import React from 'react'
-import { Facebook, Instagram, Linkedin, Logo, Twitter } from './Icons'
+import { Facebook, Instagram, Linkedin, Logo, Twitter } from '../common/Icons'
 
 const LandingFooter = () => {
     return (
@@ -10,9 +10,9 @@ const LandingFooter = () => {
                 </div>
                 <div>
                     <ul className='flex gap-6 justify-center '>
-                        <li><a href="" className='text-base font-normal leading-6 text-darkGray'>Help</a></li>
-                        <li><a href="" className='text-base font-normal leading-6 text-darkGray'>Contact us</a></li>
-                        <li><a href="" className='text-base font-normal leading-6 text-darkGray'>Found Phone</a></li>
+                        <li><a href="" className='text-base font-normal leading-6 text-darkGray'>Home</a></li>
+                        <li><a href="" className='text-base font-normal leading-6 text-darkGray'>How It Works</a></li>
+                        <li><a href="" className='text-base font-normal leading-6 text-darkGray'>Features</a></li>
                     </ul>
                 </div>
                 <div className='flex gap-[18px] justify-center lg:justify-end sm:col-span-2 lg:col-span-1'>
