@@ -1,10 +1,11 @@
 import workitMobile from "../../assets/images/homePage/workitMobile.webp";
 import { workitData } from "../common/Helper";
+import { LocationEllp } from "../common/Icons";
 import SameBtn from "../common/SameBtn";
 
 const Workit = () => {
   return (
-    <div className="pb-14">
+    <div className="pb-14 relative">
       <div className="container max-w-[1164px] relative z-20 ">
         <h1 className="text-5xl font-light  leading-xl1 text-darkBlue mb-2 text-center">
           How it <span className=" font-extrabold">works</span>
@@ -13,11 +14,15 @@ const Workit = () => {
           Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit
           elit rhoncus vestibulum fames libero id.
         </p>
-        <div className="flex flex-row justify-center items-center flex-wrap">
-          <div className="lg:w-1/2  w-full ms-[-40px]">
-            <img className="w-full" src={workitMobile} alt="workitMobile" />
+        <div className="flex flex-row justify-center pt-14 items-center flex-wrap">
+          <div className="lg:w-1/2  flex justify-center w-full ">
+            <img
+              className="md:max-w-[680px] xl:ms-[-80px] md:max-h-[626px]"
+              src={workitMobile}
+              alt="workitMobile"
+            />
           </div>
-          <div className="lg:w-1/2  w-full ">
+          <div className="lg:w-1/2 flex flex-col justify-center items-center  w-full ">
             {workitData.map((obj, index) => (
               <div className="p-5   border hover:border max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] md:h-auto">
                 <span className="">{obj.Icon}</span>
@@ -36,6 +41,12 @@ const Workit = () => {
           <SameBtn text="Got more Question?" />
         </div>
       </div>
+      <span className="absolute left-0 top-[15%]">
+        <LocationEllp />
+      </span>
+      <span className="absolute right-0 rotate-180 top-[-15%]">
+        <LocationEllp />
+      </span>
     </div>
   );
 };

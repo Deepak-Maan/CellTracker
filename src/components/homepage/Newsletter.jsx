@@ -20,7 +20,7 @@ const Newsletter = () => {
                 <h2 className="text-white text-center lg:pt-11 font-light leading-xl1 text-2xl2 md:text-5xl mb-3 md:mb-2">
                   Find your <span className="font-extrabold">phone</span>
                 </h2>
-                <p className=" text-sm md:text-base font-normal text-center mx-auto mb-7 lg:mb-8 leading-6 text-white pb-0 max-w-[402px]">
+                <p className=" text-sm md:text-base font-normal px-3 text-center mx-auto mb-7 lg:mb-8 leading-6 text-white pb-0 max-w-[402px]">
                   Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper
                   nisi sit elit rhoncus vestibulum fames libero id.
                 </p>
