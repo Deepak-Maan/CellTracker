@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
+        "2xl2": "28px",
         "3xl2": "32px",
         "4xl2": "40px",
         xxl: "64px",
@@ -13,16 +14,17 @@ module.exports = {
         padding: "12px",
       },
       backgroundImage: {
-        "header-bg": "url('./assets/images/home/webp/header-bg.webp')",
         landingHeader:
           "url('/src/assets/images/landingPage/LandingHeroBg.png')",
         homeHeader: "url('/src/assets/images/homePage/heroBg.webp')",
+        newsBg: "url('/src/assets/images/homePage/newsletterBg.webp')",
       },
       colors: {
         lightWhite: "#b2b9eb",
         whiteGray: "#959595",
         darkGray: "#4d4d4d",
         lightGray: "#e5e5e5",
+        lightGray2: "#e6e6ef",
         skyBlue: "#00b5d8",
         darkBlue: "#03045e",
         lightBlue: "#ddf9ff",
