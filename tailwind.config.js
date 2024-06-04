@@ -14,6 +14,8 @@ module.exports = {
       },
       backgroundImage: {
         "header-bg": "url('./assets/images/home/webp/header-bg.webp')",
+        landingHeader:
+          "url('/src/assets/images/landingPage/LandingHeroBg.png')",
       },
       colors: {
         lightWhite: "#b2b9eb",
@@ -29,7 +31,7 @@ module.exports = {
         sm1: "33px",
         lg1: "38px",
         xl1: "48px",
-        xxl2: "64px",
+        xxl: "64px",
       },
     },
   },
