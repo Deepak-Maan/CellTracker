@@ -16,6 +16,7 @@ module.exports = {
         "header-bg": "url('./assets/images/home/webp/header-bg.webp')",
         landingHeader:
           "url('/src/assets/images/landingPage/LandingHeroBg.png')",
+        homeHeader: "url('/src/assets/images/homePage/heroBg.webp')",
       },
       colors: {
         lightWhite: "#b2b9eb",
@@ -24,6 +25,7 @@ module.exports = {
         skyBlue: "#00b5d8",
         darkBlue: "#03045e",
         lightBlue: "#ddf9ff",
+        lightSky: "#f2f5fa",
       },
 
       lineHeight: {
