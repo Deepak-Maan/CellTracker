@@ -15,6 +15,9 @@ module.exports = {
         padding: "12px",
       },
       backgroundImage: {
+        "header-bg": "url('./assets/images/home/webp/header-bg.webp')",
+        landingHeader:
+          "url('/src/assets/images/landingPage/LandingHeroBg.png')",
         homeHeader: "url('/src/assets/images/homePage/heroBg.webp')",
       },
       colors: {
@@ -32,7 +35,7 @@ module.exports = {
         sm1: "33px",
         lg1: "38px",
         xl1: "48px",
-        xxl2: "64px",
+        xxl: "64px",
       },
     },
   },
