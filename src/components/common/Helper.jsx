@@ -18,7 +18,7 @@ export const PrivaryData = [
     },
     {
         Icon: <PrivateIcon />,
-        Heading: "compatible for every phones",
+        Heading: "Totally private",
         Description: "Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi vestibulum fames libero id."
     },
 ]
