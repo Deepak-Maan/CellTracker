@@ -1,4 +1,4 @@
-import { ContactsIcon, InstallIcon, MessagesIcon, NetworkIcon, PrivateIcon, AccurateLocation, LocateLocation, Location1, Peoples, Robot, Setting, PuzzleIcon, WorksLocationIcon } from "./Icons";
+import { ContactsIcon, InstallIcon, MessagesIcon, NetworkIcon, PrivateIcon, AccurateLocation, LocateLocation, Location1, Peoples, Robot, Setting, PuzzleIcon, WorksLocationIcon, SettingIcon, FindLocationIcon, FindMessagesIcon, PhoneIcon, LoopIcon } from "./Icons";
 // --------Works Data----------//
 export const WorksData = [
     {
@@ -86,3 +86,31 @@ export const workitData = [
             "Instantly track the location of a mobile phone at any time. No apps, no downloads, Locateaphone.com works with any Android or iPhone device. Locateaphone.com uses a range of different tools to find the location of a phone. Our unique phone location walkthrough process will determine the best tools to use for each situation.",
     },
 ];
+
+export const trackerdata = [
+    {
+        img: <SettingIcon />,
+        description: "Cell Tracker runs on all phones and configurations, of all brands",
+    },
+
+    {
+        img: <FindLocationIcon />,
+        description: "Grab real-time location as precise coordinates",
+    },
+    {
+        img: <FindMessagesIcon />,
+        description: "Customize the message you want the recipient to recieve. Or use the one suggested by default",
+    },
+
+    {
+        img: <PhoneIcon />,
+        description: "Any mobile number in the world can be tracked",
+    },
+
+    {
+        img: <LoopIcon />,
+        title: "No installation required",
+        description: "Send unlimited geo-location requests",
+    },
+];
+

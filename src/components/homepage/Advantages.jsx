@@ -13,15 +13,8 @@ const Advantages = () => {
           Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit
           elit rhoncus vestibulum fames libero id.
         </p>
-<<<<<<< HEAD
-        <div className="flex flex-row flex-wrap">
-          <div className="lg:w-4/12 w-full">
-          </div>
-        </div>
-        <div>
-=======
         <div className="flex flex-row justify-center flex-wrap">
-         
+
           {AdvantageData.map((obj, index) => (
             <div className="lg:w-3/12 md:w-4/12 sm:w-1/2 w-full px-[9px] pt-3">
               <div className="p-5   border-2 hover:border border-lightGray2 duration-300 hover:border-darkBlue rounded-xl h-[253px]">
@@ -37,7 +30,6 @@ const Advantages = () => {
           ))}
         </div>
         <div className="flex justify-center pt-12">
->>>>>>> f88de65baa93466a2faad291d394579273f00b85
           <SameBtn text="Create your Account" />
         </div>
       </div>
