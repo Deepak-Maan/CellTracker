@@ -1,4 +1,3 @@
-import React from "react";
 const SameBtn = (props) => {
   return (
     <div>
@@ -11,4 +10,5 @@ const SameBtn = (props) => {
     </div>
   );
 };
+
 export default SameBtn;
