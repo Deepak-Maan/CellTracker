@@ -3,8 +3,6 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-    
- 
       fontSize: {
         "3xl2": "32px",
         "4xl2": "40px",
@@ -24,10 +22,12 @@ module.exports = {
         lightWhite: "#b2b9eb",
         whiteGray: "#959595",
         darkGray: "#4d4d4d",
+        lightGray: "#e5e5e5",
         skyBlue: "#00b5d8",
         darkBlue: "#03045e",
         lightBlue: "#ddf9ff",
         lightSky: "#f2f5fa",
+        lightOffBlue: "#E5F8FB",
       },
 
       lineHeight: {

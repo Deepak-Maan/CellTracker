@@ -14,14 +14,10 @@ const Advantages = () => {
         </p>
         <div className="flex flex-row flex-wrap">
           <div className="lg:w-4/12 w-full">
-            {Partnerslogos.map((obj, index) => (
-                <span>{obj.name}</span>
-          
-            ))}
           </div>
         </div>
         <div>
-            <SameBtn  text="Create your Account"/>
+          <SameBtn text="Create your Account" />
         </div>
       </div>
     </div>

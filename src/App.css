@@ -6,3 +6,8 @@ body {
 * {
   scroll-behavior: smooth !important;
 }
+
+.common_bg_color {
+  background: linear-gradient(7.95deg, #00B5D8 -3.4%, #000080 114.66%);
+  box-shadow: 0px 4px 4px 0px rgba(255, 103, 107, 0.2) inset;
+}
