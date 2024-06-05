@@ -45,10 +45,30 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex gap-[18px] justify-center lg:justify-end sm:col-span-2 lg:col-span-1">
-            <Linkedin />
-            <Instagram />
-            <Facebook />
-            <Twitter />
+            <a
+              href="https://www.linkedin.com/login"
+              target="_blank"
+              aria-label="linkdin"
+            >
+              <Linkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              aria-label="instagram"
+            >
+              <Instagram />
+            </a>
+            <a
+              href="https://www.facebook.com/login/"
+              target="_blank"
+              aria-label="linkdin"
+            >
+              <Facebook />
+            </a>
+            <a href="https://x.com/login" target="_blank" aria-label="twiter">
+              <Twitter />
+            </a>
           </div>
         </div>
         <p className="text-center text-sm leading-5 font-normal pt-[18px] pb-5 md:pb-4">

@@ -18,6 +18,7 @@ module.exports = {
           "url('/src/assets/images/landingPage/LandingHeroBg.png')",
         homeHeader: "url('/src/assets/images/homePage/heroBg.webp')",
         newsBg: "url('/src/assets/images/homePage/newsletterBg.webp')",
+        companies: "url('./assets/images/homePage/CompniesBg.webp')",
       },
       colors: {
         lightWhite: "#b2b9eb",

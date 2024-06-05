@@ -15,15 +15,25 @@ const Advantages = () => {
           elit rhoncus vestibulum fames libero id.
         </p>
         <div className="flex flex-row justify-center flex-wrap">
-          {AdvantageData.map((obj, index) => (
-            <div className="lg:w-3/12 md:w-4/12 sm:w-1/2 w-full px-[9px] pt-3">
-              <div className="p-5   border-2 hover:border border-lightGray2 duration-300 hover:border-darkBlue rounded-xl h-[253px]">
-                <span className="">{obj.Icon}</span>
-                <p className=" text-2xl mt-1 text-darkBlue max-w-[231px] leading-7 font-normal pb-0 mb-1.5">
-                  {obj.Heading}
+          {AdvantageData.map((advantage, index) => (
+            <div
+              key={index}
+              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 sm:px-[9px] mt-[18px] sm:mt-6"
+            >
+              <div
+                className={`sm:max-w-[271px] mx-auto md:mx-0 h-full min-h-[184px] sm:max-h-[253px] p-[20px] border-[2px] border-solid hover:border-[#03045E] duration-300 border-[#03045E1A] shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl ${
+                  advantage.margintop ? "lg:mt-" + advantage.margintop : ""
+                }`}
+              >
+                <div className="relative">
+                  <span className="relative z-20">{advantage.icon}</span>
+                  <div className="absolute top-[55%] left-[-3.6%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10  w-[48px] h-[41px]"></div>
+                </div>
+                <p className="font-normal text-[24px] leading-[28.8px] text-darkBlue mt-1">
+                  {advantage.title}
                 </p>
-                <p className="textr-base font-normal leading-6  text-darkGray pb-0">
-                  {obj.Description}
+                <p className="text-base leading-6 font-normal  text-darkGray opacity-70 mt-[6px]">
+                  {advantage.description}
                 </p>
               </div>
             </div>

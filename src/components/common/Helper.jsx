@@ -2,15 +2,46 @@ import {
   AccurateLocation,
   InstallIcon,
   LocateLocation,
+  Location,
   Location1,
   NetworkIcon,
   Peoples,
   PrivateIcon,
   PuzzleIcon,
+  RightTick,
   Robit,
   Robot,
   Setting,
 } from "./Icons";
+export const navData = [
+  {
+    name: "Home",
+  },
+  {
+    name: "How It Works",
+  },
+  {
+    name: "Features",
+  },
+];
+export const joinCompanies = [
+  {
+    description: "Ideal for freelancers and solopreneurs",
+    rightclick: <RightTick />,
+    seat: "1 seat",
+    projects: "2 projects",
+    priceperseat: "$0",
+    billmonth: "free forever",
+  },
+  {
+    description: "Perfect for teams, startups, and growing businesses.",
+    rightclick: <RightTick />,
+    seat: "Unlimited seats",
+    projects: "Unlimited projects",
+    priceperseat: "$10.80",
+    billmonth: "per seat/month (billed annually)",
+  },
+];
 
 export const PrivaryData = [
   {
@@ -40,29 +71,30 @@ export const PrivaryData = [
 ];
 export const AdvantageData = [
   {
-    Icon: <Location1 />,
-    Heading: "Instant location lookups",
-    Description:
+    icon: <Location />,
+    title: "Instant location lookups",
+    description:
       "Check the location of your registered phones whenever you choose. Add up to 5 phones to your account.",
   },
   {
-    Icon: <Robot />,
-    Heading: "Android & iPhone compatible",
-    Description:
+    icon: <Robot />,
+    title: "Android & iPhone compatible",
+    description:
       "Our service works with any Android or iPhone device, and takes just minutes to set up.",
+    margintop: "[23px]",
   },
-
   {
-    Icon: <Setting />,
-    Heading: "Simple to use",
-    Description:
+    icon: <Setting />,
+    title: "Simple to use",
+    description:
       "Our service has been designed to be simple to use. Just follow our walkthrough wizard to locate your phone.",
   },
   {
-    Icon: <Peoples />,
-    Heading: "Keep your family safe",
-    Description:
+    icon: <Peoples />,
+    title: "Keep your family safe",
+    description:
       "Keep track of your family using our tools. Know that your children or elderly relatives are safe.",
+    margintop: "[23px]",
   },
 ];
 export const workitData = [
