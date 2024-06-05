@@ -1,46 +1,23 @@
-import {
-    AccurateLocation,
-    InstallIcon,
-    LocateLocation,
-    Location,
-    Location1,
-    NetworkIcon,
-    Peoples,
-    PrivateIcon,
-    PuzzleIcon,
-    RightTick,
-    Robot,
-    Setting,
-} from "./Icons";
-export const navData = [
+import { ContactsIcon, AccurateLocation, LocateLocation, Location1, Peoples, Robot, Setting, FindLocationIcon, FindMessagesIcon, InstallIcon, LoopIcon, MessagesIcon, NetworkIcon, PhoneIcon, PrivateIcon, PuzzleIcon, RightTick, SettingIcon, WorksLocationIcon } from "./Icons";
+
+// --------Works Data----------//
+export const WorksData = [
     {
-        name: "Home",
+        Icon: <ContactsIcon />,
+        Heading: "Provide target phone number",
+        Description: "Enter the mobile number you want to locate in the provided field."
     },
     {
-        name: "How It Works",
+        Icon: <MessagesIcon />,
+        Heading: "Customize the message",
+        Description: "Create a message that will make them approve access to their location. You can always choose the one by default. Specify sender name."
     },
     {
-        name: "Features",
+        Icon: <WorksLocationIcon />,
+        Heading: "Receive their precise location",
+        Description: "Get notification as soon as GEOfinder locates the pesron on a map. View their accurate position."
     },
-];
-export const joinCompanies = [
-    {
-        description: "Ideal for freelancers and solopreneurs",
-        rightclick: <RightTick />,
-        seat: "1 seat",
-        projects: "2 projects",
-        priceperseat: "$0",
-        billmonth: "free forever",
-    },
-    {
-        description: "Perfect for teams, startups, and growing businesses.",
-        rightclick: <RightTick />,
-        seat: "Unlimited seats",
-        projects: "Unlimited projects",
-        priceperseat: "$10.80",
-        billmonth: "per seat/month (billed annually)",
-    },
-];
+]
 
 export const PrivaryData = [
     {
@@ -94,32 +71,6 @@ export const AdvantageData = [
         Description:
             "Keep track of your family using our tools. Know that your children or elderly relatives are safe.",
     },
-    {
-        icon: <Location />,
-        title: "Instant location lookups",
-        description:
-            "Check the location of your registered phones whenever you choose. Add up to 5 phones to your account.",
-    },
-    {
-        icon: <Robot />,
-        title: "Android & iPhone compatible",
-        description:
-            "Our service works with any Android or iPhone device, and takes just minutes to set up.",
-        margintop: "[23px]",
-    },
-    {
-        icon: <Setting />,
-        title: "Simple to use",
-        description:
-            "Our service has been designed to be simple to use. Just follow our walkthrough wizard to locate your phone.",
-    },
-    {
-        icon: <Peoples />,
-        title: "Keep your family safe",
-        description:
-            "Keep track of your family using our tools. Know that your children or elderly relatives are safe.",
-        margintop: "[23px]",
-    },
 ];
 export const workitData = [
     {
@@ -136,7 +87,35 @@ export const workitData = [
             "Instantly track the location of a mobile phone at any time. No apps, no downloads, Locateaphone.com works with any Android or iPhone device. Locateaphone.com uses a range of different tools to find the location of a phone. Our unique phone location walkthrough process will determine the best tools to use for each situation.",
     },
 ];
-
+export const navData = [
+    {
+        name: "Home",
+    },
+    {
+        name: "How It Works",
+    },
+    {
+        name: "Features",
+    },
+];
+export const joinCompanies = [
+    {
+        description: "Ideal for freelancers and solopreneurs",
+        rightclick: <RightTick />,
+        seat: "1 seat",
+        projects: "2 projects",
+        priceperseat: "$0",
+        billmonth: "free forever",
+    },
+    {
+        description: "Perfect for teams, startups, and growing businesses.",
+        rightclick: <RightTick />,
+        seat: "Unlimited seats",
+        projects: "Unlimited projects",
+        priceperseat: "$10.80",
+        billmonth: "per seat/month (billed annually)",
+    },
+]
 export const trackerdata = [
     {
         img: <SettingIcon />,
@@ -163,4 +142,3 @@ export const trackerdata = [
         description: "Send unlimited geo-location requests",
     },
 ];
-
