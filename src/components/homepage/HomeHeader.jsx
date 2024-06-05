@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import headerMobile from "../../assets/images/homePage/header_mobile.webp";
 import headerWave from "../../assets/images/homePage/headerWave.webp";
 import SameBtn from "../common/SameBtn";
-import { Mic } from "../common/Icons";
+import { IndiaFlag, LocationIcon, Mic } from "../common/Icons";
 import { Logo } from "../common/Icons";
 import { navData } from "../common/Helper";
 
@@ -78,14 +78,40 @@ const HomeHeader = () => {
               Add phones to your account & track them when neededAdd phones to
               your account & track them when needed
             </p>
-            <div className="flex items-center justify-center md:justify-start gap-[7px] w-full">
+            <div className=" max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
+              <div className=" flex items-center gap-2 ">
+                <IndiaFlag />
+                <select
+                  className="outline-none text-sm leading-[23px] md:leading-[26px] md:text-base"
+                  name="number"
+                  id="number"
+                >
+                  <option value="91" className="flex items-center gap-2 ">
+                    +91
+                  </option>
+                  <option value="01" className="flex items-center gap-2 ">
+                    +01
+                  </option>
+                  <option value="92" className="flex items-center gap-2 ">
+                    +03
+                  </option>
+                  <option value="02" className="flex items-center gap-2 ">
+                    +02
+                  </option>
+                  <option value="21" className="flex items-center gap-2 ">
+                    +04
+                  </option>
+                </select>
+              </div>
               <input
-                className=" w-full sm:w-[300px] pr-[5px] text-black outline-none"
-                type="tel"
-                pattern="\d{10}"
-                placeholder=""
-                maxLength="10"
+                type="number"
+                maxLength={10}
+                className="outline-none w-[35%] sm:w-1/2"
               />
+              <button className=" bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+                <LocationIcon />
+                Locate
+              </button>
             </div>
           </div>
           <div className="lg:w-6/12 pt-24 lg:pt-0 flex justify-center  w-full">
