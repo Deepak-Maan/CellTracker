@@ -1,5 +1,5 @@
 import React from 'react'
-import MobileImg from '../../assets/images/landingPage/findPhoneImg.png'
+import MobileImg from '../../assets/images/landingPage/findPhoneImg.webp'
 import { trackerdata } from '../common/Helper'
 const Find = () => {
     return (
