@@ -25,7 +25,7 @@ const Newsletter = () => {
                   nisi sit elit rhoncus vestibulum fames libero id.
                 </p>
                 <SameBtn
-                  className="  bg-white w-full md:w-auto px-10  text-darkBlue "
+                  className="  bg-white w-[266px] md:w-auto px-10  text-darkBlue "
                   btnName="Start Now"
                 />{" "}
               </div>

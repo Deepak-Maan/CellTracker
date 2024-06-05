@@ -41,7 +41,7 @@ const Workit = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col px-3 md:px-0 md:flex-row justify-center pt-10 gap-3 items-center">
+        <div className="flex flex-col px-3 md:px-0 sm:flex-row justify-center pt-10 gap-3 items-center">
           <SameBtn
             className=" bg-darkBlue text-white max-sm:w-full"
             btnName="Create your Account"

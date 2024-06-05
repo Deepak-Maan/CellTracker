@@ -1,8 +1,6 @@
-import React from "react";
 import SameBtn from "../common/SameBtn";
 import { AdvantageData } from "../common/Helper";
 import { LocationEllp } from "../common/Icons";
-
 const Advantages = () => {
   return (
     <div id="Advantage" className="pb-14 mt-[-3px] relative">
