@@ -24,7 +24,10 @@ const Newsletter = () => {
                   Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper
                   nisi sit elit rhoncus vestibulum fames libero id.
                 </p>
-                <SameBtn text="Start Now" />
+                <SameBtn
+                  className="  bg-white  text-darkBlue "
+                  btnName="Start Now"
+                />{" "}
               </div>
             </div>
           </div>

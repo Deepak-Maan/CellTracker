@@ -17,15 +17,20 @@ const Workit = () => {
         <div className="flex flex-row justify-center pt-14 items-center flex-wrap">
           <div className="lg:w-1/2  flex justify-center w-full ">
             <img
-              className="md:max-w-[680px] xl:ms-[-80px] md:max-h-[626px]"
+              className="md:max-w-[680px] relative z-20 xl:ms-[-80px] md:max-h-[626px]"
               src={workitMobile}
               alt="workitMobile"
             />
+            <div className="absolute top-[55%] left-[-4%] linear_bg benefits_bubble_bg translate-y-[-50%] z-10 opacity-[10%] lg:w-[570px] lg:h-[490px]"></div>
+            <div className="absolute top-[55%] left-[-4%] linear_bg benefits_bubble_bg_2 translate-y-[-50%] z-10 opacity-[10%] lg:w-[570px] lg:h-[490px]"></div>
           </div>
           <div className="lg:w-1/2 flex flex-col justify-center items-center  w-full ">
             {workitData.map((obj, index) => (
               <div className="p-5   border hover:border max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] md:h-auto">
-                <span className="">{obj.Icon}</span>
+                <div className="relative">
+                  <span className="relative z-20">{obj.Icon}</span>
+                  <div className="absolute top-[55%] left-[-2%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10  w-[48px] h-[41px]"></div>
+                </div>
                 <p className=" text-xl md:text-2xl mt-1 text-darkBlue leading-7 font-normal pb-0 mb-1.5">
                   {obj.Heading}
                 </p>
@@ -37,8 +42,14 @@ const Workit = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center pt-10 gap-3 items-center">
-          <SameBtn text="Create your Account" />
-          <SameBtn text="Got more Question?" />
+          <SameBtn
+            className=" bg-darkBlue text-white max-sm:w-full"
+            btnName="Create your Account"
+          />
+          <SameBtn
+            className="  bg-white  text-darkBlue !border !border-darkBlue max-sm:w-full"
+            btnName="Got more Question?"
+          />
         </div>
       </div>
       <span className="absolute left-0 top-[15%]">
