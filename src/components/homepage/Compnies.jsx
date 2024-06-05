@@ -8,43 +8,50 @@ import SameBtn from "../common/SameBtn";
 
 const Companies = () => {
   return (
-    <div className="bg-companies bg-cover bg-center bg-no-repeat relative">
-      <img src={toplayer} alt="toplayer" className="absolute top-0 w-full" />
+    <div
+      id="Login"
+      className="bg-companies  bg-cover bg-center bg-no-repeat mb-10 -mt-1 relative"
+    >
+      <img
+        src={toplayer}
+        alt="toplayer"
+        className="absolute top-0 xl:top-[-10%] 2xl:top-[-18%] w-full"
+      />
       <img
         src={btmlayer}
         alt="botmlayer"
-        className="absolute bottom-[-12%] w-full"
+        className="absolute bottom-[-12%] 2xl:bottom-[-22%] w-full"
       />
       <div className="containers px-3 custom_container mx-auto">
-        <h2 className="text-white lg:text-5xl sm:text-4xl text-2lg text-center font-light sm:leading-xs leading-xxs md:max-w-[664px] mx-auto lg:pb-[109px] sm:pb-[80px] pb-[65px] lg:pt-[222px] md:pt-[180px] sm:pt-[150px] pt-[126px]">
+        <h2 className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-28 sm:pb-20 pb-[65px] lg:pt-28 md:pt-[180px] sm:pt-[150px] pt-32">
           Join <span className="font-extrabold">70,000+ companies</span> doing
           time tracking the easy way
         </h2>
-        <div className="flex lg:flex-row flex-col-reverse flex-wrap justify-center lg:items-end items-center max-lg:gap-[42px] pb-[80px]">
+        <div className="flex px-3 md:px-0 lg:flex-row flex-col-reverse flex-wrap justify-center lg:items-end items-center max-lg:gap-[42px] pb-28">
           {joinCompanies.map((obj, id) => {
             return (
               <div
                 key={id}
-                className={`pl-[34px] bg-white rounded-tl-xl sm:rounded-tr-xl rounded-br-xl border-y border-s border-solid w-full h-full relative max-sm:px-6 shadow-[0px_16px_25.3px_0px_#00000014] ${
+                className={`pl-[34px] bg-white  rounded-tl-xl sm:rounded-tr-xl rounded-br-xl border-y border-s border-solid w-full h-full relative max-sm:px-6 shadow-[0px_16px_25.3px_0px_#00000014] ${
                   id === 1
-                    ? "max-w-[527px] sm:pt-[63px] sm:pb-[34px] pt-[60px] pb-[30px] lg:-translate-x-3"
-                    : "max-w-[467px] max-sm:py-[75.5px] py-[34px]"
+                    ? "max-w-[527px] sm:pt-[63px] sm:pb-8 pt-[60px] pb-8 lg:-translate-x-3"
+                    : "max-w-[467px] max-sm:py-[75.5px] py-9"
                 }`}
               >
-                <h3 className=" text-darkBlue font-normal text-3xl2 leading-lg1 mb-[18px]">
+                <h3 className=" text-darkBlue font-normal text-2xl lg:text-3xl2 leading-7 md:leading-lg1 mb-[18px]">
                   Cell Tracker
                   {id === 1 && (
                     <span className="font-extrabold  text-skyBlue"> Pro</span>
                   )}
                 </h3>
-                <p className="font-normal text-base leading-normal  text-darkGray mb-3">
+                <p className="font-normal text-sm md:text-base leading-normal  text-darkGray mb-3">
                   {obj.description}
                 </p>
-                <p className="font-normal text-base  text-darkGray leading-normal flex items-center gap-[6px] mb-[6px]">
+                <p className="font-normal text-sm md:text-base  text-darkGray leading-normal flex items-center gap-1.5 mb-1.5">
                   {obj.rightclick}
                   {obj.seat}
                 </p>
-                <p className="font-normal text-base  text-darkGray leading-normal flex items-center gap-[6px] mb-[44px]">
+                <p className="font-normal text-sm md:text-base  text-darkGray leading-normal flex items-center gap-1.5 mb-[44px]">
                   {obj.rightclick}
                   {obj.projects}
                 </p>
@@ -58,14 +65,14 @@ const Companies = () => {
                     {obj.billmonth}
                   </sub>
                 </p>
-                <div className="flex sm:flex-row flex-col items-center gap-4 max-sm:w-full">
+                <div className="flex sm:flex-row flex-col items-center max-sm:w-full">
                   <SameBtn
-                    className=" bg-darkBlue text-white max-sm:w-full"
-                    btnName="Start your free trial"
+                    className=" bg-darkBlue text-white md:mb-4 max-sm:w-full"
+                    btnName="30-Day Free Trial"
                   />
-                  <SameBtn />
+
                   {id === 1 && (
-                    <p className="font-normal  text-base  text-darkGray leading-normal">
+                    <p className="font-normal  text-base  mt-2  text-darkGray leading-normal">
                       No credit card required.
                     </p>
                   )}

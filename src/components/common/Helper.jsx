@@ -8,20 +8,20 @@ import {
   Peoples,
   PrivateIcon,
   PuzzleIcon,
+  Quesmark,
   RightTick,
   Robit,
   Robot,
   Setting,
 } from "./Icons";
 export const navData = [
+ 
   {
-    name: "Home",
+    Ques : <Quesmark/>,
+    name: "How It Works" , url: "#Work",
   },
   {
-    name: "How It Works",
-  },
-  {
-    name: "Features",
+    name: "Log in",  url: "#Login",
   },
 ];
 export const joinCompanies = [
@@ -42,7 +42,6 @@ export const joinCompanies = [
     billmonth: "per seat/month (billed annually)",
   },
 ];
-
 export const PrivaryData = [
   {
     Icon: <PuzzleIcon />,
