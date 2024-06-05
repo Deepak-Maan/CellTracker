@@ -1,4 +1,4 @@
-import { ContactsIcon, AccurateLocation, LocateLocation, Location1, Peoples, Robot, Setting, FindLocationIcon, FindMessagesIcon, InstallIcon, LoopIcon, MessagesIcon, NetworkIcon, PhoneIcon, PrivateIcon, PuzzleIcon, RightTick, SettingIcon, WorksLocationIcon } from "./Icons";
+import { ContactsIcon, AccurateLocation, LocateLocation, Location1, Peoples, Robot, Setting, FindLocationIcon, FindMessagesIcon, InstallIcon, LoopIcon, MessagesIcon, NetworkIcon, PhoneIcon, PrivateIcon, PuzzleIcon, RightTick, SettingIcon, WorksLocationIcon, Quesmark } from "./Icons";
 
 // --------Works Data----------//
 export const WorksData = [
@@ -19,6 +19,34 @@ export const WorksData = [
     },
 ]
 
+export const navData = [
+
+    {
+        Ques: <Quesmark />,
+        name: "How It Works", url: "#Work",
+    },
+    {
+        name: "Log in", url: "#Login",
+    },
+];
+export const joinCompanies = [
+    {
+        description: "Ideal for freelancers and solopreneurs",
+        rightclick: <RightTick />,
+        seat: "1 seat",
+        projects: "2 projects",
+        priceperseat: "$0",
+        billmonth: "free forever",
+    },
+    {
+        description: "Perfect for teams, startups, and growing businesses.",
+        rightclick: <RightTick />,
+        seat: "Unlimited seats",
+        projects: "Unlimited projects",
+        priceperseat: "$10.80",
+        billmonth: "per seat/month (billed annually)",
+    },
+];
 export const PrivaryData = [
     {
         Icon: <PuzzleIcon />,
@@ -87,7 +115,7 @@ export const workitData = [
             "Instantly track the location of a mobile phone at any time. No apps, no downloads, Locateaphone.com works with any Android or iPhone device. Locateaphone.com uses a range of different tools to find the location of a phone. Our unique phone location walkthrough process will determine the best tools to use for each situation.",
     },
 ];
-export const navData = [
+export const navLandingData = [
     {
         name: "Home",
     },
@@ -98,24 +126,6 @@ export const navData = [
         name: "Features",
     },
 ];
-export const joinCompanies = [
-    {
-        description: "Ideal for freelancers and solopreneurs",
-        rightclick: <RightTick />,
-        seat: "1 seat",
-        projects: "2 projects",
-        priceperseat: "$0",
-        billmonth: "free forever",
-    },
-    {
-        description: "Perfect for teams, startups, and growing businesses.",
-        rightclick: <RightTick />,
-        seat: "Unlimited seats",
-        projects: "Unlimited projects",
-        priceperseat: "$10.80",
-        billmonth: "per seat/month (billed annually)",
-    },
-]
 export const trackerdata = [
     {
         img: <SettingIcon />,

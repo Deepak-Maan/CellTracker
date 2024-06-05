@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import mobileImg from "../../assets/images/landingPage/headerMobileImg.png"
 import { IndiaFlag, Location, LocationEllipse, LocationIcon, Logo, Logo2 } from '../common/Icons'
-import { navData } from '../common/Helper'
+import { navLandingData } from '../common/Helper'
 const LandingHero = () => {
     const [navBar, setnavBar] = useState(false);
     function showNav() {
@@ -25,7 +25,7 @@ const LandingHero = () => {
                                 {navBar ? <Logo2 /> : <Logo />}
                             </a>
                             <ul className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${navBar && "!left-0"}`} >
-                                {navData.map((obj, index) => (
+                                {navLandingData.map((obj, index) => (
                                     <li key={index}>
                                         <a onClick={closeNav} href="#" className="text-black md:text-white  text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full" > {obj.name} </a>
                                     </li>

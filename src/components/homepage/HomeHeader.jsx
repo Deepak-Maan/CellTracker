@@ -21,32 +21,36 @@ const HomeHeader = () => {
       <div className="container max-w-[1164px]">
         <nav>
           <div className="max-w-[1164px] px-6 sm:px-3 mx-auto pt-[27px]">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between  items-center">
               <a href="/" className="relative z-[4]" aria-label="logo">
                 {navBar ? <Logo /> : <Logo />}
               </a>
-              <ul
-                className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
-                  navBar && "!left-0"
-                }`}
-              >
-                {navData.map((obj, i) => (
-                  <li key={i}>
-                    <a
-                      href="/"
-                      className="text-black md:text-white font-mukta text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
-                    >
-                      {obj.name}
-                    </a>
-                  </li>
-                ))}
-                <button className="font-mukta md:hidden bg-dark-blue text-base leading-[26.59px] font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue hover:bg-white duration-300 relative border-transparent border-2 w-full hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue hover:after:animate-moveToX">
-                  Log In
-                </button>
-              </ul>
-              <button className="font-mukta text-dark-blue max-md:hidden text-base leading-[26.59px] font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px] hover:bg-dark-blue hover:text-white duration-300 relative z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-white hover:after:animate-moveToX">
-                Log In
-              </button>
+              <div className="flex  items-center">
+                <ul
+                  className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full t max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
+                    navBar && "!left-0"
+                  }`}
+                >
+                  {navData.map((obj, i) => (
+                    <li key={i}>
+                      <a
+                        href={obj.url}
+                        className="text-black flex items-center  gap-1.5 md:text-white text-nowrap  text-base  leading-xs1 font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:-bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                      >
+                        {obj.Ques}
+                        {obj.name}
+                      </a>
+                    </li>
+                  ))}
+                  <button className=" text-darkBlue  hidden md:block text-base  leading-xs1 font-semibold bg-white  py-[14px] md:py-4 px-7 rounded-[4px] hover:bg-darkBlue hover:text-white duration-300 relative z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-white  ">
+                    Create an Account
+                  </button>
+                  <button className=" block md:hidden bg-darkBlue text-base  leading-xs1 font-semibold text-white py-4 px-7 rounded-[4px] hover:text-darkBlue hover:bg-white duration-300 relative border-transparent border-2 w-[314px] hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden  after:left-[-20%] after:bg-dark-blue ">
+                    Create an Account
+                  </button>
+                </ul>
+              </div>
+
               <button onClick={showNav} className="md:hidden relative z-[4]">
                 {navBar ? (
                   <div className="flex md:hidden flex-col relative z-50 justify-between w-[18px] h-[17px] cursor-pointer">
@@ -66,7 +70,7 @@ const HomeHeader = () => {
         </nav>
         <div className="flex flex-row flex-wrap pt-14 md:pt-16  items-center justify-center">
           <div className="lg:w-6/12 w-full">
-            <h1 className="text-white text-3xl2 md:text-xxl mb-2 leading-9 text-center mx-auto lg:mx-0 lg:text-start px-3 md:px-0 md:leading-xxl font-extrabold max-w-[520px]">
+            <h1 className="text-white text-3xl2 lg:-mt-16 md:text-xxl mb-2 leading-9 text-center mx-auto lg:mx-0 lg:text-start px-3 md:px-0 md:leading-xxl font-extrabold max-w-[520px]">
               Find the location{" "}
               <span className=" font-light"> of any phone by its number</span>
             </h1>
@@ -74,9 +78,9 @@ const HomeHeader = () => {
               Add phones to your account & track them when neededAdd phones to
               your account & track them when needed
             </p>
-            <div className="flex items-center gap-[7px] w-full">
+            <div className="flex items-center justify-center md:justify-start gap-[7px] w-full">
               <input
-                className="w-full pr-[5px] text-black outline-none"
+                className=" w-full sm:w-[300px] pr-[5px] text-black outline-none"
                 type="tel"
                 pattern="\d{10}"
                 placeholder=""
@@ -84,35 +88,37 @@ const HomeHeader = () => {
               />
             </div>
           </div>
-          <div className="lg:w-6/12 pt-24 lg:pt-0 flex justify-center relative w-full">
-            <img
-              className="w-[339px] h-[353px] lg:w-full lg:h-full"
-              src={headerMobile}
-              alt="mobile"
-            />
-            <div className=" p-2 md:p-[18px] absolute  right-0 md:right-[10%] lg:right-[-3%] bottom-[-2%] lg:bottom-[24%] xl:w-[280px] rounded-tl-xl rounded-br-xl bg-white">
-              <div className="flex justify-between">
-                {" "}
-                <p className="text-2xl text-skyBlue font-bold leading-10">
-                  Need help?
-                </p>
-                <span>
-                  <Mic />
-                </span>
-              </div>
+          <div className="lg:w-6/12 pt-24 lg:pt-0 flex justify-center  w-full">
+            <div className="relative">
+              <img
+                className="w-[339px]  translate-x-[-15%] h-[353px] lg:w-full lg:h-full"
+                src={headerMobile}
+                alt="mobile"
+              />
+              <div className=" p-2 md:p-[18px] absolute  right-0 md:right-[10%] xl:right-0 2xl:right-[-9%] bottom-[-2%] lg:bottom-[22%] xl:w-[280px] rounded-tl-xl rounded-br-xl bg-white">
+                <div className="flex justify-between">
+                  <p className="text-2xl text-skyBlue font-bold leading-10">
+                    Need help?
+                  </p>
+                  <span>
+                    <Mic />
+                  </span>
+                </div>
 
-              <p className="text-base  text-darkBlue leading-6 font-normal mb-[14px]">
-                Get help with technical, <br /> account and billing enquiries.
-              </p>
-              <div className="w-full ">
-                <SameBtn text="Customer Support" />
+                <p className="text-base  text-darkBlue leading-6 font-normal mb-[14px]">
+                  Get help with technical, <br /> account and billing enquiries.
+                </p>
+                <SameBtn
+                  className=" bg-darkBlue text-white md:w-full"
+                  btnName="Customer Support"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
       <img
-        className="absolute w-full bottom-0 md:bottom-[-8%] z-0"
+        className="absolute w-full bottom-0 md:bottom-[-8%] 2xl:bottom-[-26%] z-0"
         src={headerWave}
         alt="wave"
       />

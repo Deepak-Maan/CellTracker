@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className="flex gap-6 justify-center ">
               <li>
                 <a
-                  href=""
+                  href="#Advantage"
                   className="text-base font-normal leading-6 text-darkGray"
                 >
                   Help
@@ -36,7 +36,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href=""
+                  href="#FoundPhone"
                   className="text-base font-normal leading-6 text-darkGray"
                 >
                   Found Phone
