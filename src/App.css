@@ -8,6 +8,14 @@ body {
 * {
   scroll-behavior: smooth !important;
 }
+::-webkit-scrollbar {
+  width: 4px;
+  background: skyblue;
+}
+
+::-webkit-scrollbar-thumb {
+  background: darkblue;
+}
 
 .benefits_bubble {
   width: 300px !important;

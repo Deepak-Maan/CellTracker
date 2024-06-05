@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Facebook,
+  FooterLogo,
   Instagram,
   Linkedin,
   LocationEllp,
@@ -14,7 +15,7 @@ const Footer = () => {
       <div className="container xl:max-w-[1164px] px-3 pt-[52px] sm:pt-[60px] lg:pt-[102px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-[58px] sm:pb-12 border-b border-darkBlue justify-between gap-[38px] lg:gap-0">
           <div className="flex justify-center lg:justify-start">
-            <Logo />
+            <FooterLogo />
           </div>
           <div>
             <ul className="flex gap-6 justify-center ">
