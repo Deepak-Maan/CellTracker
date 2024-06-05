@@ -9,8 +9,8 @@ const LandingPage = () => {
         <div>
             <div className='bg-landingHeader bg-no-repeat bg-cover'><LandingHero /></div>
             <Privacy />
+            <Find />
             <Work />
-            {/* <Find /> */}
             <LandingFooter />
         </div>
     )

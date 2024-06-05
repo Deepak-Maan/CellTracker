@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import mobileImg from "../../assets/images/landingPage/headerMobileImg.png"
-import { Location, LocationEllipse, Logo, Logo2 } from '../common/Icons'
+import { IndiaFlag, Location, LocationEllipse, LocationIcon, Logo, Logo2 } from '../common/Icons'
 import { navData } from '../common/Helper'
 const LandingHero = () => {
     const [navBar, setnavBar] = useState(false);
@@ -56,18 +56,49 @@ const LandingHero = () => {
                         </div>
                     </div>
                 </nav>
-                <div className="grid grid-cols-1 xl:grid-cols-2 pt-14 pb-[76px]  md:pt-[83px]">
+                <div className="grid grid-cols-1 xl:grid-cols-2 pt-14 sm:pb-[76px]  md:pt-[83px]">
                     <div className='md:pt-[71px]'>
-                        <h1 className='text-xxl leading-xxl font-extrabold text-white'><span className="xl:text-nowrap">Locate any phone,</span> <span className="font-bold xl:text-nowrap">anywhere, anytime</span></h1>
-                        <p className='text-base font-normal leading-6 text-white pt-2'>Lorem ipsum dolor sit amet consectetur. Nisl vitae arcu volutpat nunc cursus. Lacus ornare aliquet condimentum elementum elementum nisl nibh sed. Egestas aliquam id quam nunc.</p>
+                        <h1 className='text-[32px] sm:text-4xl md:text-5xl leading-8 sm:leading-10 lg:leading-xxl font-extrabold text-white max-sm:text-center'><span className="xl:text-nowrap">Locate any phone,</span> <span className="font-bold xl:text-nowrap">anywhere, anytime</span></h1>
+                        <p className='text-sm sm:text-base font-normal leading-5 sm:leading-6 text-white pt-2 max-sm:text-center'>Lorem ipsum dolor sit amet consectetur. Nisl vitae arcu volutpat nunc cursus. Lacus ornare aliquet condimentum elementum elementum nisl nibh sed. Egestas aliquam id quam nunc.</p>
+                        <div className=" max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
+                            <div className=" flex items-center gap-2 ">
+                                <IndiaFlag />
+                                <select
+                                    className="outline-none text-sm leading-[23px] md:leading-[26px] md:text-base"
+                                    name="number"
+                                    id="number"
+                                >
+                                    <option value="91" className="flex items-center gap-2 ">
+                                        +91
+                                    </option>
+                                    <option value="01" className="flex items-center gap-2 ">
+                                        +01
+                                    </option>
+                                    <option value="92" className="flex items-center gap-2 ">
+                                        +03
+                                    </option>
+                                    <option value="02" className="flex items-center gap-2 ">
+                                        +02
+                                    </option>
+                                    <option value="21" className="flex items-center gap-2 ">
+                                        +04
+                                    </option>
+                                </select>
+                            </div>
+                            <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
+                            <button className=" bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+                                <LocationIcon />
+                                Locate
+                            </button>
+                        </div>
                     </div>
-                    <div className='relative xl:translate-x-20'>
+                    <div className='relative xl:translate-x-20 pt-[68px] lg:pt-0'>
                         <div className=' p-2 bg-lightSky rounded-[12px] max-w-[205px] w-full absolute bottom-0 right-0 overflow-hidden'>
                             <div className="flex items-center">
                                 <Location />
                                 <p className=' text-lg font-normal text-darkBlue leading-8'>Geolocation found!</p>
                             </div>
-                            <p className=' text-xl text-darkBlue font-semibold leading-8'>+44 633 427 390</p>
+                            <p className='text-xl text-darkBlue font-semibold leading-8'>+44 633 427 390</p>
                             <p className='text-black text-sm font-normal leading-5'>3 Succession Walk, Fish Island, London E3 2RX, United Kingdom</p>
                             <p className=' text-right text-xs font-light leading-4 text-black pt-3'>June 02,2024   17:34</p>
                             <div className="-ms-[9px] -mt-5"><LocationEllipse /></div>
