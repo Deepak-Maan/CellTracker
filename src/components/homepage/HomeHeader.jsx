@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import headerMobile from "../../assets/images/homePage/header_mobile.webp";
 import headerWave from "../../assets/images/homePage/headerWave.webp";
 import SameBtn from "../common/SameBtn";
-import { IndiaFlag, LocationIcon, Mic } from "../common/Icons";
+import { IndiaFlag, LocationIcon, Logo2, Mic } from "../common/Icons";
 import { Logo } from "../common/Icons";
 import { navData } from "../common/Helper";
 
@@ -23,7 +23,7 @@ const HomeHeader = () => {
           <div className="max-w-[1164px] px-6 sm:px-3 mx-auto pt-[27px]">
             <div className="flex justify-between  items-center">
               <a href="/" className="relative z-[4]" aria-label="logo">
-                {navBar ? <Logo /> : <Logo />}
+                {navBar ? <Logo2 /> : <Logo />}
               </a>
               <div className="flex  items-center">
                 <ul
@@ -70,7 +70,7 @@ const HomeHeader = () => {
         </nav>
         <div className="flex flex-row flex-wrap pt-14 md:pt-16  items-center justify-center">
           <div className="lg:w-6/12 w-full">
-            <h1 className="text-white text-3xl2 lg:-mt-16 md:text-xxl mb-2 leading-9 text-center mx-auto lg:mx-0 lg:text-start px-3 md:px-0 md:leading-xxl font-extrabold max-w-[520px]">
+            <h1 className="text-white text-3xl2 lg:-mt-16 md:text-xxl mb-3 md:mb-2 leading-9 text-center mx-auto lg:mx-0 lg:text-start px-3 md:px-0 md:leading-xxl font-extrabold max-w-[520px]">
               Find the location{" "}
               <span className=" font-light"> of any phone by its number</span>
             </h1>
@@ -114,7 +114,7 @@ const HomeHeader = () => {
               </button>
             </div>
           </div>
-          <div className="lg:w-6/12 pt-24 lg:pt-0 flex justify-center  w-full">
+          <div className="lg:w-6/12 pt-24 sm:pt-12 lg:pt-0 flex justify-center  w-full">
             <div className="relative">
               <img
                 className="w-[339px]  translate-x-[-15%] h-[353px] lg:w-full lg:h-full"
@@ -144,7 +144,7 @@ const HomeHeader = () => {
         </div>
       </div>
       <img
-        className="absolute w-full bottom-0 md:bottom-[-8%] 2xl:bottom-[-26%] z-0"
+        className="absolute w-full -bottom-1 md:bottom-[-8%] 2xl:bottom-[-26%] z-0"
         src={headerWave}
         alt="wave"
       />
