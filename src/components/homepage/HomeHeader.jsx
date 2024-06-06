@@ -102,7 +102,7 @@ const HomeHeader = () => {
                   name="number"
                   id="number"
                 >
-                  <option  value="91" className="flex items-center gap-2">
+                  <option value="91" className="flex items-center gap-2">
                     +91
                   </option>
                   <option value="01" className="flex items-center gap-2">
@@ -119,7 +119,9 @@ const HomeHeader = () => {
                   </option>
                 </select>
               </div>
+              <label htmlFor="home"></label>
               <input
+                id="home"
                 type="text"
                 maxLength={10}
                 onInput={handleInputChange}
@@ -151,7 +153,7 @@ const HomeHeader = () => {
                 <p className="text-sm md:text-base text-darkBlue  leading-normal md:leading-6 font-normal mb-[14px]">
                   Get help with technical,
                   <br />
-                  account and billing  enquiries.
+                  account and billing enquiries.
                 </p>
                 <SameBtn
                   className="bg-darkBlue border border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 text-white md:w-full"

@@ -100,7 +100,9 @@ const AccountCreate = () => {
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <AddressIcon />
                     </div>
+                    <label htmlFor="Address"></label>
                     <input
+                      id="Address"
                       type="text"
                       placeholder="Address Line 1"
                       className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm font-normal sm:text-base text-sm text-darkBlue leading-normal w-full outline-none bg-transparent"
@@ -118,7 +120,9 @@ const AccountCreate = () => {
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <Email />
                     </div>
+                    <label htmlFor="Email"></label>
                     <input
+                      id="Email"
                       type="text"
                       placeholder="Email Address"
                       className="sm:px-[14px] pl-5 capitalize placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
@@ -133,7 +137,9 @@ const AccountCreate = () => {
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <Valid />
                     </div>
+                    <label htmlFor="Card"></label>
                     <input
+                      id="Card"
                       type="number"
                       maxLength={16}
                       placeholder="Valid Card Number"
@@ -150,7 +156,9 @@ const AccountCreate = () => {
                       <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                         <Calender />
                       </div>
+                      <label htmlFor="month"></label>
                       <input
+                        id="month"
                         type="number"
                         placeholder="MM/YY"
                         className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base !placeholder:text-sm capitalize font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
@@ -165,7 +173,9 @@ const AccountCreate = () => {
                       <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                         <SecurityCode />
                       </div>
+                      <label htmlFor="ex"></label>
                       <input
+                        id="ex"
                         type="number"
                         maxLength={4}
                         placeholder="E.x @ 0123"
