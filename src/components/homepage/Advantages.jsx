@@ -32,7 +32,7 @@ const Advantages = () => {
               >
                 <div className="relative">
                   <span className="relative z-20">{advantage.icon}</span>
-                  <div className="absolute top-[51%] left-[-3.6%] bg-lightBlue benefits_bubble_bg translate-y-[-59%] z-10 w-[48px] h-[41px]"></div>
+                  <div className="absolute top-[51%] left-[-3.6%] bg-lightBlue benefits_bubble_bg translate-y-[-59%] z-10 w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
                 </div>
                 <p className="font-normal  text-xl lg:text-2xl leading-6 md:leading-[28.8px] text-darkBlue mt-1">
                   {advantage.title}

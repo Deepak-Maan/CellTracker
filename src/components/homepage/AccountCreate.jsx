@@ -36,7 +36,10 @@ const AccountCreate = () => {
           Join now and protect your family's phones
         </p>
         <div className="flex flex-row items-center flex-wrap lg:pt-[72px] sm:pt-[50px] pt-[33.7px] gap-[37px] xl:gap-0">
-          <div data-aos="zoom-in" className="lg:w-5/12  w-full flex flex-col justify-start items-start sm:justify-center sm:items-center lg:justify-start lg:items-start  ps-3 lg:ps-5 xl:ps-0">
+          <div
+            data-aos="zoom-in"
+            className="lg:w-5/12  w-full flex flex-col justify-start items-start sm:justify-center sm:items-center lg:justify-start lg:items-start  ps-3 lg:ps-5 xl:ps-0"
+          >
             <p className="leading-lg1 text-darkBlue sm:text-3xl2 text-2xl font-light mb-[26px]">
               Get a <span className="font-extrabold">24 hour</span> trial!
             </p>
@@ -45,7 +48,7 @@ const AccountCreate = () => {
                 <div className=" flex items-center gap-3">
                   <div className="relative">
                     <span className="relative z-20">{account.icon}</span>
-                    <div className="absolute top-[55%] left-[-65%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10  w-[48px] h-[41px]"></div>
+                    <div className="absolute top-[55%] left-[-65%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10 w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
                   </div>
                   <p className="pb-0 leading-normal sm:text-base text-sm  font-normal  text-darkGray">
                     {account.title}
@@ -63,7 +66,7 @@ const AccountCreate = () => {
               </p>
             </div>
           </div>
-          <div className="xl:w-7/12 lg:w-6/12 px-3 md:px-0 relative z-20 w-full">
+          <div className="xl:w-7/12 xl:-ms-4 lg:w-6/12 px-3 md:px-0 relative z-20 w-full">
             <div
               data-aos="zoom-in"
               className="pb-9 border border-solid  shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl"

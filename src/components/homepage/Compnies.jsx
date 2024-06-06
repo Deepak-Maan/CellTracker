@@ -30,15 +30,15 @@ const Companies = () => {
           Join <span className="font-extrabold">70,000+ companies</span> doing
           time tracking the easy way
         </h2>
-        <div className="flex px-3 md:px-0 lg:flex-row flex-col-reverse flex-wrap justify-center lg:items-end items-center max-lg:gap-[42px] pb-28">
+        <div className="flex px-3 md:px-0  lg:flex-row flex-col-reverse flex-wrap justify-center lg:items-end items-center max-lg:gap-[42px] pb-28">
           {joinCompanies.map((obj, id) => {
             return (
               <div
                 data-aos="zoom-in"
                 key={id}
-                className={`pl-9 bg-white  rounded-tl-xl sm:rounded-tr-xl rounded-br-xl border-y border-s border-solid w-full h-full relative max-sm:px-6 shadow-[0px_16px_25.3px_0px_#00000014] ${
+                className={`pl-9 md:-ms-1 bg-white  rounded-tl-xl sm:rounded-tr-xl rounded-br-xl border-y border-s border-solid w-full h-full relative max-sm:px-6 shadow-[0px_16px_25.3px_0px_#00000014] ${
                   id === 1
-                    ? "max-w-[527px] sm:pt-16 sm:pb-8 pt-[60px] pb-9 lg:-translate-x-3"
+                    ? "max-w-[527px] sm:pt-16 sm:pb-8 pt-[60px] pb-9 lg:-translate-x-5"
                     : "max-w-[467px] max-sm:py-[75.5px] py-9"
                 }`}
               >

@@ -30,8 +30,8 @@ const Workit = () => {
               src={workitMobile}
               alt="workitMobile"
             />
-            <div className="absolute top-[55%] md:left-[17%] lg:left-[2%] xl:left-[-4%] linear_bg benefits_bubble_bg translate-y-[-176%] sm:translate-y-[-136%] md:translate-y-[-120%] lg:translate-y-[-50%] z-10 opacity-[10%] w-[320px] h-[296px] sm:w-[420px] sm:h-[446px] md:w-[520px] md:h-[360px] lg:w-[470px] lg:h-[380px] xl:w-[570px] xl:h-[490px]"></div>
-            <div className="absolute top-[55%] md:left-[17%] lg:left-[2%] xl:left-[-4%] linear_bg benefits_bubble_bg_2 translate-y-[-176%] sm:translate-y-[-136%] md:translate-y-[-120%] lg:translate-y-[-50%] z-10 opacity-[10%] w-[320px] h-[296px] sm:w-[420px] sm:h-[446px] md:w-[520px] md:h-[360px] lg:w-[470px] lg:h-[380px] xl:w-[570px] xl:h-[490px]"></div>
+            <div className="absolute top-[55%] md:left-[17%] lg:left-[2%] xl:left-[-6%] linear_bg benefits_bubble_bg translate-y-[-57%] sm:translate-y-[-55%] md:translate-y-[-86%] lg:translate-y-[-58%] z-10 opacity-[10%] w-[320px] h-[296px] sm:w-[420px] sm:h-[446px] md:w-[520px] md:h-[360px] lg:w-[470px] lg:h-[380px] xl:w-[570px] xl:h-[490px]"></div>
+            <div className="absolute top-[55%] md:left-[17%] lg:left-[2%] xl:left-[-6%] linear_bg benefits_bubble_bg_2 translate-y-[-57%] sm:translate-y-[-55%] md:translate-y-[-86%] lg:translate-y-[-58%] z-10 opacity-[10%] w-[320px] h-[296px] sm:w-[420px] sm:h-[446px] md:w-[520px] md:h-[360px] lg:w-[470px] lg:h-[380px] xl:w-[570px] xl:h-[490px]"></div>
           </div>
           <div className="lg:w-1/2 flex px-3 md:px-0 pt-10 md:pt-0 flex-col justify-center items-center  w-full ">
             {workitData.map((obj, index) => (
@@ -41,7 +41,7 @@ const Workit = () => {
               >
                 <div className="relative">
                   <span className="relative z-20">{obj.Icon}</span>
-                  <div className="absolute top-[55%] left-[-2%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10  w-[48px] h-[41px]"></div>
+                  <div className="absolute top-[55%] left-[-2%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10  w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
                 </div>
                 <p className=" text-xl md:text-2xl mt-1 text-darkBlue leading-7 font-normal pb-0 mb-1.5">
                   {obj.Heading}
