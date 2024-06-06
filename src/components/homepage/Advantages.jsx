@@ -5,16 +5,23 @@ const Advantages = () => {
   return (
     <div id="Advantage" className="pb-14 mt-[-3px] pt-24 relative">
       <div className="container max-w-[1164px] relative z-20">
-        <h1 className=" text-2xl2  lg:text-5xl font-light leading-8 lg:leading-xl1 text-darkBlue mb-2 text-center">
+        <h1
+          data-aos="zoom-in"
+          className=" text-2xl2  lg:text-5xl font-light leading-8 lg:leading-xl1 text-darkBlue mb-2 text-center"
+        >
           Advantages of <span className="font-extrabold">Celltracker</span>
         </h1>
-        <p className="text-sm md:text-base font-normal px-8 md:px-0 mx-auto max-w-[472px] text-center pb-0 leading-6 text-darkGray mb-7">
+        <p
+          data-aos="zoom-in"
+          className="text-sm md:text-base font-normal px-8 md:px-0 mx-auto max-w-[472px] text-center pb-0 leading-6 text-darkGray mb-7"
+        >
           Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit
           elit rhoncus vestibulum fames libero id.
         </p>
         <div className="flex flex-row justify-center flex-wrap">
           {AdvantageData.map((advantage, index) => (
             <div
+              data-aos="zoom-in"
               key={index}
               className={`w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 sm:px-[9px] mt-[18px] sm:mt-6 ${
                 index === 1 || index === 3 ? " lg:translate-y-[10%]" : ""
@@ -37,7 +44,10 @@ const Advantages = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center px-3 md:px-0 pt-10 lg:pt-20">
+        <div
+          data-aos="zoom-in"
+          className="flex justify-center px-3 md:px-0 pt-10 lg:pt-20"
+        >
           <SameBtn
             className=" bg-darkBlue text-white max-sm:w-full border border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500"
             btnName="Create your Account"

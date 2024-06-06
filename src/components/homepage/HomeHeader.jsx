@@ -48,7 +48,7 @@ const HomeHeader = () => {
                     <li key={i}>
                       <a
                         href={obj.url}
-                        className="text-black  flex items-center gap-1.5 md:text-white text-nowrap text-base leading-xs1 font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:-bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                        className="text-black  flex items-center gap-1.5 md:text-white text-nowrap text-base leading-xs1 font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                         onClick={handleLinkClick}
                         aria-label="navClickbar"
                       >

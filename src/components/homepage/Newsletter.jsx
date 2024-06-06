@@ -8,14 +8,20 @@ const Newsletter = () => {
       <div className="  container max-w-[1164px]">
         <div className="   rounded-xl">
           <div className="flex rounded-xl  lg:max-h-[391px] xl:bg-cover bg-center max-sm:h-[500px] bg-no-repeat bg-newsBg flex-row  flex-wrap items-center lg:pb-0 md:pb-20 sm:pb-16 pb-[46px]">
-            <div className="lg:w-[53%] w-full flex justify-center">
+            <div
+              data-aos="zoom-in"
+              className="lg:w-[53%] w-full flex justify-center"
+            >
               <img
                 className="lg:max-w-[609px] sm:max-w-[445px] min-[360px]:max-w-[370px] lg:h-[689px] sm:h-[507px] min-[370px]:h-[420px] h-[380px] md:w-full -translate-y-[37%] md:-translate-y-[24%] lg:-mb-[281px] sm:-mb-[110px] -mb-[110px]"
                 src={PhoneNews}
                 alt="newsletter_Phone"
               />
             </div>
-            <div className=" lg:w-[36%] w-full flex -mt-20 md:mt-0 flex-col items-center">
+            <div
+              data-aos="zoom-in"
+              className=" lg:w-[36%] w-full flex -mt-20 md:mt-0 flex-col items-center"
+            >
               <h2 className="text-white text-center lg:pt-11 font-light leading-xl1 text-2xl2 md:text-5xl mb-3 md:mb-2">
                 Find your <span className="font-extrabold">phone</span>
               </h2>

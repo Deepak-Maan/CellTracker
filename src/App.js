@@ -5,8 +5,13 @@ import Preload from "./components/homepage/Preload";
 import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
 import { useEffect, useState } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
+  useEffect(() => {
+    AOS.init({ once: true, duration: 2000 });
+  }, []);
+
   const [data, setdata] = useState(true);
   useEffect(() => {
     setdata(true);

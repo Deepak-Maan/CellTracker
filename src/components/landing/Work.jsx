@@ -9,11 +9,11 @@ const Work = () => {
                 <LocationEllp />
             </div>
             <div className="container mx-auto px-6 md:px-3 max-w-[1164px] pt-[94px] sm:pt-[98px] pb-[94px]">
-                <h2 className='font-light  text-[28px] md:text-4xl lg:text-5xl leading-8 md:leading-10 lg:leading-xl1 text-darkBlue text-center'>How it <span className="font-extrabold">works</span></h2>
-                <p className='sm:text-base text-sm font-normal leading-5 sm:leading-7 text-darkGray text-center mx-auto max-w-[472px] pt-2 pb-14'>Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id.</p>
+                <h2 data-aos="zoom-in" className='font-light  text-[28px] md:text-4xl lg:text-5xl leading-8 md:leading-10 lg:leading-xl1 text-darkBlue text-center'>How it <span className="font-extrabold">works</span></h2>
+                <p data-aos="zoom-in" className='sm:text-base text-sm font-normal leading-5 sm:leading-7 text-darkGray text-center mx-auto max-w-[472px] pt-2 pb-14'>Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id.</p>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-[200px]">
                     {WorksData.map((data, index) => (
-                        <div key={index} className={`max-w-[267px] relative ${index === 0 ? "lg:mr-auto mx-auto" : index === 1 ? "lg:mx-auto mx-auto" : index === 2 ? "lg:ml-auto mx-auto sm:col-span-2 lg:col-span-1" : ""}`}>
+                        <div data-aos="zoom-in" key={index} className={`max-w-[267px] relative ${index === 0 ? "lg:mr-auto mx-auto" : index === 1 ? "lg:mx-auto mx-auto" : index === 2 ? "lg:ml-auto mx-auto sm:col-span-2 lg:col-span-1" : ""}`}>
                             <div className={`absolute h-[14px] rotate-90 lg:rotate-0 sm:hidden lg:flex sm:top-[10%] ${index === 2 ? "lg:hidden !hidden" : index === 1 ? "bottom-[-55%] right-[20%] sm:right-[-60%] " : index === 0 ? "bottom-[-67%] right-[20%] sm:right-[-50%] " : ""}`}>
                                 <DottedLine />
                             </div>

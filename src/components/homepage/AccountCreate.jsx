@@ -23,14 +23,20 @@ const AccountCreate = () => {
   return (
     <div id="contact" className="pb-14 pt-5 md:pb-32 lg:pt-28 relative">
       <div className="container max-w-[1164px] relative z-20 ">
-        <h1 className=" text-2xl2 lg:text-5xl font-light   leading-8 md:leading-xl1 text-darkBlue mb-2 text-center">
+        <h1
+          data-aos="zoom-in"
+          className=" text-2xl2 lg:text-5xl font-light   leading-8 md:leading-xl1 text-darkBlue mb-2 text-center"
+        >
           Create your <span className=" font-extrabold">account</span>
         </h1>
-        <p className="text-sm md:text-base px-9 md:px-0 font-normal mx-auto max-w-[472px] text-center pb-0 leading-5 md:leading-6 text-darkGray  ">
+        <p
+          data-aos="zoom-in"
+          className="text-sm md:text-base px-9 md:px-0 font-normal mx-auto max-w-[472px] text-center pb-0 leading-5 md:leading-6 text-darkGray  "
+        >
           Join now and protect your family's phones
         </p>
         <div className="flex flex-row items-center flex-wrap lg:pt-[72px] sm:pt-[50px] pt-[33.7px] gap-[37px] xl:gap-0">
-          <div className="lg:w-5/12  w-full flex flex-col justify-start items-start sm:justify-center sm:items-center lg:justify-start lg:items-start  ps-3 lg:ps-5 xl:ps-0">
+          <div data-aos="zoom-in" className="lg:w-5/12  w-full flex flex-col justify-start items-start sm:justify-center sm:items-center lg:justify-start lg:items-start  ps-3 lg:ps-5 xl:ps-0">
             <p className="leading-lg1 text-darkBlue sm:text-3xl2 text-2xl font-light mb-[26px]">
               Get a <span className="font-extrabold">24 hour</span> trial!
             </p>
@@ -58,7 +64,10 @@ const AccountCreate = () => {
             </div>
           </div>
           <div className="xl:w-7/12 lg:w-6/12 px-3 md:px-0 relative z-20 w-full">
-            <div className="pb-9 border border-solid  shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl">
+            <div
+              data-aos="zoom-in"
+              className="pb-9 border border-solid  shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl"
+            >
               <div className="bg-darkBlue px-5 py-6  md:py-5 rounded-tl-xl  rounded-tr-xl flex justify-between">
                 <p className="capitalize text-white md:text-3xl2 text-2xl leading-sm flex gap-3 items-center">
                   <Debitdot />

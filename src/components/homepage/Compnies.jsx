@@ -23,7 +23,10 @@ const Companies = () => {
         className="absolute bottom-0 md:bottom-[-12%] 2xl:bottom-[-16%] w-full"
       />
       <div className="containers px-3 custom_container mx-auto">
-        <h2 className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-28 sm:pb-20 pb-[65px] lg:pt-28 md:pt-[180px] sm:pt-[150px] pt-28">
+        <h2
+          data-aos="zoom-in"
+          className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-28 sm:pb-20 pb-[65px] lg:pt-28 md:pt-[180px] sm:pt-[150px] pt-28"
+        >
           Join <span className="font-extrabold">70,000+ companies</span> doing
           time tracking the easy way
         </h2>
@@ -31,6 +34,7 @@ const Companies = () => {
           {joinCompanies.map((obj, id) => {
             return (
               <div
+                data-aos="zoom-in"
                 key={id}
                 className={`pl-9 bg-white  rounded-tl-xl sm:rounded-tr-xl rounded-br-xl border-y border-s border-solid w-full h-full relative max-sm:px-6 shadow-[0px_16px_25.3px_0px_#00000014] ${
                   id === 1
