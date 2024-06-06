@@ -33,7 +33,7 @@ const HomeHeader = () => {
     <div className="bg-homeHeader pb-28 relative bg-center min-h-screen bg-no-repeat lg:bg-[100%_100%] bg-cover">
       <div className="container px-6 md:px-3 max-w-[1164px]">
         <nav>
-          <div className="max-w-[1164px] md:px-6 sm:px-3 mx-auto pt-[27px]">
+          <div className="max-w-[1164px] md:px-0 sm:px-3 mx-auto pt-2.5">
             <div className="flex justify-between items-center">
               <a href="/" className="relative z-[4]" aria-label="logo">
                 {navBar ? <Logo2 /> : <Logo />}
