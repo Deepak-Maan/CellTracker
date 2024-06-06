@@ -25,7 +25,9 @@ import {
   Private,
   Createlocation,
   Robot2,
+  Tick,
 } from "./Icons";
+import SameBtn from "./SameBtn";
 
 // --------Works Data----------//
 export const WorksData = [
@@ -60,24 +62,27 @@ export const navData = [
     url: "#Login",
   },
 ];
+
 export const joinCompanies = [
-  {
-    description: "Ideal for freelancers and solopreneurs",
-    rightclick: <RightTick />,
-    seat: "1 seat",
-    projects: "2 projects",
-    priceperseat: "$0",
-    billmonth: "free forever",
-  },
-  {
-    description: "Perfect for teams, startups, and growing businesses.",
-    rightclick: <RightTick />,
-    seat: "Unlimited seats",
-    projects: "Unlimited projects",
-    priceperseat: "$10.80",
-    billmonth: "per seat/month (billed annually)",
-  },
-];
+    {
+      description: "Ideal for freelancers and solopreneurs",
+      tick: <Tick />,
+      seat: "1 seat",
+      projects: "2 projects",
+      priceperseat: "$0",
+      billed: "free forever",
+      btnName: "Start your free trial",
+    },
+    {
+      description: "Perfect for teams, startups, and growing businesses.",
+      tick: <Tick />,
+      seat: "Unlimited seats",
+      projects: "Unlimited projects",
+      priceperseat: "$10.80",
+      billed: "per seat/month (billed annually)",
+      btnName: "30-Day Free Trial",
+    },
+  ];
 export const PrivaryData = [
   {
     Icon: <PuzzleIcon />,

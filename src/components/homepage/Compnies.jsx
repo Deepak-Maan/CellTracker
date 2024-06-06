@@ -23,7 +23,7 @@ const Companies = () => {
         className="absolute bottom-0 md:bottom-[-12%] 2xl:bottom-[-16%] w-full"
       />
       <div className="containers px-3 custom_container mx-auto">
-        <h2 className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-28 sm:pb-20 pb-[65px] lg:pt-28 md:pt-[180px] sm:pt-[150px] pt-32">
+        <h2 className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-28 sm:pb-20 pb-[65px] lg:pt-28 md:pt-[180px] sm:pt-[150px] pt-28">
           Join <span className="font-extrabold">70,000+ companies</span> doing
           time tracking the easy way
         </h2>
@@ -48,11 +48,11 @@ const Companies = () => {
                   {obj.description}
                 </p>
                 <p className="font-normal text-sm md:text-base  text-darkGray leading-normal flex items-center gap-1.5 mb-1.5">
-                  {obj.rightclick}
+                  {obj.tick}
                   {obj.seat}
                 </p>
                 <p className="font-normal text-sm md:text-base  text-darkGray leading-normal flex items-center gap-1.5 mb-[44px]">
-                  {obj.rightclick}
+                  {obj.tick}
                   {obj.projects}
                 </p>
                 <p
@@ -62,17 +62,16 @@ const Companies = () => {
                 >
                   {obj.priceperseat}
                   <sub className="lg:text-base text-sm !leading-normal  text-darkGray">
-                    {obj.billmonth}
+                    {obj.billed}
                   </sub>
                 </p>
-                <div className="flex sm:flex-row  flex-col items-center max-sm:w-full">
-                  <SameBtn
-                    className=" bg-darkBlue border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 text-white max-sm:w-full"
-                    btnName="30-Day Free Trial"
-                  />
+                <div className="flex sm:flex-row md:gap-4  flex-col items-center max-sm:w-full">
+                  <div className="border-transparent max-sm:w-full text-center border shadow-[inset_18rem_0_0_0_#03045e] capitalize hover:shadow-[inset_0_0_0_0]  duration-500  bg-darkBlue  border-darkBlue leading-normal font-semibold text-base rounded text-white px-7 py-4">
+                    {obj.btnName}
+                  </div>
 
                   {id === 1 && (
-                    <p className="font-normal  text-base  mt-2  text-darkGray leading-normal">
+                    <p className="font-normal mt-2 lg:mt-0 text-sm md:text-base    text-darkGray leading-normal">
                       No credit card required.
                     </p>
                   )}
@@ -80,7 +79,7 @@ const Companies = () => {
                 {id === 1 && (
                   <div className="absolute xl:right-[13%] md:right-[17%] right-1/2 translate-x-1/2 top-[-29px]">
                     <SameBtn
-                      className="md:!py-[15px] border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 !font-normal text-2xl md:!px-[35px] py-3 px-4 capitalize !text-white  !bg-darkBlue"
+                      className="md:!py-[15px]  border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 !font-normal text-2xl md:!px-[35px] py-3 px-4 capitalize !text-white  !bg-darkBlue"
                       btnName="Most Popular"
                     />
                   </div>

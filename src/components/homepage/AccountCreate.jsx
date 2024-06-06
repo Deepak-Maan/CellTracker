@@ -30,7 +30,7 @@ const AccountCreate = () => {
           Join now and protect your family's phones
         </p>
         <div className="flex flex-row items-center flex-wrap lg:pt-[72px] sm:pt-[50px] pt-[33.7px] gap-[37px] xl:gap-0">
-          <div className="lg:w-5/12 w-full flex flex-col justify-start items-start  ps-3 lg:ps-0">
+          <div className="lg:w-5/12  w-full flex flex-col justify-start items-start sm:justify-center sm:items-center lg:justify-start lg:items-start  ps-3 lg:ps-5 xl:ps-0">
             <p className="leading-lg1 text-darkBlue sm:text-3xl2 text-2xl font-light mb-[26px]">
               Get a <span className="font-extrabold">24 hour</span> trial!
             </p>
@@ -57,11 +57,11 @@ const AccountCreate = () => {
               </p>
             </div>
           </div>
-          <div className="xl:w-7/12 lg:w-6/12 w-full">
+          <div className="xl:w-7/12 lg:w-6/12 px-3 md:px-0 relative z-20 w-full">
             <div className="pb-9 border border-solid  shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl">
-              <div className="bg-darkBlue px-5 py-6  md:py-5rounded-tl-xl rounded-tr-xl flex justify-between">
-                <p className="capitalize text-white sm:text-xxs text-2xl leading-sm flex gap-3 items-center">
-                  <Debitdot className="sm:w-[30px] sm:h-[30px] h-5 w-5" />
+              <div className="bg-darkBlue px-5 py-6  md:py-5 rounded-tl-xl  rounded-tr-xl flex justify-between">
+                <p className="capitalize text-white md:text-3xl2 text-2xl leading-sm flex gap-3 items-center">
+                  <Debitdot />
                   Debit/Credit Card
                 </p>
                 <div className="flex sm:gap-[34px] gap-[6px] items-center">
@@ -83,8 +83,8 @@ const AccountCreate = () => {
                     Your Address
                   </label>
                   <div className="border border-solid max-sm:h-[45px]   rounded flex items-center">
-                    <div className="w-12 sm:h-[52px] h-[45px] bg-lightGrayED flex items-center justify-center">
-                      <AddressIcon className="sm:w-6 sm:h-6 w-5 h-5" />
+                    <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
+                      <AddressIcon />
                     </div>
                     <input
                       type="text"
@@ -101,8 +101,8 @@ const AccountCreate = () => {
                     Email Address
                   </label>
                   <div className="border border-solid max-sm:h-[45px]   rounded flex items-center">
-                    <div className="w-12 sm:h-[52px] h-[45px] bg-lightGrayED flex items-center justify-center">
-                      <Email className="sm:w-6 sm:h-6 w-5 h-5" />
+                    <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
+                      <Email />
                     </div>
                     <input
                       type="text"
@@ -116,8 +116,8 @@ const AccountCreate = () => {
                     Card Number (Visa or Mastercard)
                   </label>
                   <div className="border border-solid max-sm:h-[45px]   rounded flex items-center">
-                    <div className="w-12 sm:h-[52px] h-[45px] bg-lightGrayED flex items-center justify-center">
-                      <Valid className="sm:w-6 sm:h-6 w-5 h-5" />
+                    <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
+                      <Valid />
                     </div>
                     <input
                       type="text"
@@ -133,13 +133,13 @@ const AccountCreate = () => {
                       Expiry Date
                     </label>
                     <div className="border border-solid max-sm:h-[45px]   rounded flex items-center">
-                      <div className="w-12 sm:h-[52px] h-[45px] bg-lightGrayED flex items-center justify-center">
-                        <Calender className="sm:w-6 sm:h-6 w-5 h-5" />
+                      <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
+                        <Calender />
                       </div>
                       <input
                         type="text"
                         placeholder="MM/YY"
-                        className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm capitalize font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
+                        className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base !placeholder:text-sm capitalize font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
                       />
                     </div>
                   </div>
@@ -148,8 +148,8 @@ const AccountCreate = () => {
                       Card Security Code
                     </label>
                     <div className="border border-solid max-sm:h-[45px]   rounded flex items-center">
-                      <div className="w-12 sm:h-[52px] h-[45px] bg-lightGrayED flex items-center justify-center">
-                        <SecurityCode className="sm:w-6 sm:h-6 w-5 h-5" />
+                      <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
+                        <SecurityCode />
                       </div>
                       <input
                         type="text"
@@ -171,7 +171,7 @@ const AccountCreate = () => {
       <span className="absolute left-0 top-[-1%] md:top-[15%]">
         <LocationEllp />
       </span>
-      <span className="absolute z-30 right-0 rotate-180 -bottom-5 md:bottom-[22%]">
+      <span className="absolute z-0 right-0 rotate-180 -bottom-5 md:bottom-[22%]">
         <LocationEllp />
       </span>
     </div>
