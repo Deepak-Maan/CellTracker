@@ -16,6 +16,9 @@ body {
 ::-webkit-scrollbar-thumb {
   background: darkblue;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 
 .benefits_bubble {
   width: 300px;
@@ -77,34 +80,6 @@ body {
   }
 }
 
-@media (min-width: 576px) {
-  .benefits_bubble {
-    width: 361px !important;
-    height: 321px !important;
-  }
-}
-
-
-@media (min-width: 768px) {
-  .benefits_bubble {
-    width: 500px !important;
-    height: 400px !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  .benefits_bubble {
-    width: 510px !important;
-    height: 420px !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .benefits_bubble {
-    width: 570px;
-    height: 490px;
-  }
-}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;

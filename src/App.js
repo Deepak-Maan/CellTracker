@@ -1,12 +1,14 @@
 import "./App.css";
+import Preload from "./components/homepage/Preload";
 import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <div>
-      {/* <HomePage /> */}
-      <LandingPage />
+      <Preload/>
+      <HomePage />
+      {/* <LandingPage /> */}
     </div>
   );
 }

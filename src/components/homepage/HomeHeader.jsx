@@ -31,7 +31,7 @@ const HomeHeader = () => {
 
   return (
     <div className="bg-homeHeader pb-28 relative bg-center min-h-screen bg-no-repeat lg:bg-[100%_100%] bg-cover">
-      <div className="container max-w-[1164px]">
+      <div className="container px-6 md:px-3 max-w-[1164px]">
         <nav>
           <div className="max-w-[1164px] px-6 sm:px-3 mx-auto pt-[27px]">
             <div className="flex justify-between items-center">
@@ -86,7 +86,7 @@ const HomeHeader = () => {
 
         <div className="flex flex-row flex-wrap pt-14 md:pt-16 items-center justify-center">
           <div className="lg:w-6/12 w-full">
-            <h1 className="text-white text-3xl2 lg:-mt-16 md:text-xxl mb-3 md:mb-2 leading-9 text-center mx-auto lg:mx-0 lg:text-start px-3 md:px-0 md:leading-xxl font-extrabold max-w-[520px]">
+            <h1 className="text-white text-3xl2 lg:-mt-16 md:text-xxl mb-3 md:mb-2 leading-9 text-center mx-auto lg:mx-0 lg:text-start md:leading-xxl font-extrabold max-w-[520px]">
               Find the location{" "}
               <span className="font-light">of any phone by its number</span>
             </h1>
@@ -94,7 +94,7 @@ const HomeHeader = () => {
               Add phones to your account & track them when neededAdd phones to
               your account & track them when needed
             </p>
-            <div className="max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
+            <div className="max-lg:mx-auto  bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
               <div className="flex items-center gap-2">
                 <IndiaFlag />
                 <select
@@ -140,7 +140,7 @@ const HomeHeader = () => {
               />
               <div className="p-2 md:p-[18px] absolute right-0 md:right-[1%] lg:right-[10%] xl:right-0 2xl:right-[-9%] bottom-[-2%] lg:bottom-[22%] xl:w-[280px] rounded-tl-xl rounded-br-xl bg-white">
                 <div className="flex justify-between">
-                  <p className="text-2xl text-skyBlue font-bold leading-10">
+                  <p className="text-xl md:text-2xl text-skyBlue font-bold leading-10">
                     Need help?
                   </p>
                   <span>
@@ -148,7 +148,7 @@ const HomeHeader = () => {
                   </span>
                 </div>
 
-                <p className="text-base text-darkBlue leading-6 font-normal mb-[14px]">
+                <p className="text-sm md:text-base text-darkBlue leading-6 font-normal mb-[14px]">
                   Get help with technical,
                   <br />
                   account and billing enquiries.
@@ -163,7 +163,7 @@ const HomeHeader = () => {
         </div>
       </div>
       <img
-        className="absolute w-full -bottom-1 md:bottom-[-8%] 2xl:bottom-[-26%] z-0"
+        className="absolute w-full  bottom-0 md:bottom-[-8%] 2xl:bottom-[-26%] z-0"
         src={headerWave}
         alt="wave"
       />

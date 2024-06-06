@@ -21,8 +21,8 @@ const Workit = () => {
               src={workitMobile}
               alt="workitMobile"
             />
-            <div className="absolute top-[55%] left-[-4%] linear_bg benefits_bubble_bg translate-y-[-50%] z-10 opacity-[10%] lg:w-[570px] lg:h-[490px]"></div>
-            <div className="absolute top-[55%] left-[-4%] linear_bg benefits_bubble_bg_2 translate-y-[-50%] z-10 opacity-[10%] lg:w-[570px] lg:h-[490px]"></div>
+            <div className="absolute top-[55%] md:left-[17%] lg:left-[2%] xl:left-[-4%] linear_bg benefits_bubble_bg translate-y-[-176%] sm:translate-y-[-136%] md:translate-y-[-120%] lg:translate-y-[-50%] z-10 opacity-[10%] w-[320px] h-[296px] sm:w-[420px] sm:h-[446px] md:w-[520px] md:h-[360px] lg:w-[470px] lg:h-[380px] xl:w-[570px] xl:h-[490px]"></div>
+            <div className="absolute top-[55%] md:left-[17%] lg:left-[2%] xl:left-[-4%] linear_bg benefits_bubble_bg_2 translate-y-[-176%] sm:translate-y-[-136%] md:translate-y-[-120%] lg:translate-y-[-50%] z-10 opacity-[10%] w-[320px] h-[296px] sm:w-[420px] sm:h-[446px] md:w-[520px] md:h-[360px] lg:w-[470px] lg:h-[380px] xl:w-[570px] xl:h-[490px]"></div>
           </div>
           <div className="lg:w-1/2 flex px-3 md:px-0 pt-10 md:pt-0 flex-col justify-center items-center  w-full ">
             {workitData.map((obj, index) => (

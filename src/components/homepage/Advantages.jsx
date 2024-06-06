@@ -3,7 +3,7 @@ import { AdvantageData } from "../common/Helper";
 import { LocationEllp } from "../common/Icons";
 const Advantages = () => {
   return (
-    <div id="Advantage" className="pb-14 mt-[-3px] pt-20 relative">
+    <div id="Advantage" className="pb-14 mt-[-3px] pt-16 relative">
       <div className="container max-w-[1164px] relative z-20">
         <h1 className=" text-2xl2  lg:text-5xl font-light leading-8 lg:leading-xl1 text-darkBlue mb-2 text-center">
           Advantages of <span className="font-extrabold">Celltracker</span>
