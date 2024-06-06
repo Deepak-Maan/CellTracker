@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import mobileImg from "../../assets/images/landingPage/headerMobileImg.png"
+import mobileImg from "../../assets/images/landingPage/headerMobileImg.webp"
 import { IndiaFlag, Location, LocationEllipse, LocationIcon, Logo, Logo2 } from '../common/Icons'
 import { navLandingData } from '../common/Helper'
 const LandingHero = () => {

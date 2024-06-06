@@ -1,9 +1,16 @@
 import React from 'react'
-import MobileImg from '../../assets/images/landingPage/findPhoneImg.png'
+import MobileImg from '../../assets/images/landingPage/findPhoneImg.webp'
 import { trackerdata } from '../common/Helper'
+import { LocationEllp } from '../common/Icons'
 const Find = () => {
     return (
-        <>
+        <div className='relative overflow-x-clip'>
+            <div className='absolute left-0 top-[2%] md:top-[15%]'>
+                <LocationEllp />
+            </div>
+            <div className='absolute right-0 bottom-[-2%] md:bottom-0 rotate-180'>
+                <LocationEllp />
+            </div>
             <div className='lg:pt-[132px] pt-24'>
                 <div className=' max-w-[1140px] mx-auto min-[1164px]:px-3 px-5'>
                     <h2 className=" text-[28px] md:text-4xl lg:text-5xl leading-8 md:leading-10 lg:leading-xl1 font-light text-darkBlue  text-center">
@@ -29,7 +36,7 @@ const Find = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

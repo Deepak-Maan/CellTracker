@@ -15,7 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         landingHeader:
-          "url('/src/assets/images/landingPage/LandingHeroBg.png')",
+          "url('/src/assets/images/landingPage/LandingHeroBg.webp')",
         homeHeader: "url('/src/assets/images/homePage/heroBg.webp')",
         newsBg: "url('/src/assets/images/homePage/newsletterBg.webp')",
         companies: "url('./assets/images/homePage/CompniesBg.webp')",

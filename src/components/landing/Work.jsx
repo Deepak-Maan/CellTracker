@@ -1,10 +1,13 @@
 import React from 'react'
 import { WorksData } from '../common/Helper'
-import { DottedLine } from '../common/Icons'
+import { DottedLine, LocationEllp } from '../common/Icons'
 
 const Work = () => {
     return (
-        <div>
+        <div className='relative'>
+            <div className='absolute left-0 bottom-[-2%] md:bottom-0'>
+                <LocationEllp />
+            </div>
             <div className="container mx-auto px-3 max-w-[1164px] pt-[94px] sm:pt-[98px] pb-[94px]">
                 <h2 className='font-light  text-[28px] md:text-4xl lg:text-5xl leading-8 md:leading-10 lg:leading-xl1 text-darkBlue text-center'>How it <span className="font-extrabold">works</span></h2>
                 <p className='sm:text-base text-sm font-normal leading-5 sm:leading-7 text-darkGray text-center mx-auto max-w-[472px] pt-2 pb-14'>Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit elit rhoncus vestibulum fames libero id.</p>
