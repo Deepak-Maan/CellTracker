@@ -30,11 +30,11 @@ const LandingHero = () => {
                                         <a onClick={closeNav} href={data.url} className="text-black md:text-white  text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[2px] after:bottom-1 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full" > {data.name} </a>
                                     </li>
                                 ))}
-                                <button className=" md:hidden bg-dark-blue text-base leading-7 bg-darkBlue font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue hover:bg-darkBlue duration-300  border-transparent border-2 w-full hover:border-darkBlue ">
+                                <button className=" shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]    md:hidden bg-dark-blue text-base leading-7 bg-darkBlue font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue hover:bg-darkBlue duration-300  border-transparent border-2 w-full hover:border-darkBlue ">
                                     Log In
                                 </button>
                             </ul>
-                            <button className=" text-darkBlue max-md:hidden text-base leading-7 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px] hover:bg-darkBlue hover:text-white duration-300">
+                            <button className="shadow-[inset_18rem_0_0_0_#fff] hover:shadow-[inset_0_0_0_0]  text-darkBlue max-md:hidden text-base leading-7 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px] duration-300">
                                 Log In
                             </button>
                             <button onClick={showNav} className="md:hidden relative z-[4]">
@@ -84,7 +84,7 @@ const LandingHero = () => {
                                 </select>
                             </div>
                             <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-                            <button className=" bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+                            <button className="shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
                                 <LocationIcon />
                                 Locate
                             </button>
