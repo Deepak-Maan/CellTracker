@@ -15,12 +15,12 @@ const Companies = () => {
       <img
         src={toplayer}
         alt="toplayer"
-        className="absolute top-0 xl:top-[-10%] 2xl:top-[-11%] w-full"
+        className="absolute -top-1 xl:top-[-10%] 2xl:top-[-11%] w-full"
       />
       <img
         src={btmlayer}
         alt="botmlayer"
-        className="absolute bottom-[-12%] 2xl:bottom-[-16%] w-full"
+        className="absolute bottom-0 md:bottom-[-12%] 2xl:bottom-[-16%] w-full"
       />
       <div className="containers px-3 custom_container mx-auto">
         <h2 className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-28 sm:pb-20 pb-[65px] lg:pt-28 md:pt-[180px] sm:pt-[150px] pt-32">
@@ -32,9 +32,9 @@ const Companies = () => {
             return (
               <div
                 key={id}
-                className={`pl-[34px] bg-white  rounded-tl-xl sm:rounded-tr-xl rounded-br-xl border-y border-s border-solid w-full h-full relative max-sm:px-6 shadow-[0px_16px_25.3px_0px_#00000014] ${
+                className={`pl-9 bg-white  rounded-tl-xl sm:rounded-tr-xl rounded-br-xl border-y border-s border-solid w-full h-full relative max-sm:px-6 shadow-[0px_16px_25.3px_0px_#00000014] ${
                   id === 1
-                    ? "max-w-[527px] sm:pt-[63px] sm:pb-8 pt-[60px] pb-8 lg:-translate-x-3"
+                    ? "max-w-[527px] sm:pt-16 sm:pb-8 pt-[60px] pb-9 lg:-translate-x-3"
                     : "max-w-[467px] max-sm:py-[75.5px] py-9"
                 }`}
               >
@@ -65,9 +65,9 @@ const Companies = () => {
                     {obj.billmonth}
                   </sub>
                 </p>
-                <div className="flex sm:flex-row flex-col items-center max-sm:w-full">
+                <div className="flex sm:flex-row  flex-col items-center max-sm:w-full">
                   <SameBtn
-                    className=" bg-darkBlue text-white md:mb-4 max-sm:w-full"
+                    className=" bg-darkBlue border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 text-white max-sm:w-full"
                     btnName="30-Day Free Trial"
                   />
 
@@ -80,7 +80,7 @@ const Companies = () => {
                 {id === 1 && (
                   <div className="absolute xl:right-[13%] md:right-[17%] right-1/2 translate-x-1/2 top-[-29px]">
                     <SameBtn
-                      className="md:!py-[15px] !font-normal text-2xl md:!px-[35px] py-3 px-4 capitalize !text-white  !bg-darkBlue"
+                      className="md:!py-[15px] border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 !font-normal text-2xl md:!px-[35px] py-3 px-4 capitalize !text-white  !bg-darkBlue"
                       btnName="Most Popular"
                     />
                   </div>

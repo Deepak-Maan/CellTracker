@@ -22,23 +22,23 @@ const Footer = () => {
               <li>
                 <a
                   href="#Advantage"
-                  className="text-base font-normal leading-6 text-darkGray"
+                  className="text-sm md:text-base font-normal leading-6 text-darkGray"
                 >
                   Help
                 </a>
               </li>
               <li>
                 <a
-                  href=""
-                  className="text-base font-normal leading-6 text-darkGray"
+                  href="#contact"
+                  className="text-sm md:text-base font-normal leading-6 text-darkGray"
                 >
                   Contact us
                 </a>
               </li>
               <li>
                 <a
-                  href="#FoundPhone"
-                  className="text-base font-normal leading-6 text-darkGray"
+                  href="#Work"
+                  className="text-sm md:text-base font-normal leading-6 text-darkGray"
                 >
                   Found Phone
                 </a>
@@ -72,11 +72,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <p className="text-center text-sm leading-5 font-normal pt-[18px] pb-5 md:pb-4">
+        <p className="text-center text-xs md:text-sm leading-5 font-normal pt-[18px] pb-5 md:pb-4">
           ©{new Date().getFullYear()} Cell Tracker. All Rights Reserved.
         </p>
       </div>
-      <span className="right-0 absolute bottom-20 md:bottom-6 rotate-180">
+      <span className="right-0 absolute bottom-16 md:bottom-6 rotate-180">
         <LocationEllp />
       </span>
     </div>
