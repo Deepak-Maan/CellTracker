@@ -54,7 +54,7 @@ export const WorksData = [
 export const navData = [
   {
     Ques: <Quesmark />,
-    name: "How It Works",
+    name: "Quick Help",
     url: "#Work",
   },
   {

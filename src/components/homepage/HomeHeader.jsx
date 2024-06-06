@@ -60,7 +60,7 @@ const HomeHeader = () => {
                   <button className="text-darkBlue shadow-[inset_18rem_0_0_0_#fff] hover:shadow-[inset_0_0_0_0]  duration-500 hidden md:block text-base leading-xs1 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]   relative z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-white">
                     Create an Account
                   </button>
-                  <button className="block md:hidden  border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 bg-darkBlue text-base leading-xs1 font-semibold text-white py-4 px-7 rounded-[4px] hover:text-darkBlue hover:bg-white  relative border-transparent border-2 w-[314px] hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue">
+                  <button className="block md:hidden  border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0] mt-[115px]  duration-500 bg-darkBlue text-base leading-xs1 font-semibold text-white py-4 px-7 rounded-[4px] hover:text-darkBlue hover:bg-white  relative border-transparent border-2 w-[314px] hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue">
                     Create an Account
                   </button>
                 </ul>
