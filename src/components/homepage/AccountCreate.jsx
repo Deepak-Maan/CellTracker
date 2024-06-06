@@ -21,7 +21,7 @@ import SameBtn from "../common/SameBtn";
 
 const AccountCreate = () => {
   return (
-    <div id="contact" className="pb-14 pt-5 md:pb-32 lg:pt-36 relative">
+    <div id="contact" className="pb-14 pt-5 md:pb-32 lg:pt-28 relative">
       <div className="container max-w-[1164px] relative z-20 ">
         <h1 className=" text-2xl2 lg:text-5xl font-light   leading-8 md:leading-xl1 text-darkBlue mb-2 text-center">
           Create your <span className=" font-extrabold">account</span>
