@@ -36,6 +36,7 @@ const Workit = () => {
           <div className="lg:w-1/2 flex px-3 md:px-0 pt-10 md:pt-0 flex-col justify-center items-center  w-full ">
             {workitData.map((obj, index) => (
               <div
+              key={index}
                 data-aos="zoom-in"
                 className="p-5  border hover:border w-full  shadow-[0px_16px_25.3px_0px_#00000014]  hover:border-darkBlue duration-300 md:max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] sm:h-[230px] md:h-auto"
               >

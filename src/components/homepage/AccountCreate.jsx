@@ -45,7 +45,7 @@ const AccountCreate = () => {
             </p>
             <div className="flex flex-col gap-[30px] mb-10">
               {AccountData.map((account, index) => (
-                <div className=" flex items-center gap-3">
+                <div key={index} className=" flex items-center gap-3">
                   <div className="relative">
                     <span className="relative z-20">{account.icon}</span>
                     <div className="absolute top-[55%] left-[-65%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10 w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
@@ -62,7 +62,9 @@ const AccountCreate = () => {
                 the payment page. Create an account to start a 24 hour trial
                 with full access to all our tools. The service can be cancelled
                 by the user at any time from within their account.
-                <span className=" text-skyBlue">View full terms.</span>
+                <span className=" text-skyBlue cursor-pointer">
+                  View full terms.
+                </span>
               </p>
             </div>
           </div>
@@ -72,7 +74,7 @@ const AccountCreate = () => {
               className="pb-9 border border-solid  shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl"
             >
               <div className="bg-darkBlue px-5 py-6  md:py-5 rounded-tl-xl  rounded-tr-xl flex justify-between">
-                <p className="capitalize text-white md:text-3xl2 text-2xl leading-sm flex gap-3 items-center">
+                <p className="capitalize text-white md:text-3xl2 text-2xl leading-sm1  flex gap-3 items-center">
                   <Debitdot />
                   Debit/Credit Card
                 </p>
@@ -132,7 +134,7 @@ const AccountCreate = () => {
                       <Valid />
                     </div>
                     <input
-                      type="text"
+                      type="number"
                       maxLength={16}
                       placeholder="Valid Card Number"
                       className="sm:px-[14px] pl-5 capitalize placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
@@ -149,7 +151,7 @@ const AccountCreate = () => {
                         <Calender />
                       </div>
                       <input
-                        type="text"
+                        type="number"
                         placeholder="MM/YY"
                         className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base !placeholder:text-sm capitalize font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
                       />
@@ -164,7 +166,8 @@ const AccountCreate = () => {
                         <SecurityCode />
                       </div>
                       <input
-                        type="text"
+                        type="number"
+                        maxLength={4}
                         placeholder="E.x @ 0123"
                         className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm capitalize font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
                       />

@@ -102,14 +102,14 @@ const HomeHeader = () => {
                   name="number"
                   id="number"
                 >
-                  <option value="91" className="flex items-center gap-2">
+                  <option  value="91" className="flex items-center gap-2">
                     +91
                   </option>
                   <option value="01" className="flex items-center gap-2">
                     +01
                   </option>
-                  <option value="92" className="flex items-center gap-2">
-                    +03
+                  <option value="61" className="flex items-center gap-2">
+                    +61
                   </option>
                   <option value="02" className="flex items-center gap-2">
                     +02

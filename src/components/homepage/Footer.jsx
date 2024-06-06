@@ -5,7 +5,6 @@ import {
   Instagram,
   Linkedin,
   LocationEllp,
-  Logo,
   Twitter,
 } from "../common/Icons";
 
@@ -18,11 +17,11 @@ const Footer = () => {
             <FooterLogo />
           </div>
           <div>
-            <ul className="flex gap-6 justify-center ">
+            <ul className="flex gap-6 justify-center">
               <li>
                 <a
                   href="#Advantage"
-                  className="text-sm md:text-base font-normal leading-6 text-darkGray"
+                  className="text-sm md:text-base font-normal leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Help
                 </a>
@@ -30,7 +29,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contact"
-                  className="text-sm md:text-base font-normal leading-6 text-darkGray"
+                  className="text-sm md:text-base font-normal leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Contact us
                 </a>
@@ -38,7 +37,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#Work"
-                  className="text-sm md:text-base font-normal leading-6 text-darkGray"
+                  className="text-sm md:text-base font-normal leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                 >
                   Found Phone
                 </a>
@@ -46,30 +45,48 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex gap-[18px] justify-center lg:justify-end sm:col-span-2 lg:col-span-1">
-            <a
-              href="https://www.linkedin.com/login"
-              target="_blank"
-              aria-label="linkdin"
-            >
-              <Linkedin />
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              aria-label="instagram"
-            >
-              <Instagram />
-            </a>
-            <a
-              href="https://www.facebook.com/login/"
-              target="_blank"
-              aria-label="linkdin"
-            >
-              <Facebook />
-            </a>
-            <a href="https://x.com/login" target="_blank" aria-label="twiter">
-              <Twitter />
-            </a>
+            <ul className="flex gap-[18px] justify-center ps-0 lg:justify-end">
+              <li className="hover:-translate-y-1 duration-300">
+                <a
+                  href="https://www.linkedin.com/login"
+                  target="_blank"
+                  aria-label="linkedin"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin />
+                </a>
+              </li>
+              <li className="hover:-translate-y-1 duration-300">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  aria-label="instagram"
+                  rel="noopener noreferrer"
+                >
+                  <Instagram />
+                </a>
+              </li>
+              <li className="hover:-translate-y-1 duration-300">
+                <a
+                  href="https://www.facebook.com/login/"
+                  target="_blank"
+                  aria-label="facebook"
+                  rel="noopener noreferrer"
+                >
+                  <Facebook />
+                </a>
+              </li>
+              <li className="hover:-translate-y-1 duration-300">
+                <a
+                  href="https://x.com/login"
+                  target="_blank"
+                  aria-label="twitter"
+                  rel="noopener noreferrer"
+                >
+                  <Twitter />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <p className="text-center text-xs md:text-sm leading-5 font-normal pt-[18px] pb-5 md:pb-4">
