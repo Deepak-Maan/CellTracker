@@ -3,7 +3,7 @@ import { AdvantageData } from "../common/Helper";
 import { LocationEllp } from "../common/Icons";
 const Advantages = () => {
   return (
-    <div id="Advantage" className="pb-14 mt-[-3px] pt-24 relative">
+    <div id="Advantage" className="pb-14 mt-[-3px] pt-16 relative">
       <div className="container max-w-[1164px] relative z-20">
         <h1
           data-aos="zoom-in"
@@ -18,10 +18,12 @@ const Advantages = () => {
           Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit
           elit rhoncus vestibulum fames libero id.
         </p>
-        <div className="flex flex-row justify-center flex-wrap">
+        <div
+          data-aos="zoom-in"
+          className="flex flex-row justify-center flex-wrap"
+        >
           {AdvantageData.map((advantage, index) => (
             <div
-              data-aos="zoom-in"
               key={index}
               className={`w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 sm:px-[9px] mt-[18px] sm:mt-6 ${
                 index === 1 || index === 3 ? " lg:translate-y-[10%]" : ""
