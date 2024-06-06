@@ -2,7 +2,6 @@ import {
   ContactsIcon,
   AccurateLocation,
   LocateLocation,
-  Location1,
   Peoples,
   Robot,
   Setting,
@@ -19,7 +18,6 @@ import {
   SettingIcon,
   WorksLocationIcon,
   Quesmark,
-  Location,
   Track,
   Multiple,
   Protect,
@@ -178,12 +176,15 @@ export const workitData = [
 export const navLandingData = [
   {
     name: "Home",
+    url: "#home",
   },
   {
     name: "How It Works",
+    url: "#howWork",
   },
   {
     name: "Features",
+    url: "#features",
   },
 ];
 export const trackerdata = [

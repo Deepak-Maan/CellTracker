@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import BackToTop from "./components/homepage/BackToTop";
 import HomePage from "./pages/HomePage";
@@ -6,8 +7,10 @@ import LandingPage from "./pages/LandingPage";
 function App() {
   return (
     <div>
-      <HomePage />
-      {/* <LandingPage /> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/landing" element={<LandingPage />} />
+      </Routes>
       <BackToTop />
     </div>
   );

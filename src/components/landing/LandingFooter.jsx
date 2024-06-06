@@ -10,9 +10,9 @@ const LandingFooter = () => {
                 </div>
                 <div>
                     <ul className='flex gap-6 justify-center '>
-                        <li><a href="" className=' text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray'>Home</a></li>
-                        <li><a href="" className=' text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray'>How It Works</a></li>
-                        <li><a href="" className=' text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray'>Features</a></li>
+                        <li><a href="#home" className=' text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray'>Home</a></li>
+                        <li><a href="#howWork" className=' text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray'>How It Works</a></li>
+                        <li><a href="#features" className=' text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray'>Features</a></li>
                     </ul>
                 </div>
                 <div className='flex gap-[18px] justify-center lg:justify-end sm:col-span-2 lg:col-span-1'>

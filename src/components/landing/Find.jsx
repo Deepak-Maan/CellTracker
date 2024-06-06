@@ -4,7 +4,7 @@ import { trackerdata } from '../common/Helper'
 import { LocationEllp } from '../common/Icons'
 const Find = () => {
     return (
-        <div className='relative overflow-x-clip'>
+        <div id='features' className='relative overflow-x-clip'>
             <div className='absolute left-0 top-[2%] md:top-[15%]'>
                 <LocationEllp />
             </div>

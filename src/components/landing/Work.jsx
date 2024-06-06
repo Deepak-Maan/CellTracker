@@ -4,7 +4,7 @@ import { DottedLine, LocationEllp } from '../common/Icons'
 
 const Work = () => {
     return (
-        <div className='relative'>
+        <div id='howWork' className='relative'>
             <div className='absolute left-0 bottom-[-2%] md:bottom-0'>
                 <LocationEllp />
             </div>
@@ -14,7 +14,7 @@ const Work = () => {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-[200px]">
                     {WorksData.map((data, index) => (
                         <div key={index} className={`max-w-[267px] relative ${index === 0 ? "lg:mr-auto mx-auto" : index === 1 ? "lg:mx-auto mx-auto" : index === 2 ? "lg:ml-auto mx-auto sm:col-span-2 lg:col-span-1" : ""}`}>
-                            <div className={`absolute h-[14px] rotate-90 lg:rotate-0 sm:hidden lg:flex right-[20%] sm:right-[-50%]  sm:top-[10%] ${index === 2 ? "lg:hidden !hidden" : index === 1 ? "bottom-[-55%]" : index === 0 ? "bottom-[-67%]" : ""}`}>
+                            <div className={`absolute h-[14px] rotate-90 lg:rotate-0 sm:hidden lg:flex sm:top-[10%] ${index === 2 ? "lg:hidden !hidden" : index === 1 ? "bottom-[-55%] right-[20%] sm:right-[-60%] " : index === 0 ? "bottom-[-67%] right-[20%] sm:right-[-50%] " : ""}`}>
                                 <DottedLine />
                             </div>
                             <div className={`w-[75px] h-[70px] flex items-center bg-lightOffBlue justify-center mx-auto `}>
