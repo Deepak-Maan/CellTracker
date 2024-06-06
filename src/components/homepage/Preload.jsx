@@ -23,7 +23,7 @@ function Preload() {
     <>
       <div
         id="Preloader"
-        className="h-screen bg-darkBlue flex flex-col gap-4 justify-center items-center fixed top-0 left-0 w-full z-30"
+        className="h-screen bg-darkBlue flex flex-col gap-4 justify-center items-center fixed top-0 left-0 w-full  z-50"
       >
         <span className="animate-bounce mb-5">
           <Logo />
