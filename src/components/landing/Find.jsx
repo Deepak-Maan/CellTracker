@@ -12,7 +12,7 @@ const Find = () => {
                 <LocationEllp />
             </div>
             <div className='lg:pt-[132px] pt-24'>
-                <div className=' max-w-[1140px] mx-auto min-[1164px]:px-3 px-5'>
+                <div className=' max-w-[1164px] containder mx-auto px-6 md:px-3'>
                     <h2 className=" text-[28px] md:text-4xl lg:text-5xl leading-8 md:leading-10 lg:leading-xl1 font-light text-darkBlue  text-center">
                         Find Anyone Anywhere <span className="font-extrabold block sm:inline"> for Under $1</span>
                     </h2>

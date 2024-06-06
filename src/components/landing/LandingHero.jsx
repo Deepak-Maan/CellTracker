@@ -17,9 +17,9 @@ const LandingHero = () => {
     }
     return (
         <div>
-            <div className="container mx-auto px-3 max-w-[1164px]">
+            <div className="container mx-auto px-6 md:px-3 max-w-[1164px]">
                 <nav>
-                    <div className="max-w-[1164px] px-6 sm:px-3 mx-auto pt-[27px]">
+                    <div className="max-w-[1164px] md:px-6  mx-auto pt-[27px]">
                         <div className="flex justify-between items-center">
                             <a href="/" className="relative z-[4]" aria-label="logo">
                                 {navBar ? <Logo2 /> : <Logo />}
@@ -56,7 +56,7 @@ const LandingHero = () => {
                 </nav>
                 <div id='home' className="grid grid-cols-1 xl:grid-cols-2 pt-14 sm:pb-[76px]  md:pt-[83px]">
                     <div className='md:pt-[71px]'>
-                        <h1 className='text-[32px] sm:text-4xl md:text-5xl leading-8 sm:leading-10 lg:leading-xxl font-extrabold text-white max-sm:text-center'><span className="xl:text-nowrap">Locate any phone,</span> <span className="font-bold xl:text-nowrap">anywhere, anytime</span></h1>
+                        <h1 className='text-[32px] sm:text-4xl md:text-5xl leading-8 sm:leading-10 lg:leading-xxl font-extrabold text-white max-sm:text-center'><span className="xl:text-nowrap">Locate any phone,</span> <span className="font-light xl:text-nowrap">anywhere, anytime</span></h1>
                         <p className='text-sm sm:text-base font-normal leading-5 sm:leading-6 text-white pt-2 max-sm:text-center'>Lorem ipsum dolor sit amet consectetur. Nisl vitae arcu volutpat nunc cursus. Lacus ornare aliquet condimentum elementum elementum nisl nibh sed. Egestas aliquam id quam nunc.</p>
                         <div className=" max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
                             <div className=" flex items-center gap-2 ">

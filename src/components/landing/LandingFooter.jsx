@@ -3,7 +3,7 @@ import { Facebook, FooterLogo, Instagram, Linkedin, Twitter } from '../common/Ic
 
 const LandingFooter = () => {
     return (
-        <div className='container xl:max-w-[1164px] px-3 pt-[58px] sm:pt-[60px] lg:pt-[102px]'>
+        <div className='container xl:max-w-[1164px] px-6 md:px-3 pt-[58px] sm:pt-[60px] lg:pt-[102px]'>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center pb-[58px] sm:pb-12 border-b border-darkBlue justify-between gap-[38px] lg:gap-0">
                 <div className='flex justify-center lg:justify-start'>
                     <FooterLogo />
