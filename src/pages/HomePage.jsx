@@ -5,14 +5,18 @@ import Newsletter from "../components/homepage/Newsletter";
 import Footer from "../components/homepage/Footer";
 import Workit from "../components/homepage/Workit";
 import Companies from "../components/homepage/Compnies";
+import BackToTop from "../components/homepage/BackToTop";
+import AccountCreate from "../components/homepage/AccountCreate";
 
 const HomePage = () => {
   return (
     <>
+      <BackToTop />
       <HomeHeader />
       <Advantages />
       <Workit />
       <Companies />
+      <AccountCreate/>
       <Newsletter />
       <Footer />
     </>
