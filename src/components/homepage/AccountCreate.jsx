@@ -43,7 +43,7 @@ const AccountCreate = () => {
                 <div key={index} className=" flex items-center gap-5">
                   <div className="relative">
                     <span className="relative z-20">{account.icon}</span>
-                    <div className="absolute top-[55%] left-[-61%]  bg-lightBlue benefits_bubble_bg translate-y-[-58%] z-10 w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
+                    <div className="absolute top-[55%] left-[-40%]  bg-lightBlue benefits_bubble_bg translate-y-[-58%] z-10 w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
                   </div>
                   <p className="pb-0 leading-normal sm:text-base text-sm  font-normal  text-darkGray">
                     {account.title}

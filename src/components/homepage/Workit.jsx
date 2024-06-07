@@ -5,7 +5,10 @@ import SameBtn from "../common/SameBtn";
 
 const Workit = () => {
   return (
-    <div id="Work" className="pb-24 pt-5 md:pb-36 lg:pb-14 xl:pb-36 lg:pt-12 relative">
+    <div
+      id="Work"
+      className="pb-24 pt-5 md:pb-36 lg:pb-14 xl:pb-36 lg:pt-12 relative"
+    >
       <div className="container max-w-[1164px] relative z-20 ">
         <h1
           data-aos="zoom-in"
@@ -36,15 +39,15 @@ const Workit = () => {
           <div className="lg:w-1/2 flex px-3 md:px-0 pt-10 md:pt-0 flex-col justify-center items-center  w-full ">
             {workitData.map((obj, index) => (
               <div
-              key={index}
+                key={index}
                 data-aos="zoom-in"
                 className="p-5  border hover:border w-full  shadow-[0px_16px_25.3px_0px_#00000014]  hover:border-darkBlue duration-300 md:max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] sm:h-[230px] md:h-auto"
               >
                 <div className="relative">
-                  <span className="relative z-20">{obj.Icon}</span>
+                  <span className="relative z-20 ">{obj.Icon}</span>
                   <div className="absolute top-[55%] left-[-2%]  bg-lightBlue benefits_bubble_bg translate-y-[-50%] z-10  w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
                 </div>
-                <p className=" text-xl md:text-2xl mt-1 text-darkBlue leading-7 font-normal pb-0 mb-1.5">
+                <p className=" text-xl md:text-2xl mt-[18px] text-darkBlue leading-7 font-normal pb-0 mb-1.5">
                   {obj.Heading}
                 </p>
                 <p className="text-sm md:text-base font-normal leading-6  text-darkGray pb-0">

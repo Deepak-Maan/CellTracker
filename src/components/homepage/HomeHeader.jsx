@@ -167,7 +167,7 @@ const HomeHeader = () => {
         </div>
       </div>
       <img
-        className="absolute w-full  bottom-0 md:bottom-[-8%] 2xl:bottom-[-26%] z-0"
+        className="absolute w-full  bottom-0 md:bottom-[-8%] 2xl:bottom-[-24%] z-0"
         src={headerWave}
         alt="wave"
       />
