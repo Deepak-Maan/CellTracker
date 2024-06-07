@@ -59,10 +59,10 @@ const HomeHeader = () => {
                       </li>
                     ))}
                   </div>
-                  <button className="text-darkBlue shadow-[inset_18rem_0_0_0_#fff] hover:shadow-[inset_0_0_0_0]  duration-500 hidden md:block text-base leading-xs1 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]   relative z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-white">
+                  <button className="text-darkBlue hover:shadow-[0px_1px_17.3px_1px_#fff]  duration-500 hidden md:block text-base leading-xs1 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]   relative z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-white">
                     Create an Account
                   </button>
-                  <button className="block md:hidden  border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0] mt-[115px]  duration-500 bg-darkBlue text-base leading-xs1 font-semibold text-white py-4 px-7 rounded-[4px] hover:text-darkBlue hover:bg-white  relative border-transparent border-2 w-[314px] hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue">
+                  <button className="block md:hidden  border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue]  duration-500 mt-[115px]  bg-darkBlue text-base leading-xs1 font-semibold text-white py-4 px-7 rounded-[4px] hover:text-darkBlue hover:bg-white  relative border-transparent border-2 w-[314px] hover:border-dark-blue z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-dark-blue">
                     Create an Account
                   </button>
                 </ul>
@@ -129,7 +129,7 @@ const HomeHeader = () => {
                 onInput={handleInputChange}
                 className="outline-none w-[35%] sm:w-1/2 no-spinner"
               />
-              <button className="bg-darkBlue border-2 border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1 ">
+              <button className="bg-darkBlue border-2 hover:border-white border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:text-darkBlue hover:bg-white  duration-500 -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1 ">
                 <LocationIcon />
                 Locate
               </button>
@@ -158,7 +158,7 @@ const HomeHeader = () => {
                   account and billing enquiries.
                 </p>
                 <SameBtn
-                  className="bg-darkBlue border border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 text-white md:w-full"
+                  className="bg-darkBlue border border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue]  duration-500 hover:text-darkBlue hover:bg-white text-white md:w-full"
                   btnName="Customer Support"
                 />
               </div>

@@ -62,11 +62,11 @@ const Workit = () => {
           className="flex flex-col px-3 md:px-0 sm:flex-row justify-center pt-5 md:pt-10 gap-3 items-center"
         >
           <SameBtn
-            className=" bg-darkBlue border border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 text-white max-sm:w-full"
+            className=" bg-darkBlue border border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white text-white max-sm:w-full"
             btnName="Create your Account"
           />
           <SameBtn
-            className="  bg-white shadow-[inset_18rem_0_0_0_#fff] hover:shadow-[inset_0_0_0_0]  duration-500   text-darkBlue !border !border-darkBlue max-sm:w-full"
+            className="  bg-white hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 !hover:border-white   text-darkBlue !border !border-darkBlue max-sm:w-full"
             btnName="Got more Question?"
           />
         </div>

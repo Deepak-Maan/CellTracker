@@ -29,7 +29,7 @@ const Newsletter = () => {
               sit elit rhoncus vestibulum fames libero id.
             </p>
             <SameBtn
-              className=" shadow-[inset_18rem_0_0_0_#fff] hover:shadow-[inset_0_0_0_0] hover:border hover:border-darkBlue  duration-500 bg-white w-[266px] md:w-auto px-10  text-darkBlue "
+              className=" hover:shadow-[0px_1px_17.3px_1px_#fff]  duration-500 bg-white w-[266px] md:w-auto px-10  text-darkBlue "
               btnName="Start Now"
             />{" "}
           </div>

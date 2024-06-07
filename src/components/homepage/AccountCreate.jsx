@@ -181,7 +181,7 @@ const AccountCreate = () => {
                 </div>
                 <SameBtn
                   btnName="Buy Now (50C)"
-                  className="capitalize border-darkBlue shadow-[inset_45rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 text-white px-0 bg-darkBlue w-full"
+                  className="capitalize border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white text-white px-0 bg-darkBlue w-full"
                 />
               </form>
             </div>

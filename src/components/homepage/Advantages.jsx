@@ -51,7 +51,7 @@ const Advantages = () => {
           className="flex justify-center px-3 md:px-0 pt-10 lg:pt-16"
         >
           <SameBtn
-            className=" bg-darkBlue text-white max-sm:w-full border border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500"
+            className=" bg-darkBlue text-white max-sm:w-full border border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white"
             btnName="Create your Account"
           />{" "}
         </div>

@@ -70,7 +70,7 @@ const Companies = () => {
                   </sub>
                 </p>
                 <div className="flex sm:flex-row md:gap-4  flex-col items-center max-sm:w-full">
-                  <div className="border-transparent max-sm:w-full text-center border shadow-[inset_18rem_0_0_0_#03045e] capitalize hover:shadow-[inset_0_0_0_0]  duration-500  bg-darkBlue  border-darkBlue leading-normal font-semibold text-base rounded text-white px-7 py-4">
+                  <div className="border-transparent max-sm:w-full text-center border hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white  bg-darkBlue  border-darkBlue leading-normal font-semibold text-base rounded text-white px-7 py-4">
                     {obj.btnName}
                   </div>
 
@@ -83,7 +83,7 @@ const Companies = () => {
                 {id === 1 && (
                   <div className="absolute xl:right-[13%] md:right-[17%] right-1/2 translate-x-1/2 top-[-29px]">
                     <SameBtn
-                      className="md:!py-[15px]  border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  !leading-lg1 duration-500 !font-normal text-base md:!text-2xl md:!px-[35px] py-3 px-4 capitalize !text-white  !bg-darkBlue"
+                      className="md:!py-[15px]  border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue]  hover:border-white  !leading-lg1 duration-500 !font-normal text-base md:!text-2xl md:!px-[35px] py-3 px-4 capitalize text-white  bg-darkBlue"
                       btnName="Most Popular"
                     />
                   </div>
