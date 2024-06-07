@@ -1,16 +1,10 @@
 import {
   AddressIcon,
   Calender,
-  Createlocation,
   Debitdot,
   Email,
   LocationEllp,
-  Money,
-  Multiple,
-  Private,
-  Protect,
   SecurityCode,
-  Track,
   Valid,
 } from "../common/Icons";
 import { AccountData } from "../common/Helper";

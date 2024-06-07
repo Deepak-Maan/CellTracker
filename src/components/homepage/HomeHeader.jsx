@@ -30,7 +30,7 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="bg-homeHeader pb-28 relative bg-center min-h-screen bg-no-repeat lg:bg-[100%_100%] bg-cover">
+    <div className="bg-homeHeader pb-28 relative bg-center min-h-screen xl:max-h-[110vh] bg-no-repeat lg:bg-[100%_100%] bg-cover">
       <div className="container px-6 md:px-3 max-w-[1164px]">
         <nav className="pt-8 md:pt-2.5 ">
           <div className="max-w-[1164px] md:px-0 sm:px-3 mx-auto ">

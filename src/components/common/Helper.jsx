@@ -14,7 +14,6 @@ import {
   PhoneIcon,
   PrivateIcon,
   PuzzleIcon,
-  RightTick,
   SettingIcon,
   WorksLocationIcon,
   Quesmark,
@@ -27,7 +26,6 @@ import {
   Robot2,
   Tick,
 } from "./Icons";
-import SameBtn from "./SameBtn";
 
 // --------Works Data----------//
 export const WorksData = [
