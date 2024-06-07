@@ -10,7 +10,7 @@ const Companies = () => {
   return (
     <div
       id="Login"
-      className="bg-companies  bg-cover bg-center bg-no-repeat mb-10 -mt-1 relative"
+      className="bg-companies  bg-cover bg-center 2xl:pt-20 bg-no-repeat mb-10 -mt-1 relative"
     >
       <img
         src={toplayer}
@@ -20,12 +20,12 @@ const Companies = () => {
       <img
         src={btmlayer}
         alt="botmlayer"
-        className="absolute bottom-0 md:bottom-[-12%] 2xl:bottom-[-16%] w-full"
+        className="absolute bottom-0 md:bottom-[-12%] lg:bottom-[-8%] xl:bottom-[-12%] 2xl:bottom-[-16%] w-full"
       />
       <div className="containers px-3 custom_container mx-auto">
         <h2
           data-aos="zoom-in"
-          className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-28 sm:pb-20 pb-[65px] lg:pt-28 md:pt-[180px] sm:pt-[150px] pt-28"
+          className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-16 xl:pb-28 sm:pb-20 pb-[65px] lg:pt-28 xl:pt-[70px] md:pt-[180px] sm:pt-[150px] pt-18"
         >
           Join <span className="font-extrabold">70,000+ companies</span> doing
           time tracking the easy way
@@ -83,7 +83,7 @@ const Companies = () => {
                 {id === 1 && (
                   <div className="absolute xl:right-[13%] md:right-[17%] right-1/2 translate-x-1/2 top-[-29px]">
                     <SameBtn
-                      className="md:!py-[15px]  border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500 !font-normal text-2xl md:!px-[35px] py-3 px-4 capitalize !text-white  !bg-darkBlue"
+                      className="md:!py-[15px]  border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  !leading-lg1 duration-500 !font-normal !text-2xl md:!px-[35px] py-3 px-4 capitalize !text-white  !bg-darkBlue"
                       btnName="Most Popular"
                     />
                   </div>

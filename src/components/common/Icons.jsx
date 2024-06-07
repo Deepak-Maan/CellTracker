@@ -121,32 +121,24 @@ export const Logo2 = () => {
 };
 export const Linkedin = () => {
   return (
-  
-      <svg
-        className="w-[28px] h-[28px] md:w-[40px] md:h-[40px]"
-        viewBox="0 0 40 40"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-          x="0.5"
-          y="0.5"
-          width="39"
-          height="39"
-          rx="19.5"
-          stroke="#03045E"
-        />
-        <path
-          d="M14.9404 13C14.9402 13.5305 14.7292 14.0391 14.3539 14.4139C13.9787 14.7888 13.4699 14.9993 12.9394 14.999C12.409 14.9988 11.9004 14.7878 11.5255 14.4125C11.1506 14.0373 10.9402 13.5285 10.9404 12.998C10.9407 12.4676 11.1517 11.959 11.5269 11.5841C11.9022 11.2092 12.411 10.9988 12.9414 10.999C13.4719 10.9993 13.9805 11.2103 14.3554 11.5855C14.7302 11.9608 14.9407 12.4696 14.9404 13ZM15.0004 16.48H11.0004V29H15.0004V16.48ZM21.3204 16.48H17.3404V29H21.2804V22.43C21.2804 18.77 26.0504 18.43 26.0504 22.43V29H30.0004V21.07C30.0004 14.9 22.9404 15.13 21.2804 18.16L21.3204 16.48Z"
-          fill="#03045E"
-        />
-      </svg>
+    <svg
+    className="w-[28px] h-[28px] md:w-[34px] md:h-[34px] xl:w-[40px] xl:h-[40px]"
+    viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#03045E" />
+      <path
+        d="M14.9404 13C14.9402 13.5305 14.7292 14.0391 14.3539 14.4139C13.9787 14.7888 13.4699 14.9993 12.9394 14.999C12.409 14.9988 11.9004 14.7878 11.5255 14.4125C11.1506 14.0373 10.9402 13.5285 10.9404 12.998C10.9407 12.4676 11.1517 11.959 11.5269 11.5841C11.9022 11.2092 12.411 10.9988 12.9414 10.999C13.4719 10.9993 13.9805 11.2103 14.3554 11.5855C14.7302 11.9608 14.9407 12.4696 14.9404 13ZM15.0004 16.48H11.0004V29H15.0004V16.48ZM21.3204 16.48H17.3404V29H21.2804V22.43C21.2804 18.77 26.0504 18.43 26.0504 22.43V29H30.0004V21.07C30.0004 14.9 22.9404 15.13 21.2804 18.16L21.3204 16.48Z"
+        fill="#03045E"
+      />
+    </svg>
   );
 };
 export const Instagram = () => {
   return (
     <svg
-      className="w-[28px] h-[28px] md:w-[40px] md:h-[40px]"
+      className="w-[28px] h-[28px] md:w-[34px] md:h-[34px] xl:w-[40px] xl:h-[40px]"
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -162,8 +154,8 @@ export const Instagram = () => {
 export const Facebook = () => {
   return (
     <svg
-      className="w-[28px] h-[28px] md:w-[40px] md:h-[40px]"
-      viewBox="0 0 40 40"
+    className="w-[28px] h-[28px] md:w-[34px] md:h-[34px] xl:w-[40px] xl:h-[40px]"
+    viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -178,8 +170,8 @@ export const Facebook = () => {
 export const Twitter = () => {
   return (
     <svg
-      className="w-[28px] h-[28px] md:w-[40px] md:h-[40px]"
-      viewBox="0 0 40 40"
+    className="w-[28px] h-[28px] md:w-[34px] md:h-[34px] xl:w-[40px] xl:h-[40px]"
+    viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -583,7 +575,7 @@ export const DottedLine = () => {
 export const LocationEllp = () => {
   return (
     <svg
-      className="w-10 md:w-20 lg:w-[106px] h-10 md:h-20 lg:h-[113px]"
+      className="w-10 md:w-20 -z-10  lg:w-[86px] xl:w-[106px] h-10 md:h-20 lg:h-[93px] xl:h-[113px]"
       viewBox="0 0 106 113"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -988,7 +980,7 @@ export const Tick = () => {
 export const FooterLogo = () => {
   return (
     <svg
-      className="w-[221px]  cursor-pointer h-[29px] md:w-[259px] md:h-[36px]"
+      className="w-[221px]  cursor-pointer h-[29px]  md:w-[239px] md:h-[32px] xl:w-[259px] xl:h-[36px]"
       viewBox="0 0 259 36"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

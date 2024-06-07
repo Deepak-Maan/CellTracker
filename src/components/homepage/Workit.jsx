@@ -5,7 +5,7 @@ import SameBtn from "../common/SameBtn";
 
 const Workit = () => {
   return (
-    <div id="Work" className="pb-24 pt-5 md:pb-36 lg:pt-12 relative">
+    <div id="Work" className="pb-24 pt-5 md:pb-36 lg:pb-14 xl:pb-36 lg:pt-12 relative">
       <div className="container max-w-[1164px] relative z-20 ">
         <h1
           data-aos="zoom-in"
@@ -71,7 +71,7 @@ const Workit = () => {
       <span className="absolute left-0 top-[10%] md:top-[15%]">
         <LocationEllp />
       </span>
-      <span className="absolute z-30 right-0 rotate-180 top-[-15%]">
+      <span className="absolute z-30 right-0 rotate-180 top-[-7%]">
         <LocationEllp />
       </span>
       <span className="absolute z-30 right-0 rotate-180 bottom-[4%]">

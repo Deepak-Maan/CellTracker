@@ -32,11 +32,11 @@ const Advantages = () => {
               <div
                 className={`w-full sm:max-w-[271px] xl:w-[271px] mx-auto md:mx-0 h-full min-h-[184px] xl:h-[271px] sm:max-h-[253px] p-[20px] border-[2px] border-solid hover:border-darkBlue duration-300 border-[#03045E1A] shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl`}
               >
-                <div className="relative">
+                <div className="relative mb-[26px] md:mb-3">
                   <span className="relative z-20">{advantage.icon}</span>
                   <div className="absolute top-[51%] left-[-3.6%] bg-lightBlue benefits_bubble_bg translate-y-[-59%] z-10 w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
                 </div>
-                <p className="font-normal  text-xl lg:text-2xl leading-6 md:leading-[28.8px] text-darkBlue mt-1">
+                <p className="font-normal  text-xl lg:text-2xl leading-6 md:leading-[28.8px] text-darkBlue ">
                   {advantage.title}
                 </p>
                 <p className="text-sm md:text-base leading-6 font-normal text-darkGray  mt-1.5">
@@ -48,7 +48,7 @@ const Advantages = () => {
         </div>
         <div
           data-aos="zoom-in"
-          className="flex justify-center px-3 md:px-0 pt-10 lg:pt-20"
+          className="flex justify-center px-3 md:px-0 pt-10 lg:pt-16"
         >
           <SameBtn
             className=" bg-darkBlue text-white max-sm:w-full border border-darkBlue shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  duration-500"

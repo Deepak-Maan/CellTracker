@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import BackToTop from "./components/homepage/BackToTop";
-import Preload from "./components/homepage/Preload";
 import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
 import { useEffect, useState } from "react";
@@ -21,19 +20,11 @@ function App() {
   }, []);
   return (
     <>
-      {data ? (
-        <>
-          <Preload />
-        </>
-      ) : (
-        <>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/landing" element={<LandingPage />} />
-          </Routes>
-          <BackToTop />
-        </>
-      )}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/landing" element={<LandingPage />} />
+      </Routes>
+      <BackToTop />
     </>
   );
 }

@@ -40,23 +40,25 @@ const HomeHeader = () => {
               </a>
               <div className="flex items-center">
                 <ul
-                  className={`flex items-center gap-6  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
+                  className={`flex items-center gap-[14px]  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
                     navBar && "!left-0"
                   }`}
                 >
-                  {navData.map((obj, i) => (
-                    <li key={i}>
-                      <a
-                        href={obj.url}
-                        className="text-black  flex items-center gap-1.5 md:text-white text-nowrap text-base leading-xs1 font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
-                        onClick={handleLinkClick}
-                        aria-label="navClickbar"
-                      >
-                        {obj.Ques}
-                        {obj.name}
-                      </a>
-                    </li>
-                  ))}
+                  <div className="gap-6 flex md:flex-row flex-col items-center">
+                    {navData.map((obj, i) => (
+                      <li key={i}>
+                        <a
+                          href={obj.url}
+                          className="text-black  flex items-center gap-1.5 md:text-white text-nowrap text-base leading-xs1 font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                          onClick={handleLinkClick}
+                          aria-label="navClickbar"
+                        >
+                          {obj.Ques}
+                          {obj.name}
+                        </a>
+                      </li>
+                    ))}
+                  </div>
                   <button className="text-darkBlue shadow-[inset_18rem_0_0_0_#fff] hover:shadow-[inset_0_0_0_0]  duration-500 hidden md:block text-base leading-xs1 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px]   relative z-[1] after:absolute after:h-full after:w-1 after:top-0 after:skew-x-12 after:blur-[3px] overflow-hidden after:left-[-20%] after:bg-white">
                     Create an Account
                   </button>
@@ -98,7 +100,7 @@ const HomeHeader = () => {
               <div className="flex items-center gap-2">
                 <IndiaFlag />
                 <select
-                  className="outline-none text-sm leading-[23px] md:leading-[26px] md:text-base"
+                  className="outline-none cursor-pointer text-sm leading-[23px] md:leading-[26px] md:text-base"
                   name="number"
                   id="number"
                 >
@@ -140,7 +142,7 @@ const HomeHeader = () => {
                 src={headerMobile}
                 alt="mobile"
               />
-              <div className="p-2 md:p-[18px] absolute right-0 md:right-[1%] lg:right-[10%] xl:right-0 2xl:right-[-9%] bottom-[-2%] lg:bottom-[22%] xl:w-[280px] rounded-tl-xl rounded-br-xl bg-white">
+              <div className="p-2 md:p-[18px] shadow-[0px_16px_25.3px_0px_#00000014] absolute right-0 md:right-[1%] lg:right-[10%] xl:right-0 2xl:right-[-9%] bottom-[-2%] lg:bottom-[22%] xl:w-[280px] rounded-tl-xl rounded-br-xl bg-white">
                 <div className="flex justify-between">
                   <p className="text-xl md:text-2xl text-skyBlue font-bold leading-10">
                     Need help?

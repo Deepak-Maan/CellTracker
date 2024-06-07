@@ -12,7 +12,7 @@ const Newsletter = () => {
             className="lg:w-[53%] w-full flex justify-center"
           >
             <img
-              className="lg:max-w-[609px] sm:max-w-[445px] min-[360px]:max-w-[370px] lg:h-[689px] sm:h-[507px] min-[370px]:h-[420px] h-[380px] md:w-full -translate-y-[37%] md:-translate-y-[24%] lg:-mb-[281px] sm:-mb-[110px] -mb-[110px]"
+              className="lg:max-w-[609px] xl:ms-5 sm:max-w-[445px] min-[360px]:max-w-[370px] lg:h-[689px] sm:h-[507px] min-[370px]:h-[420px] h-[380px] md:w-full -translate-y-[37%] md:-translate-y-[24%] lg:-mb-[281px] sm:-mb-[110px] -mb-[110px]"
               src={PhoneNews}
               alt="newsletter_Phone"
             />

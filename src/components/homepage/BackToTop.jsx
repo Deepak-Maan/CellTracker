@@ -20,17 +20,19 @@ const BackToTop = () => {
     });
   };
   return (
-    <button
-      onClick={scrollToTop}
-      className={`fixed sm:bottom-12 bottom-4 hover:scale-110  right-4 sm:w-12 sm:h-12 w-9 h-9 bg-skyBlue shadow-[0_2px_20px_-9px_#fff] text-white flex justify-center items-center group rounded-full z-40 transition-all duration-300 ease-linear ${
-        isBackToTopVisible ? " translate-y-0" : " translate-y-[200%]"
-      }`}
-    >
-      <span className=" transition-all duration-300 group-hover:animate-bounce mt-2">
-        {" "}
-        <BackToTopIcon />
-      </span>{" "}
-    </button>
+    <div className="2xl:max-w-[1600px]">
+      <button
+        onClick={scrollToTop}
+        className={`fixed sm:bottom-12 bottom-4 hover:scale-110  right-4 sm:w-12 sm:h-12 w-9 h-9 bg-skyBlue shadow-[0_2px_20px_-9px_#fff] text-white flex justify-center items-center group rounded-full z-40 transition-all duration-300 ease-linear ${
+          isBackToTopVisible ? " translate-y-0" : " translate-y-[200%]"
+        }`}
+      >
+        <span className=" transition-all duration-300 group-hover:animate-bounce -mt-1">
+          {" "}
+          <BackToTopIcon />
+        </span>{" "}
+      </button>
+    </div>
   );
 };
 export default BackToTop;
