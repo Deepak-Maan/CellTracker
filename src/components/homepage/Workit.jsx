@@ -14,7 +14,7 @@ const Workit = () => {
           data-aos="zoom-in"
           className="text-2xl2 lg:text-5xl font-light   leading-8 md:leading-xl1 text-darkBlue mb-2 text-center"
         >
-          How it <span className=" font-extrabold">works</span>
+          How it <span className="font-extrabold">works</span>
         </h1>
         <p
           data-aos="zoom-in"

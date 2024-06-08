@@ -19,7 +19,6 @@ const HomePage = () => {
       <Companies />
       <AccountCreate />
       <Newsletter />
-      {/* <Footer /> */}
       <Footer footerLinks={homepageFooterLinks} socialMediaLinks={socialMediaLinks} />
     </>
   );

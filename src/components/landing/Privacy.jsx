@@ -14,7 +14,7 @@ const Privacy = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:gap-0 gap-[18px] sm:gap-6">
                     {PrivaryData.map((data, index) => (
                         <div key={index} data-aos="zoom-in" className='bg-lightGray p-[1px]  w-full mx-auto lg:max-w-[267px] h-full hover:bg-gradient-to-t from-[#00B5D8] to-[#000080] rounded-[4px]'>
-                            <div className=" lg:max-w-[267px] h-full group bg-white hover:bg-gradient-to-tr from-[#00B5D8] to-[#000080] rounded-[4px] pb-[13px] pt-7 ">
+                            <div className="lg:max-w-[267px] h-full group bg-white hover:bg-gradient-to-tr from-[#00B5D8] to-[#000080] rounded-[4px] pb-[13px] pt-7 ">
                                 <div className='md:w-[75px] w-[61px] border-l border-lightGray -ms-[1px] h-[57px] md:h-[70px] bg-lightOffBlue group-hover:bg-white flex items-center justify-center'>
                                     <div>{data.Icon}</div>
                                 </div>
