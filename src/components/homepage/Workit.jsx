@@ -23,7 +23,7 @@ const Workit = () => {
           Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi sit
           elit rhoncus vestibulum fames libero id.
         </p>
-        <div className="flex flex-row justify-center pt-14 items-center flex-wrap">
+        <div className="flex flex-row justify-center pt-4 md:pt-14  items-center flex-wrap">
           <div
             data-aos="zoom-in"
             className="lg:w-1/2  flex justify-center w-full "
@@ -41,7 +41,7 @@ const Workit = () => {
               <div
                 key={index}
                 data-aos="zoom-in"
-                className="p-5  border hover:border w-full max-sm:min-h-[327px]  shadow-[0px_16px_25.3px_0px_#00000014]  hover:border-darkBlue duration-500 md:max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] sm:h-[230px] md:h-auto"
+                className="p-5  border hover:border w-full  shadow-[0px_16px_25.3px_0px_#00000014]  hover:border-darkBlue duration-500 md:max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] sm:h-[230px] md:h-auto"
               >
                 <div className="relative">
                   <span className="relative z-20 ">{obj.Icon}</span>
@@ -50,7 +50,7 @@ const Workit = () => {
                 <p className=" text-xl md:text-2xl mt-[18px] text-darkBlue leading-7 font-normal pb-0 mb-1.5">
                   {obj.Heading}
                 </p>
-                <p className="text-sm md:text-base font-normal leading-6  text-darkGray pb-0">
+                <p className="text-sm md:text-base font-normal leading-5 md:leading-6  text-darkGray pb-0">
                   {obj.Description}
                 </p>
               </div>
