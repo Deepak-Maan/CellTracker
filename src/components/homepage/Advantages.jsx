@@ -48,10 +48,10 @@ const Advantages = () => {
         </div>
         <div
           data-aos="zoom-in"
-          className="flex justify-center px-3 md:px-0 pt-1 lg:pt-18"
+          className="flex justify-center px-3 md:px-0 lg:pt-18"
         >
           <CommonBtn
-            className="max-sm:w-full bg-darkBlue text-white  border mt-10 xl:mt-20 2xl:mt-20 border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white"
+            className="max-sm:w-full bg-darkBlue text-white  border mt-10 lg:mt-16 xl:mt-20 2xl:mt-20 border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white"
             btnName="Create your Account"
           />{" "}
         </div>
