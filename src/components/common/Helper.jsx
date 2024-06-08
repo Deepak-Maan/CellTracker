@@ -1,4 +1,3 @@
-import LandingPage from "../../pages/LandingPage";
 import {
   ContactsIcon,
   AccurateLocation,
@@ -26,9 +25,35 @@ import {
   Createlocation,
   Robot2,
   Tick,
+  Linkedin,
+  Instagram,
+  Facebook,
+  Twitter,
 } from "./Icons";
 
+// footer data
+export const homepageFooterLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#howWork", label: "Contact us" },
+  { href: "#features", label: "Found Phone" },
+];
+
+export const landingPageFooterLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#howWork", label: "How It Works" },
+  { href: "#features", label: "Features" },
+];
+
+export const socialMediaLinks = [
+  { href: "https://www.linkedin.com/login", label: "linkedin", Icon: Linkedin },
+  { href: "https://www.instagram.com/", label: "instagram", Icon: Instagram },
+  { href: "https://www.facebook.com/login/", label: "facebook", Icon: Facebook },
+  { href: "https://x.com/login", label: "twitter", Icon: Twitter },
+];
+
+
 // --------Works Data----------//
+
 export const WorksData = [
   {
     Icon: <ContactsIcon />,
@@ -58,7 +83,7 @@ export const navData = [
   },
   {
     name: "Log in",
-    url: "#Login" ,
+    url: "#Login",
   },
 ];
 
