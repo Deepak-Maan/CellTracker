@@ -26,15 +26,14 @@ const LandingHero = () => {
     <div>
       <div className="container mx-auto px-6 md:px-3 max-w-[1164px]">
         <nav>
-          <div className="max-w-[1164px] md:px-6  mx-auto pt-[27px]">
+          <div className="max-w-[1164px]  mx-auto pt-[27px]">
             <div className="flex justify-between items-center">
               <a href="/" className="relative z-[4]" aria-label="logo">
                 {navBar ? <Logo2 /> : <Logo />}
               </a>
               <ul
-                className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
-                  navBar && "!left-0"
-                }`}
+                className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${navBar && "!left-0"
+                  }`}
               >
                 {navLandingData.map((data, index) => (
                   <li key={index}>
