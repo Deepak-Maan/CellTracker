@@ -29,7 +29,7 @@ const Workit = () => {
             className="lg:w-1/2 flex justify-center w-full "
           >
             <img
-              className=" lg:max-w-[580px] xl:max-w-[710px]  relative z-20 xl:-ms-20  2xl:-ms-12 md:max-h-[656px] max-sm:min-h-[370px] "
+              className="lg:max-w-[580px] xl:max-w-[710px]  relative z-20 xl:-ms-20  2xl:-ms-12 md:max-h-[656px] max-sm:min-h-[370px] "
               src={workitMobile}
               alt="workitMobile"
             />

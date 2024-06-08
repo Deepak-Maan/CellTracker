@@ -8,7 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 function App() {
   useEffect(() => {
-    AOS.init({ once: true, duration: 2000 });
+    AOS.init({ once: true, duration: 1200 });
   }, []);
 
   const [data, setdata] = useState(true);

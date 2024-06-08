@@ -91,9 +91,9 @@ const AccountCreate = () => {
       <div className="container max-w-[1164px] relative ">
         <h1
           data-aos="zoom-in"
-          className=" text-2xl2 lg:text-5xl font-light   leading-8 md:leading-xl1 text-darkBlue mb-2 text-center"
+          className="text-2xl2 lg:text-5xl font-light   leading-8 md:leading-xl1 text-darkBlue mb-2 text-center"
         >
-          Create your <span className=" font-extrabold">account</span>
+          Create your <span className="font-extrabold">account</span>
         </h1>
         <p
           data-aos="zoom-in"
@@ -111,7 +111,7 @@ const AccountCreate = () => {
             </p>
             <div className="flex flex-col gap-6 md:gap-[30px] pb-10">
               {AccountData.map((account, index) => (
-                <div key={index} className=" flex items-center gap-5">
+                <div key={index} className="flex items-center gap-5">
                   <div className="relative">
                     <span className="relative z-20">{account.icon}</span>
                     <div className="absolute top-[55%] left-[-40%]  bg-lightBlue benefits_bubble_bg translate-y-[-58%] z-10 w-[38px] h-[30px]  md:w-[48px] md:h-[41px]"></div>
@@ -128,7 +128,7 @@ const AccountCreate = () => {
                 the payment page. Create an account to start a 24 hour trial
                 with full access to all our tools. The service can be cancelled
                 by the user at any time from within their account.
-                <Link className=" text-skyBlue ms-1 cursor-pointer">
+                <Link className="text-skyBlue ms-1 cursor-pointer">
                   View full terms.
                 </Link>
               </p>
