@@ -551,25 +551,14 @@ export const WorksLocationIcon = () => {
 };
 export const DottedLine = () => {
   return (
-    <svg
-      width="152"
-      height="19"
-      viewBox="0 0 152 19"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M7 9L143 9.00001"
-        stroke="#03045E"
-        strokeWidth="3"
-        strokeLinecap="round"
-        strokeLinejoin="8 8"
-      />
+    <svg width="152" height="19" viewBox="0 0 152 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7 9L143 9.00001" stroke="#03045E" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8" />
       <rect x="0.5" y="0.5" width="18" height="18" rx="9" fill="white" />
       <rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#03045E" />
       <rect x="133.5" y="0.5" width="18" height="18" rx="9" fill="white" />
       <rect x="133.5" y="0.5" width="18" height="18" rx="9" stroke="#03045E" />
     </svg>
+
   );
 };
 export const LocationEllp = () => {

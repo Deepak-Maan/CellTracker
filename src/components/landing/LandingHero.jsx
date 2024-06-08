@@ -73,7 +73,7 @@ const LandingHero = () => {
         </nav>
         <div
           id="home"
-          className="grid grid-cols-1 xl:grid-cols-2 pt-14 sm:pb-[76px]  md:pt-[83px]"
+          className="grid grid-cols-1 lg:grid-cols-2 pt-14 sm:pb-[76px]  md:pt-[83px]"
         >
           <div className="md:pt-[71px]">
             <h1 className="text-[32px] sm:text-4xl md:text-5xl leading-8 sm:leading-10 lg:leading-xxl font-extrabold text-white max-sm:text-center">
