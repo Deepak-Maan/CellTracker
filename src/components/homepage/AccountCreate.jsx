@@ -38,7 +38,7 @@ const AccountCreate = () => {
             <p className="leading-lg1 text-darkBlue sm:text-3xl2 text-2xl font-light mb-[26px]">
               Get a <span className="font-extrabold">24 hour</span> trial!
             </p>
-            <div className="flex flex-col gap-[30px] pb-10">
+            <div className="flex flex-col gap-6 md:gap-[30px] pb-10">
               {AccountData.map((account, index) => (
                 <div key={index} className=" flex items-center gap-5">
                   <div className="relative">
