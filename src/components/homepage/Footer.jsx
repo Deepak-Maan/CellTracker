@@ -7,6 +7,7 @@ import {
   LocationEllp,
   Twitter,
 } from "../common/Icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -47,44 +48,44 @@ const Footer = () => {
           <div className="flex gap-[18px] justify-center lg:justify-end sm:col-span-2 lg:col-span-1">
             <ul className="flex gap-[18px] justify-center ps-0 lg:justify-end">
               <li className="hover:-translate-y-1 duration-300">
-                <a
-                  href="https://www.linkedin.com/login"
+                <Link
+                  to="https://www.linkedin.com/login"
                   target="_blank"
                   aria-label="linkedin"
                   rel="noopener noreferrer"
                 >
                   <Linkedin />
-                </a>
+                </Link>
               </li>
               <li className="hover:-translate-y-1 duration-300">
-                <a
-                  href="https://www.instagram.com/"
+                <Link
+                  to="https://www.instagram.com/"
                   target="_blank"
                   aria-label="instagram"
                   rel="noopener noreferrer"
                 >
                   <Instagram />
-                </a>
+                </Link>
               </li>
               <li className="hover:-translate-y-1 duration-300">
-                <a
-                  href="https://www.facebook.com/login/"
+                <Link
+                  to="https://www.facebook.com/login/"
                   target="_blank"
                   aria-label="facebook"
                   rel="noopener noreferrer"
                 >
                   <Facebook />
-                </a>
+                </Link>
               </li>
               <li className="hover:-translate-y-1 duration-300">
-                <a
-                  href="https://x.com/login"
+                <Link
+                  to="https://x.com/login"
                   target="_blank"
                   aria-label="twitter"
                   rel="noopener noreferrer"
                 >
                   <Twitter />
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
