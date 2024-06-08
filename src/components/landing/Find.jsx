@@ -12,10 +12,10 @@ const Find = () => {
         <LocationEllp />
       </div>
       <div className="lg:pt-[132px] pt-24">
-        <div className=" max-w-[1164px] containder mx-auto px-6 md:px-3">
+        <div className="max-w-[1164px] containder mx-auto px-6 md:px-3">
           <h2
             data-aos="zoom-in"
-            className=" text-[28px] md:text-4xl lg:text-5xl leading-8 md:leading-10 lg:leading-xl1 font-light text-darkBlue  text-center"
+            className="text-[28px] md:text-4xl lg:text-5xl leading-8 md:leading-10 lg:leading-xl1 font-light text-darkBlue  text-center"
           >
             Find Anyone Anywhere{" "}
             <span className="font-extrabold block sm:inline">
@@ -35,7 +35,7 @@ const Find = () => {
               data-aos="zoom-in"
               src={MobileImg}
               alt="mobile-img"
-              className=" top-[74px] xl:top-[50px]  lg:absolute w-[213px] h-[319px] xl:w-[256px] xl:h-[386px] translate-x-7"
+              className="top-[74px] xl:top-[50px]  lg:absolute w-[213px] h-[319px] xl:w-[256px] xl:h-[386px] translate-x-7"
             />
             {trackerdata.map((data, index) => {
               return (
@@ -57,7 +57,7 @@ const Find = () => {
                     <div className="sm:min-w-[75px] sm:h-[70px] min-w-[61px] min-h-[57px] relative min-[1140px]:left-[-.5px] left-[-1.5px] border-l-[1px] border-l-black border-opacity-10 bg-lightOffBlue flex justify-center items-center">
                       {data.img}
                     </div>
-                    <p className=" font-normal text-black text-lg leading-[29.92px] lg:text-xl md:leading-8  max-w-[269px]">
+                    <p className="font-normal text-black text-lg leading-[29.92px] lg:text-xl md:leading-8  max-w-[269px]">
                       {data.description}
                     </p>
                   </div>

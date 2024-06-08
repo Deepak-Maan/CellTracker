@@ -48,7 +48,7 @@ const HomeHeader = () => {
                   <div className="gap-6 flex md:flex-row flex-col items-center">
                     {navData.map((obj, i) => (
                       <li key={i}>
-                        <a
+                        <Link
                           href={obj.url}
                           className="text-black  flex items-center gap-1.5 md:text-white text-nowrap text-base leading-xs1 font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                           onClick={handleLinkClick}
@@ -56,7 +56,7 @@ const HomeHeader = () => {
                         >
                           {obj.Ques}
                           {obj.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </div>

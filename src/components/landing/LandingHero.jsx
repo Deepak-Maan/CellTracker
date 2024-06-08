@@ -47,7 +47,7 @@ const LandingHero = () => {
                     </a>
                   </li>
                 ))}
-                <button className="  border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:bg-white hover:text-darkBlue     md:hidden bg-dark-blue text-base leading-7 bg-darkBlue font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue  duration-300  border-transparent border-2 w-full  ">
+                <button className="border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:bg-white hover:text-darkBlue     md:hidden bg-dark-blue text-base leading-7 bg-darkBlue font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue  duration-300  border-transparent border-2 w-full  ">
                   Log In
                 </button>
               </ul>
@@ -87,8 +87,8 @@ const LandingHero = () => {
               nunc cursus. Lacus ornare aliquet condimentum elementum elementum
               nisl nibh sed. Egestas aliquam id quam nunc.
             </p>
-            <div className=" max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
-              <div className=" flex items-center gap-2 ">
+            <div className="max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
+              <div className="flex items-center gap-2 ">
                 <IndiaFlag />
                 <select
                   className="outline-none cursor-pointer text-sm leading-[23px] md:leading-[26px] md:text-base"
@@ -120,10 +120,10 @@ const LandingHero = () => {
             </div>
           </div>
           <div className="relative xl:translate-x-20 pt-[68px] lg:pt-0">
-            <div className=" p-2 bg-lightSky rounded-[12px] max-w-[205px] w-full absolute bottom-0 right-0 overflow-hidden">
+            <div className="p-2 bg-lightSky rounded-[12px] max-w-[205px] w-full absolute bottom-0 right-0 overflow-hidden">
               <div className="flex items-center">
                 <Location />
-                <p className=" text-lg font-normal text-darkBlue leading-8">
+                <p className="text-lg font-normal text-darkBlue leading-8">
                   Geolocation found!
                 </p>
               </div>
@@ -133,7 +133,7 @@ const LandingHero = () => {
               <p className="text-black text-sm font-normal leading-5">
                 3 Succession Walk, Fish Island, London E3 2RX, United Kingdom
               </p>
-              <p className=" text-right text-xs font-light leading-4 text-black pt-3">
+              <p className="text-right text-xs font-light leading-4 text-black pt-3">
                 June 02,2024 17:34
               </p>
               <div className="-ms-[9px] -mt-5">

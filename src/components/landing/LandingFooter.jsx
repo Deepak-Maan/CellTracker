@@ -20,7 +20,7 @@ const LandingFooter = () => {
             <li>
               <a
                 href="#home"
-                className=" text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                className="text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
               >
                 Home
               </a>
@@ -28,7 +28,7 @@ const LandingFooter = () => {
             <li>
               <a
                 href="#howWork"
-                className=" text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                className="text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
               >
                 How It Works
               </a>
@@ -36,7 +36,7 @@ const LandingFooter = () => {
             <li>
               <a
                 href="#features"
-                className=" text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
+                className="text-sm sm:text-base font-normal leading-5 sm:leading-6 text-darkGray relative z-[1] after:w-0 after:bg-darkGray after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
               >
                 Features
               </a>

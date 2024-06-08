@@ -7,7 +7,7 @@ const Advantages = () => {
       <div className="container max-w-[1164px] relative z-20">
         <h1
           data-aos="zoom-in"
-          className=" text-2xl2  lg:text-5xl font-light leading-8 lg:leading-xl1 text-darkBlue mb-2 text-center"
+          className="text-2xl2  lg:text-5xl font-light leading-8 lg:leading-xl1 text-darkBlue mb-2 text-center"
         >
           Advantages of <span className="font-extrabold">Celltracker</span>
         </h1>

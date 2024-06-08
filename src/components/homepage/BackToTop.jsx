@@ -27,7 +27,7 @@ const BackToTop = () => {
           isBackToTopVisible ? " translate-y-0" : " translate-y-[200%]"
         }`}
       >
-        <span className=" transition-all duration-300 group-hover:animate-bounce -mt-1">
+        <span className="transition-all duration-300 group-hover:animate-bounce -mt-1">
           {" "}
           <BackToTopIcon />
         </span>{" "}
