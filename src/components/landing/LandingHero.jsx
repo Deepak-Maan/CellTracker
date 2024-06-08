@@ -1,32 +1,40 @@
 import React, { useState } from "react";
 import mobileImg from "../../assets/images/landingPage/headerMobileImg.webp";
-import {
-  IndiaFlag,
-  Location,
-  LocationEllipse,
-  LocationIcon,
-  Logo,
-  Logo2,
-} from "../common/Icons";
+import { Location, LocationEllipse, LocationIcon, Logo, Logo2 } from "../common/Icons";
 import { navLandingData } from "../common/Helper";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+
 const LandingHero = () => {
-  const [navBar, setnavBar] = useState(false);
-  function showNav() {
-    setnavBar(!navBar);
-  }
-  const closeNav = () => {
-    setnavBar(false);
+  const [navBar, setNavBar] = useState(false);
+
+  const showNav = () => {
+    setNavBar(!navBar);
   };
+
+  const closeNav = () => {
+    setNavBar(false);
+  };
+
   if (navBar) {
     document.body.classList.add("max-md:overflow-hidden");
   } else {
     document.body.classList.remove("max-md:overflow-hidden");
   }
+
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [, setCountryCode] = useState("91");
+
+  const handleOnChange = (value, country) => {
+    setPhoneNumber(value);
+    setCountryCode(country.dialCode);
+  };
+
   return (
     <div>
       <div className="container mx-auto px-6 md:px-3 max-w-[1164px]">
         <nav>
-          <div className="max-w-[1164px]  mx-auto pt-[27px]">
+          <div className="max-w-[1164px] mx-auto pt-[27px]">
             <div className="flex justify-between items-center">
               <a href="/" className="relative z-[4]" aria-label="logo">
                 {navBar ? <Logo2 /> : <Logo />}
@@ -76,44 +84,27 @@ const LandingHero = () => {
           className="grid grid-cols-1 lg:grid-cols-2 pt-14 sm:pb-[76px]  md:pt-[83px]"
         >
           <div className="md:pt-[71px]">
-            <h1 className="text-[32px] sm:text-4xl md:text-5xl leading-8 sm:leading-10 lg:leading-xxl font-extrabold text-white max-sm:text-center">
+            <h1 className="text-[32px] sm:text-4xl md:text-5xl leading-8 sm:leading-10 lg:leading-xxl font-extrabold text-white max-xl:text-center">
               <span className="xl:text-nowrap">Locate any phone,</span>{" "}
               <span className="font-light xl:text-nowrap">
                 anywhere, anytime
               </span>
             </h1>
-            <p className="text-sm sm:text-base font-normal leading-5 sm:leading-6 text-white pt-2 max-sm:text-center">
+            <p className="text-sm sm:text-base font-normal leading-5 sm:leading-6 text-white pt-2 max-xl:text-center max-lg:max-w-[550px] max-lg:mx-auto">
               Lorem ipsum dolor sit amet consectetur. Nisl vitae arcu volutpat
               nunc cursus. Lacus ornare aliquet condimentum elementum elementum
               nisl nibh sed. Egestas aliquam id quam nunc.
             </p>
-            <div className="max-lg:mx-auto bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
-              <div className="flex items-center gap-2 ">
-                <IndiaFlag />
-                <select
-                  className="outline-none cursor-pointer text-sm leading-[23px] md:leading-[26px] md:text-base"
-                  name="number"
-                  id="number"
-                >
-                  <option value="91" className="flex items-center gap-2 ">
-                    +91
-                  </option>
-                  <option value="01" className="flex items-center gap-2 ">
-                    +01
-                  </option>
-                  <option value="92" className="flex items-center gap-2 ">
-                    +03
-                  </option>
-                  <option value="02" className="flex items-center gap-2 ">
-                    +02
-                  </option>
-                  <option value="21" className="flex items-center gap-2 ">
-                    +04
-                  </option>
-                </select>
-              </div>
-              <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-              <button className="hover:border-white border-darkBlue group hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+            <div className="bg-white rounded shadow-inputNumber max-xl:mx-auto flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
+              <PhoneInput
+                country={'in'}
+                value={phoneNumber}
+                onChange={(phone, country) => handleOnChange(phone, country)}
+                inputClass="outline-none w-[35%] sm:w-1/2"
+                containerClass="phone-input-container"
+                buttonClass="country-code-dropdown"
+              />
+              <button className="hover:border-darkBlue border border-darkBlue group  hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
                 <LocationIcon />
                 Locate
               </button>
@@ -140,7 +131,7 @@ const LandingHero = () => {
                 <LocationEllipse />
               </div>
             </div>
-            <img src={mobileImg} alt="mobineImg" className="w-full" />
+            <img src={mobileImg} alt="mobineImg" className=" sm:w-[60%] mx-auto lg:w-full" />
           </div>
         </div>
       </div>

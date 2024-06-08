@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import headerMobile from "../../assets/images/homePage/headerMobile.webp";
 import headerWave from "../../assets/images/homePage/headerWave.webp";
 import CommonBtn from "../common/CommonBtn";
-import { IndiaFlag, LocationIcon, Logo2, Mic, Logo } from "../common/Icons";
+import { LocationIcon, Logo2, Mic, Logo } from "../common/Icons";
 import { navData } from "../common/Helper";
 import { Link } from "react-router-dom";
-
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 const HomeHeader = () => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [, setCountryCode] = useState("91");
+
+  const handleOnChange = (value, country) => {
+    setPhoneNumber(value);
+    setCountryCode(country.dialCode);
+  };
   const [navBar, setNavBar] = useState(false);
 
   const showNav = () => {
@@ -24,12 +32,7 @@ const HomeHeader = () => {
     document.body.classList.remove("max-md:overflow-hidden");
   }
 
-  const handleInputChange = (event) => {
-    const { value } = event.target;
-    const sanitizedValue = value.replace(/[^0-9]/g, "").slice(0, 10);
-    event.target.value = sanitizedValue;
-  };
-
+ 
   return (
     <div className="bg-homeHeader pb-28 relative bg-center xl:min-h-screen 2xl:min-h-[800px] bg-no-repeat lg:bg-[100%_100%] bg-cover">
       <div className="container px-6 md:px-3 max-w-[1164px]">
@@ -97,40 +100,16 @@ const HomeHeader = () => {
               Add phones to your account & track them when neededAdd phones to
               your account & track them when needed
             </p>
-            <div className="max-lg:mx-auto  bg-white rounded shadow-inputNumber flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
-              <div className="flex items-center gap-2">
-                <IndiaFlag />
-                <select
-                  className="outline-none cursor-pointer text-sm leading-[23px] md:leading-[26px] md:text-base"
-                  name="number"
-                  id="number"
-                >
-                  <option value="91" className="flex items-center gap-2">
-                    +91
-                  </option>
-                  <option value="01" className="flex items-center gap-2">
-                    +01
-                  </option>
-                  <option value="61" className="flex items-center gap-2">
-                    +61
-                  </option>
-                  <option value="02" className="flex items-center gap-2">
-                    +02
-                  </option>
-                  <option value="21" className="flex items-center gap-2">
-                    +04
-                  </option>
-                </select>
-              </div>
-              <label htmlFor="home"></label>
-              <input
-                id="home"
-                type="text"
-                maxLength={10}
-                onInput={handleInputChange}
-                className="outline-none w-[35%] sm:w-1/2 no-spinner"
+            <div className="bg-white rounded shadow-inputNumber max-xl:mx-auto flex items-center justify-between ps-2.5 max-w-[448px] mt-6">
+              <PhoneInput
+                country={"in"}
+                value={phoneNumber}
+                onChange={(phone, country) => handleOnChange(phone, country)}
+                inputClass="outline-none w-[35%] sm:w-1/2"
+                containerClass="phone-input-container"
+                buttonClass="country-code-dropdown"
               />
-              <button className="bg-darkBlue border-2 hover:border-white border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:text-darkBlue hover:bg-white  duration-500 -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1 ">
+              <button className="hover:border-darkBlue border border-darkBlue group  hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
                 <LocationIcon />
                 Locate
               </button>
@@ -139,7 +118,7 @@ const HomeHeader = () => {
           <div className="lg:w-6/12 pt-8 sm:pt-12 lg:pt-0 flex justify-center w-full">
             <div className="relative">
               <img
-                className="w-[339px] translate-x-[-15%] h-[353px] lg:w-full lg:h-full"
+                className="w-[339px] translate-x-[-15%] h-[335px] lg:w-full lg:h-full"
                 src={headerMobile}
                 alt="mobile"
               />

@@ -14,7 +14,7 @@ const Work = () => {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-y-[200px]">
                     {WorksData.map((data, index) => (
                         <div data-aos="zoom-in" key={index} className={`max-w-[267px] relative ${index === 0 ? "lg:mr-auto mx-auto" : index === 1 ? "lg:mx-auto mx-auto" : index === 2 ? "lg:ml-auto mx-auto sm:col-span-2 lg:col-span-1" : ""}`}>
-                            <div className={`absolute h-[14px] rotate-90 lg:rotate-0 sm:hidden lg:flex sm:top-[10%] ${index === 2 ? "lg:hidden !hidden" : index === 1 ? "bottom-[-55%] right-[20%] sm:right-[-60%] " : index === 0 ? "bottom-[-67%] right-[20%] sm:right-[-50%] " : ""}`}>
+                            <div className={`absolute h-[14px]  ${index === 2 ? "lg:hidden !hidden" : index === 1 ? "bottom-[-55%] sm:right-[90%] right-[20%] lg:right-[-60%] lg:top-[10%]   sm:top-[120%]  rotate-90 lg:rotate-0  " : index === 0 ? "bottom-[-67%]  sm:top-[10%] right-[20%] sm:right-[-50%] rotate-90 sm:rotate-0  " : ""}`}>
                                 <DottedLine />
                             </div>
                             <div className={`md:w-[75px] w-[61px] h-[57px] md:h-[70px] flex items-center bg-lightOffBlue justify-center mx-auto `}>
