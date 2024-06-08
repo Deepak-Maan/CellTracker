@@ -32,8 +32,9 @@ const LandingHero = () => {
                 {navBar ? <Logo2 /> : <Logo />}
               </a>
               <ul
-                className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${navBar && "!left-0"
-                  }`}
+                className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
+                  navBar && "!left-0"
+                }`}
               >
                 {navLandingData.map((data, index) => (
                   <li key={index}>
@@ -47,11 +48,11 @@ const LandingHero = () => {
                     </a>
                   </li>
                 ))}
-                <button className=" shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]    md:hidden bg-dark-blue text-base leading-7 bg-darkBlue font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue hover:bg-darkBlue duration-300  border-transparent border-2 w-full hover:border-darkBlue ">
+                <button className="  border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:bg-white hover:text-darkBlue     md:hidden bg-dark-blue text-base leading-7 bg-darkBlue font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue  duration-300  border-transparent border-2 w-full  ">
                   Log In
                 </button>
               </ul>
-              <button className="shadow-[inset_18rem_0_0_0_#fff] hover:shadow-[inset_0_0_0_0]  text-darkBlue max-md:hidden text-base leading-7 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px] duration-300">
+              <button className="text-darkBlue hover:shadow-[0px_1px_17.3px_1px_#fff] max-md:hidden text-base leading-7 font-semibold bg-white py-[14px] md:py-4 px-7 rounded-[4px] duration-300">
                 Log In
               </button>
               <button onClick={showNav} className="md:hidden relative z-[4]">
@@ -113,7 +114,7 @@ const LandingHero = () => {
                 </select>
               </div>
               <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-              <button className="shadow-[inset_18rem_0_0_0_#03045e] hover:shadow-[inset_0_0_0_0]  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+              <button className="hover:border-white border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
                 <LocationIcon />
                 Locate
               </button>
