@@ -313,7 +313,7 @@ export const Peoples = () => {
     </svg>
   );
 };
-export const Robot = () => {
+export const InstantLocation = () => {
   return (
     <svg
       width="24"
@@ -608,7 +608,7 @@ export const LocateLocation = () => {
     </svg>
   );
 };
-export const Robot2 = () => {
+export const Robot = () => {
   return (
     <svg
       width="24"

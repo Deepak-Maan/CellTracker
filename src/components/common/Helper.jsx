@@ -23,12 +23,12 @@ import {
   Money,
   Private,
   Createlocation,
-  Robot2,
   Tick,
   Linkedin,
   Instagram,
   Facebook,
   Twitter,
+  InstantLocation,
 } from "./Icons";
 
 // footer data
@@ -135,17 +135,16 @@ export const PrivaryData = [
 ];
 export const AdvantageData = [
   {
-    icon: <Robot />,
+    icon: <InstantLocation />,
     title: "Instant location lookups",
     description:
       "Check the location of your registered phones whenever you choose. Add up to 5 phones to your account.",
   },
   {
-    icon: <Robot2 />,
+    icon: <Robot />,
     title: "Android & iPhone compatible",
     description:
       "Our service works with any Android or iPhone device, and takes just minutes to set up.",
-    margintop: "[23px]",
   },
   {
     icon: <Setting />,
@@ -158,7 +157,6 @@ export const AdvantageData = [
     title: "Keep your family safe",
     description:
       "Keep track of your family using our tools. Know the your children or elderly relatives are safe.",
-    margintop: "[23px]",
   },
 ];
 export const AccountData = [

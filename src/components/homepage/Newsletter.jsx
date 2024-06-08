@@ -1,11 +1,11 @@
 import PhoneNews from "../../assets/images/homePage/findPhone.webp";
 import { LocationEllp } from "../common/Icons";
-import SameBtn from "../common/SameBtn";
+import CommonBtn from "../common/CommonBtn";
 
 const Newsletter = () => {
   return (
     <div id="FoundPhone" className="pt-16 relative mt-14 px-3 md:px-6 lg:px-0">
-      <div className="  container max-w-[1164px] pt-20 md:pt-0">
+      <div className="container max-w-[1164px] pt-20 md:pt-0">
         <div className="flex rounded-xl  lg:max-h-[391px] xl:bg-cover bg-center max-sm:h-[500px] bg-no-repeat bg-newsBg flex-row  flex-wrap items-center lg:pb-0 md:pb-20 sm:pb-16 pb-[46px]">
           <div
             data-aos="zoom-in"
@@ -19,17 +19,17 @@ const Newsletter = () => {
           </div>
           <div
             data-aos="zoom-in"
-            className=" lg:w-[36%] w-full flex -mt-20 md:mt-0 flex-col items-center"
+            className="lg:w-[36%] w-full flex -mt-20 md:mt-0 flex-col items-center"
           >
-            <h2 className="text-white text-center lg:pt-2 font-light leading-xl1 text-2xl2 md:text-5xl mb-3 md:mb-2">
+            <h2 className="text-center text-white  lg:pt-2 font-light leading-xl1 text-2xl2 md:text-5xl mb-3 md:mb-2">
               Find your <span className="font-extrabold">phone</span>
             </h2>
-            <p className=" text-sm md:text-base font-normal px-10 lg:px-0 text-center mx-auto mb-7 lg:mb-8 leading-6 text-white pb-0 max-w-[402px]">
+            <p className="text-sm md:text-base font-normal px-10 lg:px-0 text-center mx-auto mb-7 lg:mb-8 leading-6 text-white pb-0 max-w-[402px]">
               Fames tincidunt pellentesque nisl blandit at sit. Ullamcorper nisi
               sit elit rhoncus vestibulum fames libero id.
             </p>
-            <SameBtn
-              className=" hover:shadow-[0px_1px_17.3px_1px_#fff]  duration-500 bg-white w-[266px] md:w-auto px-10  text-darkBlue "
+            <CommonBtn
+              className="hover:shadow-[0px_1px_17.3px_1px_#fff]  duration-500 bg-white w-[266px] md:w-auto px-10  text-darkBlue "
               btnName="Start Now"
             />{" "}
           </div>

@@ -7,13 +7,13 @@ import Footer from '../components/common/Footer'
 import { landingPageFooterLinks, socialMediaLinks } from '../components/common/Helper'
 const LandingPage = () => {
     return (
-        <div>
+        <>
             <div className='bg-landingHeader bg-no-repeat bg-cover'><LandingHero /></div>
             <Privacy />
             <Find />
             <Work />
             <Footer footerLinks={landingPageFooterLinks} socialMediaLinks={socialMediaLinks} />
-        </div>
+        </>
     )
 }
 

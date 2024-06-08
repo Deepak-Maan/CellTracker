@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import headerMobile from "../../assets/images/homePage/headerMobile.webp";
 import headerWave from "../../assets/images/homePage/headerWave.webp";
-import SameBtn from "../common/SameBtn";
+import CommonBtn from "../common/CommonBtn";
 import { IndiaFlag, LocationIcon, Logo2, Mic, Logo } from "../common/Icons";
 import { navData } from "../common/Helper";
 import { Link } from "react-router-dom";
@@ -31,7 +31,7 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="bg-homeHeader pb-28 relative bg-center min-h-screen 2xl:min-h-[80vh] bg-no-repeat lg:bg-[100%_100%] bg-cover">
+    <div className="bg-homeHeader pb-28 relative bg-center xl:min-h-screen 2xl:min-h-[800px] bg-no-repeat lg:bg-[100%_100%] bg-cover">
       <div className="container px-6 md:px-3 max-w-[1164px]">
         <nav className="pt-8 md:pt-2.5 ">
           <div className="max-w-[1164px] md:px-0 sm:px-3 mx-auto ">
@@ -157,7 +157,7 @@ const HomeHeader = () => {
                   <br />
                   account and billing enquiries.
                 </p>
-                <SameBtn
+                <CommonBtn
                   className="bg-darkBlue border py-2 md:py-4 px-[18px] w-full border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue]  duration-500 hover:text-darkBlue hover:bg-white text-white md:w-full"
                   btnName="Customer Support"
                 />
