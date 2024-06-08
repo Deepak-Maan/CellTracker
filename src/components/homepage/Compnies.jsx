@@ -25,7 +25,7 @@ const Companies = () => {
       <div className="containers px-3 custom_container mx-auto">
         <h2
           data-aos="zoom-in"
-          className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-16 xl:pb-28 sm:pb-20 pb-[65px] lg:pt-28 xl:pt-[70px] md:pt-[180px] sm:pt-[150px] pt-28"
+          className="text-white lg:text-5xl sm:text-4xl px-6 md:px-0 text-2xl2 text-center font-light leading-8 md:leading-xl1 md:max-w-[664px] mx-auto lg:pb-16 xl:pb-28 sm:pb-20 pb-[65px] lg:pt-28 xl:pt-[170px] md:pt-[180px] sm:pt-[150px] pt-28"
         >
           Join <span className="font-extrabold">70,000+ companies</span> doing
           time tracking the easy way
