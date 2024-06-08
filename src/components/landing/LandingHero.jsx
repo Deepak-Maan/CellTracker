@@ -32,9 +32,8 @@ const LandingHero = () => {
                 {navBar ? <Logo2 /> : <Logo />}
               </a>
               <ul
-                className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
-                  navBar && "!left-0"
-                }`}
+                className={`flex items-center gap-[35px] duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:justify-start max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${navBar && "!left-0"
+                  }`}
               >
                 {navLandingData.map((data, index) => (
                   <li key={index}>
@@ -92,7 +91,7 @@ const LandingHero = () => {
               <div className=" flex items-center gap-2 ">
                 <IndiaFlag />
                 <select
-                  className="outline-none text-sm leading-[23px] md:leading-[26px] md:text-base"
+                  className="outline-none cursor-pointer text-sm leading-[23px] md:leading-[26px] md:text-base"
                   name="number"
                   id="number"
                 >
