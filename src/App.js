@@ -11,7 +11,7 @@ function App() {
     AOS.init({ once: true, duration: 1200 });
   }, []);
 
-  const [data, setdata] = useState(true);
+  const [, setdata] = useState(true);
   useEffect(() => {
     setdata(true);
     setTimeout(() => {

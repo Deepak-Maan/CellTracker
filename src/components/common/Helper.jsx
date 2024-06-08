@@ -83,7 +83,7 @@ export const navData = [
   },
   {
     name: "Log in",
-    url: "#Login",
+    url: "/landing",
   },
 ];
 

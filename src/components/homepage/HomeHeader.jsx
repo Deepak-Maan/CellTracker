@@ -32,7 +32,7 @@ const HomeHeader = () => {
     document.body.classList.remove("max-md:overflow-hidden");
   }
 
- 
+
   return (
     <div className="bg-homeHeader pb-28 relative bg-center xl:min-h-screen 2xl:min-h-[800px] bg-no-repeat lg:bg-[100%_100%] bg-cover">
       <div className="container px-6 md:px-3 max-w-[1164px]">
@@ -44,15 +44,14 @@ const HomeHeader = () => {
               </Link>
               <div className="flex items-center">
                 <ul
-                  className={`flex items-center gap-[14px]  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
-                    navBar && "!left-0"
-                  }`}
+                  className={`flex items-center gap-[14px]  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${navBar && "!left-0"
+                    }`}
                 >
                   <div className="gap-6 flex md:flex-row flex-col items-center">
                     {navData.map((obj, i) => (
                       <li key={i}>
                         <Link
-                          href={obj.url}
+                          to={obj.url}
                           className="text-black  flex items-center gap-1.5 md:text-white text-nowrap text-base leading-xs1 font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                           onClick={handleLinkClick}
                           aria-label="navClickbar"
