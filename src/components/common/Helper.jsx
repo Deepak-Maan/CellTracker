@@ -1,3 +1,4 @@
+import LandingPage from "../../pages/LandingPage";
 import {
   ContactsIcon,
   AccurateLocation,
@@ -57,7 +58,7 @@ export const navData = [
   },
   {
     name: "Log in",
-    url: "#Login",
+    url: "#Login" ,
   },
 ];
 
