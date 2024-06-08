@@ -39,8 +39,7 @@ const Find = () => {
             />
             {trackerdata.map((data, index) => {
               return (
-                <div
-                  data-aos="zoom-in"
+                <div key={index} data-aos="zoom-in"
                   className={`${index === 0
                     ? "sm:w-full mt-[47px] lg:mt-0 sm:justify-center max-sm:order-0 lg:justify-start lg:w-1/2 block"
                     : index === 1
