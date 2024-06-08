@@ -46,14 +46,14 @@ const LandingHero = () => {
               >
                 {navLandingData.map((data, index) => (
                   <li key={index}>
-                    <a
+                    <Link
                       onClick={closeNav}
-                      href={data.url}
+                      to={data.url}
                       className="text-black md:text-white  text-base leading-[26.59px] font-normal relative z-[1] after:w-0 after:bg-white after:h-[1.5px] after:bottom-0 after:left-[50%] after:duration-300 after:rounded-md after:absolute hover:after:left-0 hover:after:w-full"
                     >
                       {" "}
                       {data.name}{" "}
-                    </a>
+                    </Link>
                   </li>
                 ))}
                 <button className="border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:bg-white hover:text-darkBlue     md:hidden bg-dark-blue text-base leading-7 bg-darkBlue font-semibold text-white py-4 px-7 rounded-[4px] hover:text-dark-blue  duration-300  border-transparent border-2 w-full  ">
