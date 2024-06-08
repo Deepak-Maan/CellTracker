@@ -158,7 +158,7 @@ const HomeHeader = () => {
                   account and billing enquiries.
                 </p>
                 <SameBtn
-                  className="bg-darkBlue border border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue]  duration-500 hover:text-darkBlue hover:bg-white text-white md:w-full"
+                  className="bg-darkBlue border py-2 md:py-4 px-[18px] w-full border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue]  duration-500 hover:text-darkBlue hover:bg-white text-white md:w-full"
                   btnName="Customer Support"
                 />
               </div>
@@ -167,7 +167,7 @@ const HomeHeader = () => {
         </div>
       </div>
       <img
-        className="absolute w-full  bottom-0 md:bottom-[-8%] 2xl:bottom-[-24%] z-0"
+        className="absolute w-full  -bottom-1 md:bottom-[-8%] 2xl:bottom-[-24%] z-0"
         src={headerWave}
         alt="wave"
       />

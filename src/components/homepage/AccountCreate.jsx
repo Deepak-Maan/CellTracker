@@ -91,7 +91,7 @@ const AccountCreate = () => {
                   <label className="capitalize text-darkBlue font-normal sm:text-base text-sm  leading-normal ">
                     Your Address
                   </label>
-                  <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA  rounded flex items-center mt-2">
+                  <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA  rounded flex items-center mt-1.5 md:mt-2">
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <AddressIcon />
                     </div>
@@ -111,7 +111,7 @@ const AccountCreate = () => {
                   <label className="capitalize text-darkBlue font-normal sm:text-base text-sm  leading-normal ">
                     Email Address
                   </label>
-                  <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA  rounded flex items-center mt-2">
+                  <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA  rounded flex items-center mt-1.5 md:mt-2">
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <Email />
                     </div>
@@ -128,7 +128,7 @@ const AccountCreate = () => {
                   <label className="capitalize text-darkBlue font-normal sm:text-base text-sm leading-normal ">
                     Card Number (Visa or Mastercard)
                   </label>
-                  <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA  rounded flex items-center mt-2">
+                  <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA  rounded flex items-center mt-1.5 md:mt-2">
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <Valid />
                     </div>
@@ -147,7 +147,7 @@ const AccountCreate = () => {
                     <label className="capitalize text-darkBlue font-normal sm:text-base text-sm leading-normal ">
                       Expiry Date
                     </label>
-                    <div className="border border-solid border-lightBlueEb max-sm:h-[45px]  bg-lightGrayFA rounded flex items-center mt-2">
+                    <div className="border border-solid border-lightBlueEb max-sm:h-[45px]  bg-lightGrayFA rounded flex items-center mt-1.5 md:mt-2">
                       <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                         <Calender />
                       </div>
@@ -164,7 +164,7 @@ const AccountCreate = () => {
                     <label className="capitalize text-darkBlue font-normal sm:text-base text-sm leading-normal ">
                       Card Security Code
                     </label>
-                    <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA   rounded flex items-center mt-2">
+                    <div className="border border-solid border-lightBlueEb max-sm:h-[45px] bg-lightGrayFA   rounded flex items-center mt-1.5 md:mt-2">
                       <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                         <SecurityCode />
                       </div>

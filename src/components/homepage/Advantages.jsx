@@ -3,7 +3,7 @@ import { AdvantageData } from "../common/Helper";
 import { LocationEllp } from "../common/Icons";
 const Advantages = () => {
   return (
-    <div id="Advantage" className="pb-14 mt-[-3px] pt-16 relative">
+    <div id="Advantage" className="pb-14 mt-[-3px] pt-[18px] relative">
       <div className="container max-w-[1164px] relative z-20">
         <h1
           data-aos="zoom-in"

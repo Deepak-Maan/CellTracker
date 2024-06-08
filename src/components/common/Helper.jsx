@@ -62,25 +62,25 @@ export const navData = [
 ];
 
 export const joinCompanies = [
-    {
-      description: "Ideal for freelancers and solopreneurs",
-      tick: <Tick />,
-      seat: "1 seat",
-      projects: "2 projects",
-      priceperseat: "$0",
-      billed: "free forever",
-      btnName: "Start your free trial",
-    },
-    {
-      description: "Perfect for teams, startups, and growing businesses.",
-      tick: <Tick />,
-      seat: "Unlimited seats",
-      projects: "Unlimited projects",
-      priceperseat: "$10.80",
-      billed: "per seat/month (billed annually)",
-      btnName: "30-Day Free Trial",
-    },
-  ];
+  {
+    description: "Ideal for freelancers and solopreneurs",
+    tick: <Tick />,
+    seat: "1 seat",
+    projects: "2 projects",
+    priceperseat: "$0",
+    billed: "free forever",
+    btnName: "Start your free trial",
+  },
+  {
+    description: "Perfect for teams, startups, and growing businesses.",
+    tick: <Tick />,
+    seat: "Unlimited seats",
+    projects: "Unlimited projects",
+    priceperseat: "$10.80",
+    billed: "per seat/month (billed annually)",
+    btnName: "30-Day Free Trial",
+  },
+];
 export const PrivaryData = [
   {
     Icon: <PuzzleIcon />,
@@ -173,7 +173,7 @@ export const workitData = [
     Icon: <AccurateLocation />,
     Heading: "Accurate location info for any phone on any network.",
     Description:
-      "Instantly track the location of a mobile phone at any time. No apps, no downloads, Locateaphone.com works with any Android or iPhone device. Locateaphone.com uses a range of different tools to find the location of a phone. Our unique phone location walkthrough process will determine the best tools to use for each situation.",
+      "Instantly track the location of a mobile  at any time. No apps, no downloads, Locateaphone.com works with any Android or iPhone device. Locateaphone.com uses a range of different tools to find the location of a phone. Our unique phone location walkthrough process will determine the best tools to use for each situation.",
   },
 ];
 export const navLandingData = [

@@ -41,7 +41,7 @@ const Workit = () => {
               <div
                 key={index}
                 data-aos="zoom-in"
-                className="p-5  border hover:border w-full  shadow-[0px_16px_25.3px_0px_#00000014]  hover:border-darkBlue duration-300 md:max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] sm:h-[230px] md:h-auto"
+                className="p-5  border hover:border w-full max-sm:min-h-[327px]  shadow-[0px_16px_25.3px_0px_#00000014]  hover:border-darkBlue duration-500 md:max-w-[536px] mb-[18px] border-lightGray2  rounded-xl h-[303px] sm:h-[230px] md:h-auto"
               >
                 <div className="relative">
                   <span className="relative z-20 ">{obj.Icon}</span>
