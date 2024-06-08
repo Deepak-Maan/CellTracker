@@ -40,9 +40,8 @@ const HomeHeader = () => {
               </a>
               <div className="flex items-center">
                 <ul
-                  className={`flex items-center gap-[14px]  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
-                    navBar && "!left-0"
-                  }`}
+                  className={`flex items-center gap-[14px]  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${navBar && "!left-0"
+                    }`}
                 >
                   <div className="gap-6 flex md:flex-row flex-col items-center">
                     {navData.map((obj, i) => (
@@ -138,7 +137,7 @@ const HomeHeader = () => {
           <div className="lg:w-6/12 pt-8 sm:pt-12 lg:pt-0 flex justify-center w-full">
             <div className="relative">
               <img
-                className="w-[339px] translate-x-[-15%] h-[353px] lg:w-full lg:h-full"
+                className="w-[339px] translate-x-[-15%] h-[335px] lg:w-full lg:h-full"
                 src={headerMobile}
                 alt="mobile"
               />
