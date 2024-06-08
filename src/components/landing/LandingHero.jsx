@@ -23,7 +23,7 @@ const LandingHero = () => {
   }
 
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [setCountryCode] = useState("91");
+  const [, setCountryCode] = useState("91");
 
   const handleOnChange = (value, country) => {
     setPhoneNumber(value);
@@ -104,7 +104,7 @@ const LandingHero = () => {
                 containerClass="phone-input-container"
                 buttonClass="country-code-dropdown"
               />
-              <button className="hover:border-white border-darkBlue group hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+              <button className="hover:border-darkBlue border border-darkBlue group  hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
                 <LocationIcon />
                 Locate
               </button>
