@@ -1,9 +1,9 @@
-import SameBtn from "../common/SameBtn";
+import CommonBtn from "../common/CommonBtn";
 import { AdvantageData } from "../common/Helper";
 import { LocationEllp } from "../common/Icons";
 const Advantages = () => {
   return (
-    <div id="Advantage" className="pb-14 mt-[-3px] pt-[18px] relative">
+    <div id="Advantage" className="pb-14 pt-6  md:pt-[18px] relative">
       <div className="container max-w-[1164px] relative z-20">
         <h1
           data-aos="zoom-in"
@@ -30,7 +30,7 @@ const Advantages = () => {
               }`}
             >
               <div
-                className={`w-full sm:max-w-[271px] xl:w-[271px] mx-auto md:mx-0 h-full min-h-[184px] xl:h-[271px] sm:max-h-[253px] p-[20px] border-[2px] border-solid hover:border-darkBlue duration-300 border-[#03045E1A] shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl`}
+                className={`w-full sm:w-full xl:w-[271px] mx-auto md:mx-0 h-full min-h-[184px] xl:h-[271px] sm:max-h-[253px] p-[20px] border-[2px] border-solid hover:border-darkBlue duration-300 border-[#03045E1A] shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl`}
               >
                 <div className="relative mb-[26px] md:mb-3">
                   <span className="relative z-20">{advantage.icon}</span>
@@ -48,10 +48,10 @@ const Advantages = () => {
         </div>
         <div
           data-aos="zoom-in"
-          className="flex justify-center px-3 md:px-0 pt-10 lg:pt-16"
+          className="flex justify-center px-3 md:px-0 pt-1 lg:pt-18"
         >
-          <SameBtn
-            className=" bg-darkBlue text-white max-sm:w-full border border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white"
+          <CommonBtn
+            className="max-sm:w-full bg-darkBlue text-white  border mt-10 xl:mt-20 2xl:mt-20 border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white"
             btnName="Create your Account"
           />{" "}
         </div>

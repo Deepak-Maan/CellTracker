@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import {
   AddressIcon,
   Calender,
@@ -7,14 +8,84 @@ import {
   SecurityCode,
   Valid,
 } from "../common/Icons";
+import InputMask from "react-input-mask";
 import { AccountData } from "../common/Helper";
-
-import visa from "../../assets/svg/Visa.svg";
-import masterCard from "../../assets/svg/MasterCard.svg";
-import SameBtn from "../common/SameBtn";
+import visa from "../../assets/images/svg/Visa.svg";
+import masterCard from "../../assets/images/svg/MasterCard.svg";
+import CommonBtn from "../common/CommonBtn";
 import { Link } from "react-router-dom";
 
 const AccountCreate = () => {
+  const [formData, setFormData] = useState({
+    address: "",
+    email: "",
+    cardNumber: "",
+    expiryDate: "",
+    securityCode: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleInputChange = (e) => {
+    const { id, value } = e.target;
+
+    if (id === "securityCode") {
+      if (value.length > 4) return;
+    }
+    if (id === "cardNumber") {
+      if (value.length > 16) return;
+    }
+
+    setFormData({ ...formData, [id]: value });
+  };
+
+  const validate = () => {
+    let newErrors = {};
+
+    if (!formData.address) {
+      newErrors.address = "Address is required";
+    }
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email address is invalid";
+    }
+
+    if (!formData.cardNumber) {
+      newErrors.cardNumber = "Card number is required";
+    } else if (formData.cardNumber.replace(/\s+/g, "").length !== 16) {
+      newErrors.cardNumber = "Card number must be 16 digits";
+    }
+
+    if (!formData.expiryDate) {
+      newErrors.expiryDate = "Expiry date is required";
+    } else if (!/^\d{2}\/\d{2}$/.test(formData.expiryDate)) {
+      newErrors.expiryDate = "Expiry date is invalid";
+    }
+
+    if (!formData.securityCode) {
+      newErrors.securityCode = "Security code is required";
+    } else if (
+      formData.securityCode.length < 3 ||
+      formData.securityCode.length > 4
+    ) {
+      newErrors.securityCode = "Security code must be 3 or 4 digits";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate()) {
+      console.log("Form submitted successfully");
+    } else {
+      console.log("Form validation failed");
+    }
+  };
+
   return (
     <div id="contact" className="pb-14 pt-5 md:pb-32 z-[2]  lg:pt-36 relative">
       <div className="container max-w-[1164px] relative ">
@@ -30,10 +101,10 @@ const AccountCreate = () => {
         >
           Join now and protect your family's phones
         </p>
-        <div className="flex flex-row items-center flex-wrap lg:pt-[72px] sm:pt-[50px] pt-[33.7px] gap-[37px] xl:gap-0">
+        <div className="flex flex-row items-center flex-wrap lg:pt-[72px] sm:pt-[50px] pt-[33.7px] gap-5 lg:gap-[37px] xl:gap-0">
           <div
             data-aos="zoom-in"
-            className="lg:w-5/12  w-full flex flex-col justify-start items-start sm:justify-center sm:items-center lg:justify-start lg:items-start  ps-3 lg:ps-5 xl:ps-0"
+            className="md:w-5/12  w-full flex flex-col justify-start items-start  ps-3 lg:ps-5 xl:ps-0"
           >
             <p className="leading-lg1 text-darkBlue sm:text-3xl2 text-2xl font-light mb-[26px]">
               Get a <span className="font-extrabold">24 hour</span> trial!
@@ -51,29 +122,29 @@ const AccountCreate = () => {
                 </div>
               ))}
             </div>
-            <div className="sm:p-[18px]  p-6 rounded-xl shadow-[0px_0px_9.5px_0px_#00000014] lg:max-w-[424px] max-w-[560px]">
+            <div className="sm:p-[18px]  p-6 rounded-xl shadow-[0px_0px_9.5px_0px_#00000014] max-md:mx-auto lg:max-w-[424px] max-w-[560px]">
               <p className="text-center px-2 md:px-0 sm:text-base text-sm leading-normal font-normal  text-darkGray">
                 Terms: Users must be 16 or over. Pricing options are shown on
                 the payment page. Create an account to start a 24 hour trial
                 with full access to all our tools. The service can be cancelled
                 by the user at any time from within their account.
-                <Link className=" text-skyBlue cursor-pointer">
+                <Link className=" text-skyBlue ms-1 cursor-pointer">
                   View full terms.
                 </Link>
               </p>
             </div>
           </div>
-          <div className="xl:w-7/12 xl:-ms-4 lg:w-6/12 px-3 z-20 md:px-0 relative  w-full">
+          <div className="xl:w-7/12 xl:-ms-4 md:w-6/12 px-3 z-20 md:px-0 relative  w-full">
             <div
               data-aos="zoom-in"
               className="pb-9 border border-solid  z-20 relative shadow-[0px_16px_25.3px_0px_#00000014] rounded-xl"
             >
               <div className="bg-darkBlue px-5 relative  z-30 py-6  md:py-5 rounded-tl-xl  rounded-tr-xl flex justify-between">
-                <p className="capitalize text-white md:text-3xl2 text-2xl leading-sm1  flex gap-3 items-center">
+                <p className="capitalize text-white lg:text-3xl2 text-2xl leading-sm1  flex gap-3 items-center">
                   <Debitdot />
                   Debit/Credit Card
                 </p>
-                <div className="flex sm:gap-[34px] gap-[6px] items-center">
+                <div className="flex sm:gap-[34px] md:gap-2 lg:gap-[6px] items-center">
                   <img
                     src={visa}
                     alt="visa"
@@ -86,7 +157,10 @@ const AccountCreate = () => {
                   />
                 </div>
               </div>
-              <form className="sm:pt-[30px] pt-[42px] sm:px-6 px-2" action="">
+              <form
+                className="sm:pt-[30px] pt-[42px] sm:px-6 px-2"
+                onSubmit={handleSubmit}
+              >
                 <div className="mb-5">
                   <label className="capitalize text-darkBlue font-normal sm:text-base text-sm  leading-normal ">
                     Your Address
@@ -95,18 +169,23 @@ const AccountCreate = () => {
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <AddressIcon />
                     </div>
-                    <label htmlFor="Address"></label>
+                    <label htmlFor="address"></label>
                     <input
-                      id="Address"
+                      id="address"
                       type="text"
                       placeholder="Address Line 1"
+                      value={formData.address}
+                      onChange={handleInputChange}
                       className="sm:px-[14px]  pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm font-normal sm:text-base text-sm text-darkBlue leading-normal w-full outline-none bg-transparent"
                     />
                   </div>
-                  <p className="mt-1 text-whiteGray sm:text-base text-sm  font-normal leading-normal">
-                    Our enter address manually
-                  </p>
+                  {errors.address && (
+                    <p className="mt-1 text-red-600 sm:text-base text-sm  font-normal leading-normal">
+                      {errors.address}
+                    </p>
+                  )}
                 </div>
+
                 <div className="mb-5">
                   <label className="capitalize text-darkBlue font-normal sm:text-base text-sm  leading-normal ">
                     Email Address
@@ -115,15 +194,23 @@ const AccountCreate = () => {
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <Email />
                     </div>
-                    <label htmlFor="Email"></label>
+                    <label htmlFor="email"></label>
                     <input
-                      id="Email"
+                      id="email"
                       type="text"
                       placeholder="Email Address"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       className="sm:px-[14px] pl-5  capitalize placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
                     />
                   </div>
+                  {errors.email && (
+                    <p className="mt-1 text-red-600 sm:text-base text-sm  font-normal leading-normal">
+                      {errors.email}
+                    </p>
+                  )}
                 </div>
+
                 <div className="mb-5">
                   <label className="capitalize text-darkBlue font-normal sm:text-base text-sm leading-normal ">
                     Card Number (Visa or Mastercard)
@@ -132,34 +219,51 @@ const AccountCreate = () => {
                     <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                       <Valid />
                     </div>
-                    <label htmlFor="Card"></label>
+                    <label htmlFor="cardNumber"></label>
                     <input
-                      id="Card"
-                      type="number"
-                      maxLength={16}
+                      id="cardNumber"
+                      type="text"
+                      pattern="\d{16}"
                       placeholder="Valid Card Number"
-                      className="sm:px-[14px] pl-5  capitalize placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
+                      value={formData.cardNumber}
+                      onChange={handleInputChange}
+                      className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm font-normal sm:text-base text-sm text-darkBlue leading-normal w-full outline-none bg-transparent"
                     />
                   </div>
+                  {errors.cardNumber && (
+                    <p className="mt-1 text-red-600 sm:text-base text-sm  font-normal leading-normal">
+                      {errors.cardNumber}
+                    </p>
+                  )}
                 </div>
+
                 <div className="sm:mb-[46px] mb-[38px] flex gap-[17px]">
                   <div className="lg:max-w-[307px] w-full">
                     <label className="capitalize text-darkBlue font-normal sm:text-base text-sm leading-normal ">
                       Expiry Date
                     </label>
+
                     <div className="border border-solid border-lightBlueEb max-sm:h-[45px]  bg-lightGrayFA rounded flex items-center mt-1.5 md:mt-2">
                       <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                         <Calender />
                       </div>
-                      <label htmlFor="month"></label>
-                      <input
-                        id="month"
-                        type="number"
+                      <label htmlFor="expiryDate"></label>
+                      <InputMask
+                        id="expiryDate"
+                        mask="99/99"
                         placeholder="MM/YY"
-                        className="sm:px-[14px] pl-5  placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base !placeholder:text-sm capitalize font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
+                        value={formData.expiryDate}
+                        onChange={handleInputChange}
+                        className="sm:px-[14px] pl-5 placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base !placeholder:text-sm capitalize font-normal sm:text-base text-sm text-darkBlue leading-normal w-full outline-none bg-transparent"
                       />
                     </div>
+                    {errors.expiryDate && (
+                      <p className="mt-1 text-red-600 sm:text-base text-sm  font-normal leading-normal">
+                        {errors.expiryDate}
+                      </p>
+                    )}
                   </div>
+
                   <div className="lg:max-w-[307px] w-full">
                     <label className="capitalize text-darkBlue font-normal sm:text-base text-sm leading-normal ">
                       Card Security Code
@@ -168,18 +272,26 @@ const AccountCreate = () => {
                       <div className="px-3 py-[14px] bg-lightGrayED flex items-center justify-center">
                         <SecurityCode />
                       </div>
-                      <label htmlFor="ex"></label>
+                      <label htmlFor="securityCode"></label>
                       <input
-                        id="ex"
+                        id="securityCode"
                         type="number"
                         maxLength={4}
                         placeholder="E.x @ 0123"
+                        value={formData.securityCode}
+                        onChange={handleInputChange}
                         className="sm:px-[14px] pl-5  placeholder:text-darkBlue placeholder:font-normal placeholder:sm:text-base placeholder:text-sm capitalize font-normal sm:text-base text-sm  text-darkBlue leading-normal w-full outline-none bg-transparent"
                       />
                     </div>
+                    {errors.securityCode && (
+                      <p className="mt-1 text-red-600 sm:text-base text-sm  font-normal leading-normal">
+                        {errors.securityCode}
+                      </p>
+                    )}
                   </div>
                 </div>
-                <SameBtn
+
+                <CommonBtn
                   btnName="Buy Now (50C)"
                   className="capitalize border-darkBlue hover:text-darkBlue hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue] duration-500 hover:border-white text-white px-0 bg-darkBlue w-full"
                 />
