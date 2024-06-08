@@ -113,7 +113,7 @@ const LandingHero = () => {
                 </select>
               </div>
               <input type="tell" className="outline-none w-[35%] sm:w-1/2" />
-              <button className="hover:border-white border-darkBlue hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
+              <button className="hover:border-white border-darkBlue group hover:shadow-[0px_1px_17.3px_1px_darkBlue] hover:text-darkBlue hover:bg-white  bg-darkBlue -me-[1px] rounded font-semibold text-sm md:text-base group text-white py-[13.5px] px-[22.2px] flex items-center gap-1  duration-300 ">
                 <LocationIcon />
                 Locate
               </button>
