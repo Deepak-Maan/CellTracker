@@ -2,8 +2,8 @@ import React from "react";
 // import { joinCompanies } from "./";
 import { joinCompanies } from "../common/Helper";
 
-import toplayer from "../../assets/images/homePage/company_Top.webp";
-import btmlayer from "../../assets/images/homePage/company_Btm.webp";
+import toplayer from "../../assets/images/homePage/companyTop.webp";
+import btmlayer from "../../assets/images/homePage/companyBtm.webp";
 import SameBtn from "../common/SameBtn";
 
 const Companies = () => {
