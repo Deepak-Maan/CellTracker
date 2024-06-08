@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import headerMobile from "../../assets/images/homePage/header_mobile.webp";
+import headerMobile from "../../assets/images/homePage/headerMobile.webp";
 import headerWave from "../../assets/images/homePage/headerWave.webp";
 import SameBtn from "../common/SameBtn";
 import { IndiaFlag, LocationIcon, Logo2, Mic, Logo } from "../common/Icons";
 import { navData } from "../common/Helper";
+import { Link } from "react-router-dom";
 
 const HomeHeader = () => {
   const [navBar, setNavBar] = useState(false);
@@ -30,14 +31,14 @@ const HomeHeader = () => {
   };
 
   return (
-    <div className="bg-homeHeader pb-28 relative bg-center min-h-screen xl:max-h-[110vh] bg-no-repeat lg:bg-[100%_100%] bg-cover">
+    <div className="bg-homeHeader pb-28 relative bg-center min-h-screen 2xl:min-h-[80vh] bg-no-repeat lg:bg-[100%_100%] bg-cover">
       <div className="container px-6 md:px-3 max-w-[1164px]">
         <nav className="pt-8 md:pt-2.5 ">
           <div className="max-w-[1164px] md:px-0 sm:px-3 mx-auto ">
             <div className="flex justify-between items-center">
-              <a href="/" className="relative z-[4]" aria-label="logo">
+              <Link to="/" className="relative z-[4]" aria-label="logo">
                 {navBar ? <Logo2 /> : <Logo />}
-              </a>
+              </Link>
               <div className="flex items-center">
                 <ul
                   className={`flex items-center gap-[14px]  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${
