@@ -8,6 +8,7 @@ body {
 * {
   scroll-behavior: smooth !important;
 }
+
 ::-webkit-scrollbar {
   width: 4px;
   background: skyblue;
@@ -16,6 +17,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: darkblue;
 }
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -88,4 +90,16 @@ input[type="number"]::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+/* input modification */
+.react-tel-input .flag-dropdown {
+  border: none !important;
+  background-color: white !important;
+}
+
+.react-tel-input .form-control {
+  border: none !important;
+  width: 100% !important;
+  max-width: 448px !important;
 }
