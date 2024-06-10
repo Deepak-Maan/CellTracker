@@ -32,9 +32,8 @@ const HomeHeader = () => {
     document.body.classList.remove("max-md:overflow-hidden");
   }
 
-
   return (
-    <div className="bg-homeHeader pb-28 relative bg-center xl:min-h-screen 2xl:min-h-[800px] bg-no-repeat lg:bg-[100%_100%] bg-cover">
+    <div className="bg-homeHeader pb-28 relative bg-center xl:min-h-screen 2xl:min-h-[800px] bg-no-repeat lg:bg-[100%_100%] z-50 bg-cover">
       <div className="container px-6 md:px-3 max-w-[1164px]">
         <nav className="pt-8 md:pt-2.5 ">
           <div className="max-w-[1164px] md:px-0 sm:px-3 mx-auto ">
@@ -44,8 +43,9 @@ const HomeHeader = () => {
               </Link>
               <div className="flex items-center">
                 <ul
-                  className={`flex items-center gap-[14px]  duration-300 max-md:fixed max-md:w-full max-md:h-full max-md:pt-[121px] max-md:flex-col max-md:z-[3] max-md:top-0 max-md:left-[-105%] max-md:p-[30px] max-md:bg-white ${navBar && "!left-0"
-                    }`}
+                  className={`flex items-center gap-[24px] max-lg:fixed max-lg:w-full max-lg:h-full max-lg:justify-start max-lg:pt-[120px] max-lg:flex-col max-lg:z-[3] max-lg:top-0 max-lg:left-[-105%] max-lg:p-[30px] max-lg:bg-white transition-all ease-linear duration-300 ${
+                    navBar && "!left-0"
+                  }`}
                 >
                   <div className="gap-6 flex md:flex-row flex-col items-center">
                     {navData.map((obj, i) => (
@@ -71,7 +71,10 @@ const HomeHeader = () => {
                 </ul>
               </div>
 
-              <button onClick={showNav} className="md:hidden relative z-[4]">
+              <button
+                onClick={showNav}
+                className="md:hidden relative pb-2 z-[4]"
+              >
                 {navBar ? (
                   <div className="flex md:hidden flex-col relative z-50 justify-between w-[18px] h-[17px] cursor-pointer">
                     <span className="bg-black w-[11px] h-[2px] relative z-50 transition-all ease-linear duration-300 rotate-[45deg] translate-x-0 translate-y-0 -bottom-[11px]"></span>

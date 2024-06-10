@@ -79,7 +79,7 @@ const Companies = () => {
                 </div>
                 {id === 1 && (
                   <div className="absolute xl:right-[13%] md:right-[17%] right-1/2 translate-x-1/2 top-[-29px]">
-                    <label className="md:!py-[15px]  border-darkBlue hover:text-darkBlue leading-8 hover:bg-white hover:shadow-[0px_1px_17.3px_1px_darkBlue]  hover:border-white  md:!leading-lg1 duration-500 !font-normal text-xl md:!text-2xl md:!px-[35px] !py-3 !px-5 capitalize text-white rounded  bg-darkBlue">
+                    <label className="md:!py-[15px]  border-darkBlue leading-8    md:!leading-lg1 duration-500 !font-normal text-xl md:!text-2xl md:!px-[35px] !py-3 !px-5 capitalize text-white rounded  bg-darkBlue">
                       Expiry Date
                     </label>
                   </div>
