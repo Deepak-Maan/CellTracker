@@ -120,7 +120,7 @@ const HomeHeader = () => {
           <div className="lg:w-6/12 pt-8 sm:pt-12 lg:pt-0 flex justify-center w-full">
             <div className="relative">
               <img
-                className="w-[339px] translate-x-[-15%] h-[335px] lg:w-full lg:h-full"
+                className="w-[339px] pointer-events-none translate-x-[-15%] h-[335px] lg:w-full lg:h-full"
                 src={headerMobile}
                 alt="mobile"
               />
@@ -149,7 +149,7 @@ const HomeHeader = () => {
         </div>
       </div>
       <img
-        className="absolute w-full  -bottom-1 md:bottom-[-8%] 2xl:bottom-[-24%] z-0"
+        className="absolute w-full pointer-events-none  -bottom-1 md:bottom-[-8%] 2xl:bottom-[-24%] z-0"
         src={headerWave}
         alt="wave"
       />

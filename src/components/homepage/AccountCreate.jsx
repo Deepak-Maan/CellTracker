@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   AddressIcon,
   Calender,
@@ -148,12 +148,12 @@ const AccountCreate = () => {
                   <img
                     src={visa}
                     alt="visa"
-                    className="sm:w-[73px] sm:h-[27px] w-[33px] h-[12px]"
+                    className="sm:w-[73px] pointer-events-none sm:h-[27px] w-[33px] h-[12px]"
                   />
                   <img
                     src={masterCard}
                     alt="mastercard"
-                    className="sm:w-[57px] sm:h-[49px] w-[25px] h-[21px]"
+                    className="sm:w-[57px] pointer-events-none sm:h-[49px] w-[25px] h-[21px]"
                   />
                 </div>
               </div>

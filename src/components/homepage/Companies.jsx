@@ -12,12 +12,12 @@ const Companies = () => {
       <img
         src={toplayer}
         alt="toplayer"
-        className="absolute -top-1 xl:top-[-10%] 2xl:top-[-11%] w-full"
+        className="absolute -top-1 pointer-events-none xl:top-[-10%] 2xl:top-[-11%] w-full"
       />
       <img
         src={btmlayer}
         alt="botmlayer"
-        className="absolute -bottom-1 md:bottom-[-3%] lg:bottom-[-8%] xl:bottom-[-12%] 2xl:bottom-[-15%] w-full"
+        className="absolute -bottom-1 pointer-events-none md:bottom-[-3%] lg:bottom-[-8%] xl:bottom-[-12%] 2xl:bottom-[-15%] w-full"
       />
       <div className="containers px-3 custom_container mx-auto">
         <h2
